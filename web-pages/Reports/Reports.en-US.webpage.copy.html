@@ -1,0 +1,207 @@
+<!-- BFLFP Maintenance Control Center — REPORTS -->
+<div class="bflfp-reports">
+
+    <!-- HEADER -->
+    <header class="rep-header">
+        <div class="rep-header-inner">
+            <div class="rep-titles">
+                <div class="rep-eyebrow">
+                    <span class="rep-dot"></span>
+                    <span>Reports · Insights</span>
+                </div>
+                <h1 class="rep-title">
+                    Maintenance Reports
+                    <span class="rep-title-th">รายงานการบำรุงรักษา</span>
+                </h1>
+                <p class="rep-subtitle">Pre-built monthly and yearly summaries, downloadable as CSV. Use the dashboard for interactive filtering.</p>
+            </div>
+            <div class="rep-controls">
+                <div class="rep-period">
+                    <label>Period / ช่วงเวลา</label>
+                    <select id="rep-period">
+                        <option value="this_month">This Month</option>
+                        <option value="last_month">Last Month</option>
+                        <option value="this_quarter">This Quarter</option>
+                        <option value="ytd" selected>Year to Date</option>
+                        <option value="last_12">Last 12 Months</option>
+                        <option value="all">All Time</option>
+                    </select>
+                </div>
+                <button class="rep-btn rep-btn-primary" id="rep-refresh">Refresh</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- LOADING / ERROR -->
+    <div class="rep-state rep-state-loading" id="rep-loading">
+        <div class="rep-spinner"></div>
+        <p>Loading reports… / กำลังโหลด</p>
+    </div>
+    <div class="rep-state rep-state-error" id="rep-error" style="display:none;">
+        <h3>Unable to load data</h3>
+        <p id="rep-error-msg">Could not reach the Power Automate flow.</p>
+        <button class="rep-btn rep-btn-primary" id="rep-retry">Retry</button>
+    </div>
+
+    <main class="rep-main" id="rep-main" style="display:none;">
+
+        <!-- SUMMARY CARDS -->
+        <section class="rep-summary">
+            <div class="rep-summary-card">
+                <span class="rep-summary-label">Total Jobs<small>งานทั้งหมด</small></span>
+                <span class="rep-summary-value" id="sum-total">—</span>
+                <span class="rep-summary-sub" id="sum-total-sub">In selected period</span>
+            </div>
+            <div class="rep-summary-card">
+                <span class="rep-summary-label">Completed<small>เสร็จสิ้น</small></span>
+                <span class="rep-summary-value" id="sum-done">—</span>
+                <span class="rep-summary-sub" id="sum-done-sub">— complete rate</span>
+            </div>
+            <div class="rep-summary-card">
+                <span class="rep-summary-label">Total Downtime<small>เวลาหยุดเดิน</small></span>
+                <span class="rep-summary-value" id="sum-downtime">—</span>
+                <span class="rep-summary-sub">across all machines</span>
+            </div>
+            <div class="rep-summary-card">
+                <span class="rep-summary-label">Breakdowns<small>การเสียกะทันหัน</small></span>
+                <span class="rep-summary-value" id="sum-bd">—</span>
+                <span class="rep-summary-sub">Repair / Breakdown</span>
+            </div>
+            <div class="rep-summary-card">
+                <span class="rep-summary-label">Avg MTTR<small>เวลาซ่อมเฉลี่ย</small></span>
+                <span class="rep-summary-value" id="sum-mttr">—</span>
+                <span class="rep-summary-sub">per completed job</span>
+            </div>
+            <div class="rep-summary-card">
+                <span class="rep-summary-label">PM Compliance<small>บรรลุแผน PM</small></span>
+                <span class="rep-summary-value" id="sum-pm">—</span>
+                <span class="rep-summary-sub" id="sum-pm-sub">— PM jobs</span>
+            </div>
+        </section>
+
+        <!-- TREND CHART -->
+        <section class="rep-card">
+            <div class="rep-card-head">
+                <h3 class="rep-card-title">Monthly Job Volume</h3>
+                <span class="rep-card-sub">งานต่อเดือน · last 12 months</span>
+                <button class="rep-card-export" data-export="monthly">Download CSV</button>
+            </div>
+            <div class="rep-chart-wrap rep-chart-tall">
+                <canvas id="rep-chart-monthly"></canvas>
+            </div>
+        </section>
+
+        <!-- 2-COL ROW -->
+        <section class="rep-row">
+            <div class="rep-card">
+                <div class="rep-card-head">
+                    <h3 class="rep-card-title">Top 10 Machines by Issues</h3>
+                    <span class="rep-card-sub">เครื่องที่มีปัญหามากที่สุด</span>
+                    <button class="rep-card-export" data-export="machines">CSV</button>
+                </div>
+                <div class="rep-chart-wrap rep-chart-mid">
+                    <canvas id="rep-chart-machines"></canvas>
+                </div>
+            </div>
+            <div class="rep-card">
+                <div class="rep-card-head">
+                    <h3 class="rep-card-title">Downtime by Machine (hrs)</h3>
+                    <span class="rep-card-sub">เวลาเสียต่อเครื่อง</span>
+                    <button class="rep-card-export" data-export="downtime">CSV</button>
+                </div>
+                <div class="rep-chart-wrap rep-chart-mid">
+                    <canvas id="rep-chart-downtime"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-COL ROW -->
+        <section class="rep-row rep-row-3">
+            <div class="rep-card">
+                <div class="rep-card-head">
+                    <h3 class="rep-card-title">Status Breakdown</h3>
+                    <span class="rep-card-sub">การกระจายสถานะ</span>
+                </div>
+                <div class="rep-chart-wrap rep-chart-donut">
+                    <canvas id="rep-chart-status"></canvas>
+                </div>
+            </div>
+            <div class="rep-card">
+                <div class="rep-card-head">
+                    <h3 class="rep-card-title">Job Type Mix</h3>
+                    <span class="rep-card-sub">สัดส่วนประเภทงาน</span>
+                </div>
+                <div class="rep-chart-wrap rep-chart-donut">
+                    <canvas id="rep-chart-jobtype"></canvas>
+                </div>
+            </div>
+            <div class="rep-card">
+                <div class="rep-card-head">
+                    <h3 class="rep-card-title">Priority Mix</h3>
+                    <span class="rep-card-sub">ระดับความเร่งด่วน</span>
+                </div>
+                <div class="rep-chart-wrap rep-chart-donut">
+                    <canvas id="rep-chart-priority"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOP ISSUES TABLE -->
+        <section class="rep-card">
+            <div class="rep-card-head">
+                <h3 class="rep-card-title">Top Root Causes</h3>
+                <span class="rep-card-sub">สาเหตุหลักของปัญหา · most frequent</span>
+                <button class="rep-card-export" data-export="rootcause">CSV</button>
+            </div>
+            <div class="rep-table-wrap">
+                <table class="rep-table" id="rep-table-rootcause">
+                    <thead>
+                        <tr>
+                            <th style="width:50px">#</th>
+                            <th>Root Cause</th>
+                            <th style="width:120px">Count</th>
+                            <th style="width:160px">Total Downtime (hrs)</th>
+                            <th style="width:140px">Top Machine</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TECHNICIAN WORKLOAD -->
+        <section class="rep-card">
+            <div class="rep-card-head">
+                <h3 class="rep-card-title">Technician Workload Summary</h3>
+                <span class="rep-card-sub">ภาระงานของช่าง</span>
+                <button class="rep-card-export" data-export="techs">CSV</button>
+            </div>
+            <div class="rep-table-wrap">
+                <table class="rep-table" id="rep-table-techs">
+                    <thead>
+                        <tr>
+                            <th>Technician</th>
+                            <th style="width:110px">Jobs Handled</th>
+                            <th style="width:130px">Jobs Completed</th>
+                            <th style="width:140px">Avg MTTR</th>
+                            <th style="width:160px">Total Downtime (hrs)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- META FOOTER -->
+        <div class="rep-meta">
+            <span id="rep-meta-period">Period: —</span>
+            <span class="rep-meta-sep">·</span>
+            <span id="rep-meta-records">— records</span>
+            <span class="rep-meta-sep">·</span>
+            <span id="rep-meta-updated">Updated: —</span>
+        </div>
+    </main>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
