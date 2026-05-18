@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BFLFP CORS Test</title>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #1E293B; }
+    h1 { color: #EA580C; }
+    button { padding: 12px 24px; background: #F97316; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 14px; margin-right: 8px; }
+    button:hover { background: #EA580C; }
+    .result { margin-top: 20px; padding: 16px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; }
+    .ok { border-left: 4px solid #22C55E; }
+    .err { border-left: 4px solid #EF4444; }
+    pre { background: #1E293B; color: #FFF; padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 12px; line-height: 1.5; }
+    .step { margin: 24px 0; }
+    code { background: #FFF7ED; padding: 2px 6px; border-radius: 3px; color: #EA580C; font-size: 13px; }
+</style>
+</head>
+<body>
+    <h1>BFLFP Flow CORS Test</h1>
+    <p>This page verifies whether the Power Automate flow can be called from this origin (<code id="origin"></code>).
+       Run it from the deployed GitHub Pages URL before assuming the dashboards will work.</p>
+
+    <div class="step">
+        <button id="btn-post">Test POST</button>
+        <button id="btn-get">Test GET</button>
+    </div>
+
+    <div id="result" class="result" style="display:none;"></div>
+
+    <h2>What to look for</h2>
+    <ul>
+        <li><strong>✅ Success:</strong> Status 200 and a JSON response body. CORS is fine.</li>
+        <li><strong>❌ CORS error:</strong> "blocked by CORS policy" in console. The flow's Response action needs <code>Access-Control-Allow-Origin: *</code> header. Edit the flow → Response action → Add header.</li>
+        <li><strong>❌ 401/403:</strong> Signature is wrong or expired. Regenerate the flow URL.</li>
+        <li><strong>❌ 400 on POST + 405 on GET:</strong> The trigger method is restricted. Allow both POST and GET in the flow trigger.</li>
+    </ul>
+
+    <h2>How to fix CORS in Power Automate</h2>
+    <ol>
+        <li>Open the flow in Power Automate</li>
+        <li>Click the <strong>Response</strong> action (last step)</li>
+        <li>Click <strong>Show advanced options</strong></li>
+        <li>In the <strong>Headers</strong> field, add:
+            <pre>{
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type"
+}</pre>
+        </li>
+        <li>Save the flow and retest here</li>
+    </ol>
+
+<script>
+    var DATA_URL = 'https://e3f3e42aeed8e8578b8fbeb256cd05.92.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/761fb5647d804b62a867d1ce49124311/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=B3DKRO5DG6GO3A6Ldjfet5kNncZV1rE4geWQhCKtSEs';
+
+    document.getElementById('origin').textContent = window.location.origin;
+
+    function showResult(ok, html) {
+        var el = document.getElementById('result');
+        el.style.display = 'block';
+        el.className = 'result ' + (ok ? 'ok' : 'err');
+        el.innerHTML = html;
+    }
+
+    function test(method) {
+        var start = Date.now();
+        var opts = { method: method, headers: { 'Accept': 'application/json' } };
+        if (method === 'POST') {
+            opts.headers['Content-Type'] = 'application/json';
+            opts.body = '{}';
+        }
+        showResult(true, '⏳ Testing ' + method + '…');
+        fetch(DATA_URL, opts)
+            .then(function(r) {
+                var time = Date.now() - start;
+                return r.text().then(function(text) {
+                    var preview = text.slice(0, 500);
+                    var html = '<strong>' + method + ' ' + (r.ok ? '✅' : '⚠️') + '</strong> Status: ' + r.status + ' · Time: ' + time + 'ms<br><br>' +
+                               '<strong>Response preview:</strong><pre>' + preview.replace(/</g, '&lt;') + (text.length > 500 ? '\n…(truncated)' : '') + '</pre>';
+                    showResult(r.ok, html);
+                });
+            })
+            .catch(function(err) {
+                showResult(false, '<strong>❌ Error:</strong> ' + err.message + '<br><br>' +
+                    'This usually means a CORS block. Open your browser DevTools console — there will be a more specific error message there.');
+            });
+    }
+
+    document.getElementById('btn-post').addEventListener('click', function(){ test('POST'); });
+    document.getElementById('btn-get').addEventListener('click', function(){ test('GET'); });
+</script>
+</body>
+</html>

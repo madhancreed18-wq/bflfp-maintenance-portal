@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — BFLFP Maintenance Portal</title>
+    <link rel="icon" type="image/png" href="./assets/Bluefalo.png">
+    <link rel="stylesheet" href="./assets/master.css">
+    <link rel="stylesheet" href="./assets/dashboard.css">
+    
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BANNER -->
+<div class="announcement-banner">
+    <div class="announcement-inner">
+        <span class="announcement-text">🔧 BFLFP Maintenance System — Production Site | ระบบบำรุงรักษา BFLFP</span>
+        <span class="announcement-date" id="announcement-date"></span>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="./" class="nav-brand" aria-label="BFLFP Home">
+            <img src="./assets/Bluefalo.png" alt="Bluefalo Logo" class="nav-logo">
+            <div class="nav-brand-text">
+                <span class="nav-brand-name">BFLFP</span>
+                <span class="nav-brand-sub">Maintenance Control</span>
+            </div>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./">Home<span class="nav-th">หน้าหลัก</span></a></li>
+            <li><a href="./dashboard.html" class="active">Dashboard<span class="nav-th">แดชบอร์ด</span></a></li>
+            <li><a href="./maintenance-log.html">Maintenance Log<span class="nav-th">บันทึกการซ่อม</span></a></li>
+            <li><a href="./reports.html">Reports<span class="nav-th">รายงาน</span></a></li>
+            <li><a href="./about.html">About<span class="nav-th">เกี่ยวกับ</span></a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<main class="page-content">
+<!-- BFLFP Maintenance Control Center — DASHBOARD PAGE -->
+<div class="bflfp-dashboard">
+
+    <!-- ============================================
+         PAGE HEADER
+         ============================================ -->
+    <header class="dash-header">
+        <div class="dash-header-inner">
+            <div class="dash-header-titles">
+                <div class="dash-eyebrow">
+                    <span class="dash-live-dot"></span>
+                    <span class="dash-live-text">LIVE</span>
+                    <span class="dash-eyebrow-sep">·</span>
+                    <span>Real-time Maintenance KPIs</span>
+                </div>
+                <h1 class="dash-title">
+                    Maintenance Dashboard
+                    <span class="dash-title-th">แดชบอร์ดบำรุงรักษา</span>
+                </h1>
+                <p class="dash-subtitle">Live operational view across all BFLFP production machines, technicians, and jobs.</p>
+            </div>
+            <div class="dash-header-actions">
+                <div class="dash-clock" id="dash-clock">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span id="dash-clock-time">--:--:--</span>
+                </div>
+                <button class="dash-btn dash-btn-outline" id="btn-export">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Export CSV
+                </button>
+                <button class="dash-btn dash-btn-primary" id="btn-refresh">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         FILTER BAR
+         ============================================ -->
+    <section class="dash-filterbar">
+        <div class="dash-filterbar-inner">
+            <div class="dash-filter">
+                <label>Status<span>สถานะ</span></label>
+                <select id="f-status"><option value="">All</option></select>
+            </div>
+            <div class="dash-filter">
+                <label>Job Type<span>ประเภทงาน</span></label>
+                <select id="f-jobtype"><option value="">All</option></select>
+            </div>
+            <div class="dash-filter">
+                <label>Priority<span>ลำดับความสำคัญ</span></label>
+                <select id="f-priority"><option value="">All</option></select>
+            </div>
+            <div class="dash-filter">
+                <label>Machine<span>เครื่องจักร</span></label>
+                <select id="f-machine"><option value="">All</option></select>
+            </div>
+            <div class="dash-filter">
+                <label>Technician<span>ช่าง</span></label>
+                <select id="f-tech"><option value="">All</option></select>
+            </div>
+            <div class="dash-filter">
+                <label>From<span>ตั้งแต่</span></label>
+                <input type="date" id="f-datefrom"/>
+            </div>
+            <div class="dash-filter">
+                <label>To<span>ถึง</span></label>
+                <input type="date" id="f-dateto"/>
+            </div>
+            <div class="dash-filter dash-filter-search">
+                <label>Search<span>ค้นหา</span></label>
+                <input type="text" id="f-search" placeholder="Job ID, machine, cause…"/>
+            </div>
+            <button class="dash-btn dash-btn-clear" id="btn-clear">Clear<span>ล้าง</span></button>
+        </div>
+        <div class="dash-filterbar-summary">
+            <span id="filter-summary">Loading…</span>
+        </div>
+    </section>
+
+    <!-- ============================================
+         LOADING / ERROR STATES
+         ============================================ -->
+    <div class="dash-state dash-state-loading" id="state-loading">
+        <div class="dash-spinner"></div>
+        <p>Fetching live maintenance data… / กำลังโหลดข้อมูล</p>
+    </div>
+
+    <div class="dash-state dash-state-error" id="state-error" style="display:none;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <h3>Unable to load data</h3>
+        <p id="error-msg">The Power Automate flow did not return data.</p>
+        <button class="dash-btn dash-btn-primary" id="btn-retry">Retry</button>
+    </div>
+
+    <!-- ============================================
+         MAIN CONTENT (hidden until data loads)
+         ============================================ -->
+    <div class="dash-main" id="dash-main" style="display:none;">
+
+        <!-- KPI STRIP -->
+        <section class="dash-kpi-strip">
+            <div class="kpi-tile kpi-tile-primary">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">MTTR<small>เวลาเฉลี่ยที่ใช้ซ่อม</small></span>
+                    <div class="kpi-tile-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                </div>
+                <div class="kpi-tile-value" id="kpi-mttr">—</div>
+                <div class="kpi-tile-sub" id="kpi-mttr-sub">Mean Time To Repair</div>
+            </div>
+
+            <div class="kpi-tile kpi-tile-navy">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">MTBF<small>ระยะเวลาเฉลี่ยระหว่างเสีย</small></span>
+                    <div class="kpi-tile-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                </div>
+                <div class="kpi-tile-value" id="kpi-mtbf">—</div>
+                <div class="kpi-tile-sub" id="kpi-mtbf-sub">Mean Time Between Failures</div>
+            </div>
+
+            <div class="kpi-tile kpi-tile-green">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">PM Compliance<small>การปฏิบัติตามแผน PM</small></span>
+                    <div class="kpi-tile-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                </div>
+                <div class="kpi-tile-value" id="kpi-pm">—</div>
+                <div class="kpi-tile-sub" id="kpi-pm-sub">Preventive done on time</div>
+            </div>
+
+            <div class="kpi-tile kpi-tile-orange">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">FTFR<small>อัตราซ่อมจบในครั้งเดียว</small></span>
+                    <div class="kpi-tile-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                </div>
+                <div class="kpi-tile-value" id="kpi-ftfr">—</div>
+                <div class="kpi-tile-sub" id="kpi-ftfr-sub">First Time Fix Rate</div>
+            </div>
+
+            <div class="kpi-tile kpi-tile-sm">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">Total Jobs<small>งานทั้งหมด</small></span>
+                </div>
+                <div class="kpi-tile-value" id="kpi-total">—</div>
+                <div class="kpi-tile-sub">In selected range</div>
+            </div>
+
+            <div class="kpi-tile kpi-tile-sm">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">Open Jobs<small>งานคงค้าง</small></span>
+                </div>
+                <div class="kpi-tile-value kpi-warn" id="kpi-open">—</div>
+                <div class="kpi-tile-sub">Status ≠ Done</div>
+            </div>
+
+            <div class="kpi-tile kpi-tile-sm">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">Overdue<small>งานเลยกำหนด</small></span>
+                </div>
+                <div class="kpi-tile-value kpi-danger" id="kpi-overdue">—</div>
+                <div class="kpi-tile-sub">Past due date</div>
+            </div>
+
+            <div class="kpi-tile kpi-tile-sm">
+                <div class="kpi-tile-top">
+                    <span class="kpi-tile-label">Avg Response<small>เวลาตอบสนอง</small></span>
+                </div>
+                <div class="kpi-tile-value" id="kpi-resp">—</div>
+                <div class="kpi-tile-sub">Created → Start</div>
+            </div>
+        </section>
+
+        <!-- TREND CHART -->
+        <section class="dash-card dash-trend-card">
+            <div class="dash-card-header">
+                <div>
+                    <h3 class="dash-card-title">Daily Jobs Trend</h3>
+                    <p class="dash-card-sub">งานต่อวัน · Total vs Breakdown jobs</p>
+                </div>
+                <div class="dash-legend">
+                    <span class="dash-legend-item"><i style="background:#F97316"></i>Total Jobs</span>
+                    <span class="dash-legend-item"><i style="background:#EF4444"></i>Breakdowns</span>
+                </div>
+            </div>
+            <div class="dash-chart-wrap dash-chart-trend">
+                <canvas id="chart-trend"></canvas>
+            </div>
+        </section>
+
+        <!-- DONUT ROW -->
+        <section class="dash-row dash-row-3">
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 class="dash-card-title">Status Breakdown</h3>
+                    <p class="dash-card-sub">การกระจายสถานะ</p>
+                </div>
+                <div class="dash-chart-wrap dash-chart-donut">
+                    <canvas id="chart-status"></canvas>
+                </div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 class="dash-card-title">Job Type Mix</h3>
+                    <p class="dash-card-sub">สัดส่วนประเภทงาน</p>
+                </div>
+                <div class="dash-chart-wrap dash-chart-donut">
+                    <canvas id="chart-jobtype"></canvas>
+                </div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 class="dash-card-title">Priority Distribution</h3>
+                    <p class="dash-card-sub">ระดับความเร่งด่วน</p>
+                </div>
+                <div class="dash-chart-wrap dash-chart-donut">
+                    <canvas id="chart-priority"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANALYSIS BARS -->
+        <section class="dash-row dash-row-3">
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 class="dash-card-title">Top Machines by Issues</h3>
+                    <p class="dash-card-sub">เครื่องที่มีปัญหามากที่สุด</p>
+                </div>
+                <div class="dash-chart-wrap dash-chart-bar">
+                    <canvas id="chart-machines"></canvas>
+                </div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 class="dash-card-title">Downtime by Machine</h3>
+                    <p class="dash-card-sub">เวลาหยุดเดิน (ชั่วโมง)</p>
+                </div>
+                <div class="dash-chart-wrap dash-chart-bar">
+                    <canvas id="chart-downtime"></canvas>
+                </div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 class="dash-card-title">Technician Workload</h3>
+                    <p class="dash-card-sub">ภาระงานช่าง · jobs handled</p>
+                </div>
+                <div class="dash-chart-wrap dash-chart-bar">
+                    <canvas id="chart-tech"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPEN JOBS TABLE -->
+        <section class="dash-card dash-table-card">
+            <div class="dash-card-header">
+                <div>
+                    <h3 class="dash-card-title">
+                        <span class="dot dot-warn"></span>
+                        Open Jobs <span class="dash-th-inline">/ งานคงค้าง</span>
+                    </h3>
+                    <p class="dash-card-sub">All jobs where Status is not <em>Done</em></p>
+                </div>
+                <span class="count-badge count-badge-warn" id="count-open">0</span>
+            </div>
+            <div class="dash-table-wrap">
+                <table class="dash-table" id="tbl-open">
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Machine</th>
+                            <th>Problem / Root Cause</th>
+                            <th>Type</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                            <th>Assigned To</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- OVERDUE JOBS TABLE -->
+        <section class="dash-card dash-table-card">
+            <div class="dash-card-header">
+                <div>
+                    <h3 class="dash-card-title">
+                        <span class="dot dot-danger"></span>
+                        Overdue Jobs <span class="dash-th-inline">/ งานเลยกำหนด</span>
+                    </h3>
+                    <p class="dash-card-sub">Open jobs past their due date</p>
+                </div>
+                <span class="count-badge count-badge-danger" id="count-overdue">0</span>
+            </div>
+            <div class="dash-table-wrap">
+                <table class="dash-table" id="tbl-overdue">
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Machine</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                            <th>Days Over</th>
+                            <th>Assigned To</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FULL LOG TABLE -->
+        <section class="dash-card dash-table-card">
+            <div class="dash-card-header">
+                <div>
+                    <h3 class="dash-card-title">
+                        <span class="dot dot-primary"></span>
+                        Full Maintenance Log <span class="dash-th-inline">/ บันทึกการซ่อมทั้งหมด</span>
+                    </h3>
+                    <p class="dash-card-sub">All jobs in the selected filter range</p>
+                </div>
+                <span class="count-badge count-badge-primary" id="count-total">0</span>
+            </div>
+            <div class="dash-table-wrap">
+                <table class="dash-table" id="tbl-full">
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Machine</th>
+                            <th>Root Cause</th>
+                            <th>Solution</th>
+                            <th>Type</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Downtime (h)</th>
+                            <th>Response (h)</th>
+                            <th>Action By</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="dash-table-footer">
+                <span id="full-pager-info">—</span>
+                <div class="dash-pager">
+                    <button class="dash-pager-btn" id="pg-prev">‹ Prev</button>
+                    <span id="pg-info">Page 1</span>
+                    <button class="dash-pager-btn" id="pg-next">Next ›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PM KPI DASHBOARD — Monthly KPI Matrix
+             ============================================ -->
+        <section class="dash-card pmkpi-card">
+            <div class="pmkpi-banner">
+                <div class="pmkpi-banner-title">
+                    PM KPI DASHBOARD
+                    <span class="pmkpi-banner-th">— ตัวชี้วัดประสิทธิผลการบำรุงรักษา</span>
+                </div>
+                <div class="pmkpi-banner-controls">
+                    <label class="pmkpi-year-label">Year / ปี</label>
+                    <select id="pmkpi-year" class="pmkpi-year-select"></select>
+                </div>
+            </div>
+
+            <div class="pmkpi-section-bar">
+                <span class="pmkpi-section-marker">■</span>
+                <span class="pmkpi-section-label">MONTHLY KPI — ตัวชี้วัดรายเดือน</span>
+                <span class="pmkpi-section-spacer"></span>
+                <span class="pmkpi-section-meta" id="pmkpi-section-meta">—</span>
+            </div>
+
+            <div class="pmkpi-table-wrap">
+                <table class="pmkpi-table" id="pmkpi-table">
+                    <thead>
+                        <tr>
+                            <th class="pmkpi-th-kpi">KPI</th>
+                            <th class="pmkpi-th-target">Target</th>
+                            <th>ม.ค.</th><th>ก.พ.</th><th>มี.ค.</th><th>เม.ย.</th>
+                            <th>พ.ค.</th><th>มิ.ย.</th><th>ก.ค.</th><th>ส.ค.</th>
+                            <th>ก.ย.</th><th>ต.ค.</th><th>พ.ย.</th><th>ธ.ค.</th>
+                        </tr>
+                    </thead>
+                    <tbody><!-- populated by JS --></tbody>
+                </table>
+            </div>
+
+            <div class="pmkpi-legend">
+                <span class="pmkpi-legend-item"><i class="pmkpi-swatch pmkpi-cell-good"></i>Meets target / บรรลุเป้า</span>
+                <span class="pmkpi-legend-item"><i class="pmkpi-swatch pmkpi-cell-warn"></i>Within 10% / ใกล้เคียงเป้า</span>
+                <span class="pmkpi-legend-item"><i class="pmkpi-swatch pmkpi-cell-bad"></i>Misses target / ต่ำกว่าเป้า</span>
+                <span class="pmkpi-legend-item pmkpi-legend-note">Rows without auto-data require additional sources (production runtime, OEE, IT, cost).</span>
+            </div>
+        </section>
+
+        <!-- FOOTER META -->
+        <div class="dash-meta-footer">
+            <span>BFLFP Maintenance Control Center · Dashboard</span>
+            <span class="dash-meta-sep">·</span>
+            <span id="dash-last-updated">Last updated: —</span>
+            <span class="dash-meta-sep">·</span>
+            <span>Source: Power Automate flow</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- Chart.js via CDN (required for charts) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-col footer-about">
+            <div class="footer-brand">
+                <img src="./assets/Bluefalo.png" alt="Bluefalo">
+                <div class="footer-brand-text">
+                    BFLFP
+                    <small>Bluefalo Food Products</small>
+                </div>
+            </div>
+            <p>Real-time maintenance visibility and control for BFLFP production facilities. Engineered for reliability, built for efficiency.</p>
+            <p style="margin-top:8px;font-size:12px;color:rgba(255,255,255,0.55)">ระบบจัดการการบำรุงรักษาแบบเรียลไทม์สำหรับโรงงาน BFLFP</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+                <li><a href="./">Home / หน้าหลัก</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./maintenance-log.html">Maintenance Log</a></li>
+                <li><a href="./reports.html">Reports</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Operator Guide</a></li>
+                <li><a href="#">Technician Manual</a></li>
+                <li><a href="#">PM Schedule</a></li>
+                <li><a href="#">KPI Definitions</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact-line">📍 BFLFP Plant, Thailand</div>
+            <div class="footer-contact-line">✉️ maintenance@bluefalo-group.com</div>
+            <div class="footer-contact-line">📞 +66 (0) 2-xxx-xxxx</div>
+            <div class="footer-contact-line">🕐 Mon–Sat · 07:00–19:00</div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 BFLFP — Bluefalo Food Products. All rights reserved.</span>
+        <span>Built for production excellence · สร้างเพื่อความเป็นเลิศ</span>
+    </div>
+</footer>
+
+<script src="./assets/master.js"></script>
+<script src="./assets/dashboard.js"></script>
+</body>
+</html>

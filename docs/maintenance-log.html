@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Log — BFLFP Maintenance Portal</title>
+    <link rel="icon" type="image/png" href="./assets/Bluefalo.png">
+    <link rel="stylesheet" href="./assets/master.css">
+    <link rel="stylesheet" href="./assets/maintenance-log.css">
+    
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BANNER -->
+<div class="announcement-banner">
+    <div class="announcement-inner">
+        <span class="announcement-text">🔧 BFLFP Maintenance System — Production Site | ระบบบำรุงรักษา BFLFP</span>
+        <span class="announcement-date" id="announcement-date"></span>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="./" class="nav-brand" aria-label="BFLFP Home">
+            <img src="./assets/Bluefalo.png" alt="Bluefalo Logo" class="nav-logo">
+            <div class="nav-brand-text">
+                <span class="nav-brand-name">BFLFP</span>
+                <span class="nav-brand-sub">Maintenance Control</span>
+            </div>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./">Home<span class="nav-th">หน้าหลัก</span></a></li>
+            <li><a href="./dashboard.html">Dashboard<span class="nav-th">แดชบอร์ด</span></a></li>
+            <li><a href="./maintenance-log.html" class="active">Maintenance Log<span class="nav-th">บันทึกการซ่อม</span></a></li>
+            <li><a href="./reports.html">Reports<span class="nav-th">รายงาน</span></a></li>
+            <li><a href="./about.html">About<span class="nav-th">เกี่ยวกับ</span></a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<main class="page-content">
+<!-- BFLFP Maintenance Control Center — MAINTENANCE LOG -->
+<div class="bflfp-mlog">
+
+    <!-- HEADER -->
+    <header class="mlog-header">
+        <div class="mlog-header-inner">
+            <div class="mlog-titles">
+                <div class="mlog-eyebrow">
+                    <span class="mlog-live-dot"></span>
+                    <span>LIVE · Maintenance Log</span>
+                </div>
+                <h1 class="mlog-title">
+                    Maintenance Log
+                    <span class="mlog-title-th">บันทึกการบำรุงรักษา</span>
+                </h1>
+                <p class="mlog-subtitle">Complete record of all maintenance jobs across BFLFP production. Sort, filter, search, and drill into any job.</p>
+            </div>
+            <div class="mlog-actions">
+                <span class="mlog-count-pill" id="mlog-count">— rows</span>
+                <button class="mlog-btn mlog-btn-outline" id="mlog-export">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Export CSV
+                </button>
+                <button class="mlog-btn mlog-btn-primary" id="mlog-refresh">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- FILTER BAR -->
+    <section class="mlog-filterbar">
+        <div class="mlog-filterbar-inner">
+            <div class="mlog-search-wrap">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="mlog-search" placeholder="Search by Job ID, machine, root cause, solution, technician…"/>
+            </div>
+            <div class="mlog-filter">
+                <select id="mlog-status"><option value="">All Statuses</option></select>
+            </div>
+            <div class="mlog-filter">
+                <select id="mlog-jobtype"><option value="">All Types</option></select>
+            </div>
+            <div class="mlog-filter">
+                <select id="mlog-priority"><option value="">All Priorities</option></select>
+            </div>
+            <div class="mlog-filter">
+                <select id="mlog-machine"><option value="">All Machines</option></select>
+            </div>
+            <div class="mlog-filter mlog-filter-date">
+                <input type="date" id="mlog-datefrom" title="From date"/>
+                <span>—</span>
+                <input type="date" id="mlog-dateto" title="To date"/>
+            </div>
+            <button class="mlog-clear-btn" id="mlog-clear">Clear / ล้าง</button>
+        </div>
+        <div class="mlog-active-filters" id="mlog-active-filters"></div>
+    </section>
+
+    <!-- LOADING / ERROR -->
+    <div class="mlog-state mlog-state-loading" id="mlog-loading">
+        <div class="mlog-spinner"></div>
+        <p>Loading maintenance log… / กำลังโหลดข้อมูล</p>
+    </div>
+    <div class="mlog-state mlog-state-error" id="mlog-error" style="display:none;">
+        <h3>Unable to load data</h3>
+        <p id="mlog-error-msg">Could not reach the Power Automate flow.</p>
+        <button class="mlog-btn mlog-btn-primary" id="mlog-retry">Retry</button>
+    </div>
+
+    <!-- TABLE -->
+    <main class="mlog-main" id="mlog-main" style="display:none;">
+        <div class="mlog-table-wrap">
+            <table class="mlog-table" id="mlog-table">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-sort="JobID">Job ID<span class="sort-arrow"></span></th>
+                        <th class="sortable" data-sort="Machine">Machine<span class="sort-arrow"></span></th>
+                        <th>Root Cause</th>
+                        <th>Solution</th>
+                        <th class="sortable" data-sort="JobType">Type<span class="sort-arrow"></span></th>
+                        <th class="sortable" data-sort="Priority">Priority<span class="sort-arrow"></span></th>
+                        <th class="sortable" data-sort="Status">Status<span class="sort-arrow"></span></th>
+                        <th class="sortable" data-sort="Downtime">Downtime<span class="sort-arrow"></span></th>
+                        <th class="sortable" data-sort="ActionBy">Action By<span class="sort-arrow"></span></th>
+                        <th class="sortable" data-sort="StartTime">Date<span class="sort-arrow"></span></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="mlog-footer">
+            <div class="mlog-page-info" id="mlog-page-info">—</div>
+            <div class="mlog-pager">
+                <button class="mlog-page-btn" id="mlog-first">« First</button>
+                <button class="mlog-page-btn" id="mlog-prev">‹ Prev</button>
+                <span class="mlog-page-current" id="mlog-page-current">Page 1</span>
+                <button class="mlog-page-btn" id="mlog-next">Next ›</button>
+                <button class="mlog-page-btn" id="mlog-last">Last »</button>
+                <select class="mlog-page-size" id="mlog-page-size">
+                    <option value="25">25 / page</option>
+                    <option value="50" selected>50 / page</option>
+                    <option value="100">100 / page</option>
+                    <option value="250">250 / page</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <!-- DETAIL MODAL -->
+    <div class="mlog-modal-backdrop" id="mlog-modal-backdrop" style="display:none;">
+        <div class="mlog-modal" role="dialog" aria-modal="true">
+            <header class="mlog-modal-header">
+                <div>
+                    <span class="mlog-modal-eyebrow" id="modal-eyebrow">Job</span>
+                    <h2 class="mlog-modal-title" id="modal-title">—</h2>
+                </div>
+                <button class="mlog-modal-close" id="mlog-modal-close" aria-label="Close">×</button>
+            </header>
+            <div class="mlog-modal-body" id="modal-body"><!-- populated by JS --></div>
+        </div>
+    </div>
+
+</div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-col footer-about">
+            <div class="footer-brand">
+                <img src="./assets/Bluefalo.png" alt="Bluefalo">
+                <div class="footer-brand-text">
+                    BFLFP
+                    <small>Bluefalo Food Products</small>
+                </div>
+            </div>
+            <p>Real-time maintenance visibility and control for BFLFP production facilities. Engineered for reliability, built for efficiency.</p>
+            <p style="margin-top:8px;font-size:12px;color:rgba(255,255,255,0.55)">ระบบจัดการการบำรุงรักษาแบบเรียลไทม์สำหรับโรงงาน BFLFP</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+                <li><a href="./">Home / หน้าหลัก</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./maintenance-log.html">Maintenance Log</a></li>
+                <li><a href="./reports.html">Reports</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Operator Guide</a></li>
+                <li><a href="#">Technician Manual</a></li>
+                <li><a href="#">PM Schedule</a></li>
+                <li><a href="#">KPI Definitions</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact-line">📍 BFLFP Plant, Thailand</div>
+            <div class="footer-contact-line">✉️ maintenance@bluefalo-group.com</div>
+            <div class="footer-contact-line">📞 +66 (0) 2-xxx-xxxx</div>
+            <div class="footer-contact-line">🕐 Mon–Sat · 07:00–19:00</div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 BFLFP — Bluefalo Food Products. All rights reserved.</span>
+        <span>Built for production excellence · สร้างเพื่อความเป็นเลิศ</span>
+    </div>
+</footer>
+
+<script src="./assets/master.js"></script>
+<script src="./assets/maintenance-log.js"></script>
+</body>
+</html>
