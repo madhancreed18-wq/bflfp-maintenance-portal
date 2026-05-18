@@ -1,0 +1,465 @@
+<!-- BFLFP Maintenance Control Center — HOME PAGE -->
+<div class="bflfp-home">
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <span class="hero-eyebrow-dot"></span>
+                    <span>Production Maintenance Platform · v2.6</span>
+                </div>
+                <h1 class="hero-title">
+                    Maintenance Control Center
+                    <span class="hero-title-th">ศูนย์ควบคุมการบำรุงรักษา</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Real-time maintenance visibility for BFLFP production facilities.
+                    Track every job, every machine, every KPI — from one elegant control center.
+                </p>
+                <p class="hero-subtitle-th">
+                    ติดตามการบำรุงรักษาแบบเรียลไทม์สำหรับโรงงาน BFLFP — งานทุกชิ้น เครื่องจักรทุกเครื่อง ตัวชี้วัดทุกค่า รวมไว้ในที่เดียว
+                </p>
+                <div class="hero-ctas">
+                    <a href="/dashboard" class="btn btn-primary">
+                        View Dashboard
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="/maintenance-log" class="btn btn-outline">View Maintenance Log</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="hero-trust-item">
+                        <strong>24</strong>
+                        <span>Machines tracked</span>
+                    </div>
+                    <div class="hero-trust-item">
+                        <strong>6</strong>
+                        <span>Technicians</span>
+                    </div>
+                    <div class="hero-trust-item">
+                        <strong>99.7%</strong>
+                        <span>Uptime SLA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Background panel -->
+                    <rect x="40" y="40" width="440" height="320" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+                    <rect x="40" y="40" width="440" height="44" rx="16" fill="#1E293B"/>
+                    <rect x="40" y="72" width="440" height="12" fill="#1E293B"/>
+                    <circle cx="62" cy="62" r="5" fill="#F97316"/>
+                    <circle cx="80" cy="62" r="5" fill="#EA580C"/>
+                    <circle cx="98" cy="62" r="5" fill="#FFFFFF" opacity="0.4"/>
+                    <text x="230" y="67" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">BFLFP · Live Dashboard</text>
+
+                    <!-- KPI tiles -->
+                    <rect x="60" y="104" width="120" height="70" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+                    <text x="72" y="125" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#EA580C">MTTR</text>
+                    <text x="72" y="155" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#1E293B">2.2h</text>
+                    <text x="72" y="168" font-family="Inter, sans-serif" font-size="9" fill="#64748B">avg repair</text>
+
+                    <rect x="200" y="104" width="120" height="70" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+                    <text x="212" y="125" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#16A34A">PM Comp.</text>
+                    <text x="212" y="155" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#1E293B">62.5%</text>
+                    <text x="212" y="168" font-family="Inter, sans-serif" font-size="9" fill="#64748B">on schedule</text>
+
+                    <rect x="340" y="104" width="120" height="70" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5"/>
+                    <text x="352" y="125" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#DC2626">Breakdowns</text>
+                    <text x="352" y="155" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#1E293B">18</text>
+                    <text x="352" y="168" font-family="Inter, sans-serif" font-size="9" fill="#64748B">this month</text>
+
+                    <!-- Trend chart -->
+                    <rect x="60" y="190" width="400" height="150" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+                    <text x="72" y="210" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#1E293B">Daily Jobs Trend</text>
+                    <line x1="72" y1="320" x2="448" y2="320" stroke="#E2E8F0" stroke-width="1"/>
+                    <polyline points="72,300 110,280 148,290 186,265 224,275 262,250 300,260 338,240 376,255 414,235 448,245" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="72,300 110,280 148,290 186,265 224,275 262,250 300,260 338,240 376,255 414,235 448,245 448,320 72,320" fill="#F97316" opacity="0.12"/>
+                    <polyline points="72,310 110,305 148,308 186,300 224,305 262,295 300,302 338,290 376,295 414,288 448,292" fill="none" stroke="#1E293B" stroke-width="1.8" stroke-dasharray="3,3" opacity="0.6"/>
+
+                    <!-- Floating gear -->
+                    <g transform="translate(380,380)">
+                        <circle r="42" fill="#FFFFFF" stroke="#F97316" stroke-width="3"/>
+                        <g fill="#F97316">
+                            <rect x="-5" y="-50" width="10" height="14" rx="2"/>
+                            <rect x="-5" y="36" width="10" height="14" rx="2"/>
+                            <rect x="-50" y="-5" width="14" height="10" rx="2"/>
+                            <rect x="36" y="-5" width="14" height="10" rx="2"/>
+                            <rect x="-5" y="-50" width="10" height="14" rx="2" transform="rotate(45)"/>
+                            <rect x="-5" y="36" width="10" height="14" rx="2" transform="rotate(45)"/>
+                            <rect x="-50" y="-5" width="14" height="10" rx="2" transform="rotate(45)"/>
+                            <rect x="36" y="-5" width="14" height="10" rx="2" transform="rotate(45)"/>
+                        </g>
+                        <circle r="22" fill="#1E293B"/>
+                        <circle r="8" fill="#F97316"/>
+                    </g>
+
+                    <!-- Wrench -->
+                    <g transform="translate(95,395) rotate(-25)">
+                        <rect x="0" y="0" width="80" height="14" rx="4" fill="#1E293B"/>
+                        <circle cx="0" cy="7" r="14" fill="#1E293B"/>
+                        <circle cx="0" cy="7" r="6" fill="#FFFFFF"/>
+                        <path d="M 80 -6 L 100 -6 L 110 7 L 100 20 L 80 20 Z" fill="#F97316"/>
+                    </g>
+
+                    <!-- Small gear -->
+                    <g transform="translate(220,400)">
+                        <circle r="22" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5"/>
+                        <g fill="#1E293B">
+                            <rect x="-3" y="-28" width="6" height="8" rx="1"/>
+                            <rect x="-3" y="20" width="6" height="8" rx="1"/>
+                            <rect x="-28" y="-3" width="8" height="6" rx="1"/>
+                            <rect x="20" y="-3" width="8" height="6" rx="1"/>
+                        </g>
+                        <circle r="10" fill="#F97316"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="hero-diagonal"></div>
+    </section>
+
+    <!-- ============================================
+         STATS STRIP
+         ============================================ -->
+    <section class="stats-strip">
+        <div class="stats-inner">
+            <div class="stat-card">
+                <div class="stat-icon stat-icon-orange">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4"/><polyline points="9 11 12 8 15 11"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value" id="stat-total-jobs">0</div>
+                    <div class="stat-label">Total Jobs This Month</div>
+                    <div class="stat-label-th">งานทั้งหมดเดือนนี้</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon stat-icon-navy">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value" id="stat-machines">0</div>
+                    <div class="stat-label">Active Machines</div>
+                    <div class="stat-label-th">เครื่องจักรที่ใช้งาน</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon stat-icon-green">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value" id="stat-technicians">0</div>
+                    <div class="stat-label">Technicians</div>
+                    <div class="stat-label-th">ช่างเทคนิค</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon stat-icon-red">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value" id="stat-response-time">—</div>
+                    <div class="stat-label">Avg Response Time</div>
+                    <div class="stat-label-th">เวลาตอบสนองเฉลี่ย</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         KPI HIGHLIGHTS
+         ============================================ -->
+    <section class="section kpi-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Performance</span>
+                <h2 class="section-title">
+                    Key Performance Indicators
+                    <span class="section-title-th">ตัวชี้วัดหลัก</span>
+                </h2>
+                <p class="section-sub">Live metrics from across the production floor — updated continuously from technician-logged jobs.</p>
+            </div>
+            <div class="kpi-grid">
+                <div class="kpi-card kpi-card-orange">
+                    <div class="kpi-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="kpi-name">
+                        MTTR
+                        <span class="kpi-name-full">Mean Time To Repair</span>
+                        <span class="kpi-name-th">เวลาเฉลี่ยที่ใช้ซ่อม</span>
+                    </div>
+                    <div class="kpi-value" id="kpi-mttr">—</div>
+                    <div class="kpi-desc">Average hours from issue report to job completion across all machines.</div>
+                    <div class="kpi-trend kpi-trend-down">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg>
+                        <span>12% better than last month</span>
+                    </div>
+                </div>
+                <div class="kpi-card kpi-card-green">
+                    <div class="kpi-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="kpi-name">
+                        PM Compliance
+                        <span class="kpi-name-full">Preventive Maintenance</span>
+                        <span class="kpi-name-th">การปฏิบัติตามแผน PM</span>
+                    </div>
+                    <div class="kpi-value" id="kpi-pm">—</div>
+                    <div class="kpi-desc">Percentage of scheduled preventive maintenance jobs completed on time.</div>
+                    <div class="kpi-trend kpi-trend-up">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+                        <span>4% improvement vs target</span>
+                    </div>
+                </div>
+                <div class="kpi-card kpi-card-red">
+                    <div class="kpi-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <div class="kpi-name">
+                        Breakdown Rate
+                        <span class="kpi-name-full">Unplanned Stops</span>
+                        <span class="kpi-name-th">อัตราการเสียกะทันหัน</span>
+                    </div>
+                    <div class="kpi-value" id="kpi-bd">—</div>
+                    <div class="kpi-desc">Total unplanned breakdown events recorded across all production lines.</div>
+                    <div class="kpi-trend kpi-trend-down">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg>
+                        <span>3 fewer than last month</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         HOW IT WORKS
+         ============================================ -->
+    <section class="section how-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Workflow</span>
+                <h2 class="section-title">
+                    How It Works
+                    <span class="section-title-th">วิธีการทำงาน</span>
+                </h2>
+                <p class="section-sub">A simple, structured workflow from issue detection to documented resolution.</p>
+            </div>
+            <div class="how-grid">
+                <div class="how-step">
+                    <div class="how-step-num">1</div>
+                    <div class="how-step-icon how-icon-orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </div>
+                    <h3 class="how-step-title">Operator Reports Issue</h3>
+                    <p class="how-step-th">ผู้ปฏิบัติงานรายงานปัญหา</p>
+                    <p class="how-step-desc">Floor operator logs the problem with machine ID, description, and priority.</p>
+                </div>
+                <div class="how-arrow">
+                    <svg width="40" height="20" viewBox="0 0 40 20" fill="none" stroke="#F97316" stroke-width="2"><line x1="2" y1="10" x2="34" y2="10"/><polyline points="28 4 36 10 28 16"/></svg>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">2</div>
+                    <div class="how-step-icon how-icon-orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3 class="how-step-title">Planner Assigns Job</h3>
+                    <p class="how-step-th">ผู้วางแผนมอบหมายงาน</p>
+                    <p class="how-step-desc">Maintenance planner reviews, prioritizes, and assigns to a technician.</p>
+                </div>
+                <div class="how-arrow">
+                    <svg width="40" height="20" viewBox="0 0 40 20" fill="none" stroke="#F97316" stroke-width="2"><line x1="2" y1="10" x2="34" y2="10"/><polyline points="28 4 36 10 28 16"/></svg>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">3</div>
+                    <div class="how-step-icon how-icon-orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3 class="how-step-title">Technician Executes</h3>
+                    <p class="how-step-th">ช่างดำเนินการซ่อม</p>
+                    <p class="how-step-desc">Assigned technician diagnoses, repairs, and validates the fix on-site.</p>
+                </div>
+                <div class="how-arrow">
+                    <svg width="40" height="20" viewBox="0 0 40 20" fill="none" stroke="#F97316" stroke-width="2"><line x1="2" y1="10" x2="34" y2="10"/><polyline points="28 4 36 10 28 16"/></svg>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">4</div>
+                    <div class="how-step-icon how-icon-orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3 class="how-step-title">Job Completed & Logged</h3>
+                    <p class="how-step-th">บันทึกผลการซ่อม</p>
+                    <p class="how-step-desc">Solution, downtime, and root cause are captured for analysis and KPIs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         MACHINE STATUS
+         ============================================ -->
+    <section class="section machine-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Equipment</span>
+                <h2 class="section-title">
+                    Machine Status Overview
+                    <span class="section-title-th">ภาพรวมสถานะเครื่องจักร</span>
+                </h2>
+                <p class="section-sub">Current operational status of key production equipment.</p>
+            </div>
+            <div class="machine-grid">
+                <div class="machine-card">
+                    <div class="machine-card-top">
+                        <div class="machine-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        </div>
+                        <span class="status-badge status-running">Running</span>
+                    </div>
+                    <h3 class="machine-name">Seamer</h3>
+                    <p class="machine-th">เครื่องปิดผนึก</p>
+                    <div class="machine-meta">
+                        <span>Last PM:</span>
+                        <strong>May 09, 2026</strong>
+                    </div>
+                </div>
+                <div class="machine-card">
+                    <div class="machine-card-top">
+                        <div class="machine-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12V7a7 7 0 0 1 14 0v5"/><rect x="3" y="12" width="18" height="9" rx="2"/></svg>
+                        </div>
+                        <span class="status-badge status-maintenance">Under Maintenance</span>
+                    </div>
+                    <h3 class="machine-name">Can Filling</h3>
+                    <p class="machine-th">เครื่องบรรจุกระป๋อง</p>
+                    <div class="machine-meta">
+                        <span>Last PM:</span>
+                        <strong>May 12, 2026</strong>
+                    </div>
+                </div>
+                <div class="machine-card">
+                    <div class="machine-card-top">
+                        <div class="machine-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="2"/><line x1="10" y1="7" x2="14" y2="7"/></svg>
+                        </div>
+                        <span class="status-badge status-running">Running</span>
+                    </div>
+                    <h3 class="machine-name">Tetra Pak</h3>
+                    <p class="machine-th">เครื่องบรรจุกล่อง</p>
+                    <div class="machine-meta">
+                        <span>Last PM:</span>
+                        <strong>May 06, 2026</strong>
+                    </div>
+                </div>
+                <div class="machine-card">
+                    <div class="machine-card-top">
+                        <div class="machine-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="8" height="12" rx="1"/><rect x="14" y="6" width="8" height="12" rx="1"/></svg>
+                        </div>
+                        <span class="status-badge status-running">Running</span>
+                    </div>
+                    <h3 class="machine-name">Duplex</h3>
+                    <p class="machine-th">ดูเพล็กซ์</p>
+                    <div class="machine-meta">
+                        <span>Last PM:</span>
+                        <strong>May 03, 2026</strong>
+                    </div>
+                </div>
+                <div class="machine-card">
+                    <div class="machine-card-top">
+                        <div class="machine-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3 v18 M3 12 h18"/></svg>
+                        </div>
+                        <span class="status-badge status-standby">Standby</span>
+                    </div>
+                    <h3 class="machine-name">HI MIXER 300KG</h3>
+                    <p class="machine-th">เครื่องผสม 300 กก.</p>
+                    <div class="machine-meta">
+                        <span>Last PM:</span>
+                        <strong>Apr 28, 2026</strong>
+                    </div>
+                </div>
+                <div class="machine-card">
+                    <div class="machine-card-top">
+                        <div class="machine-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                        </div>
+                        <span class="status-badge status-running">Running</span>
+                    </div>
+                    <h3 class="machine-name">Tony</h3>
+                    <p class="machine-th">เครื่องโทนี่</p>
+                    <div class="machine-meta">
+                        <span>Last PM:</span>
+                        <strong>May 10, 2026</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         RECENT JOBS
+         ============================================ -->
+    <section class="section jobs-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Activity</span>
+                <h2 class="section-title">
+                    Recent Maintenance Jobs
+                    <span class="section-title-th">งานบำรุงรักษาล่าสุด</span>
+                </h2>
+                <p class="section-sub">Latest jobs logged across the production floor.</p>
+            </div>
+            <div class="jobs-table-wrap">
+                <table class="jobs-table" id="recent-jobs-table">
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Machine</th>
+                            <th>Type</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Technician</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="jobs-footer">
+                <a href="/maintenance-log" class="view-all-link">
+                    View All Jobs
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA BANNER
+         ============================================ -->
+    <section class="cta-banner">
+        <div class="cta-pattern" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 1200 200" preserveAspectRatio="none">
+                <circle cx="100" cy="100" r="80" fill="rgba(255,255,255,0.06)"/>
+                <circle cx="1100" cy="80" r="120" fill="rgba(255,255,255,0.05)"/>
+                <circle cx="600" cy="180" r="60" fill="rgba(255,255,255,0.04)"/>
+            </svg>
+        </div>
+        <div class="cta-inner">
+            <div class="cta-text">
+                <h2 class="cta-title">Ready to see the full dashboard?</h2>
+                <p class="cta-subtitle">พร้อมดูแดชบอร์ดเต็มรูปแบบหรือไม่?</p>
+                <p class="cta-desc">Get real-time KPIs, detailed job logs, and machine analytics in one unified view.</p>
+            </div>
+            <a href="/dashboard" class="btn btn-cta">
+                Open Dashboard
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+        </div>
+    </section>
+
+</div>

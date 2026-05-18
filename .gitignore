@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local
+node_modules/
+.env
+.env.local
+*.log
+secrets.json
+config.local.js
+
+# Power Platform CLI
+.pac/
+*.deployment.zip
+
+# Build/temp
+dist/
+build/
+.cache/

@@ -1,0 +1,97 @@
+<!-- BFLFP Maintenance Control Center — Announcement Banner -->
+<style>
+    .bflfp-announcement {
+        height: 36px;
+        width: 100%;
+        background: linear-gradient(90deg, #F97316 0%, #EA580C 100%);
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        font-family: 'Inter', 'Prompt', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        position: relative;
+        z-index: 101;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+    }
+    .bflfp-announcement-inner {
+        max-width: 1320px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+    .bflfp-announcement-text {
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .bflfp-announcement-text .bflfp-announcement-icon {
+        margin-right: 4px;
+    }
+    .bflfp-announcement-date {
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.92;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .bflfp-announcement-date::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        opacity: 0.85;
+        box-shadow: 0 0 0 3px rgba(255,255,255,0.18);
+        animation: bflfp-announce-pulse 2s ease-in-out infinite;
+    }
+    @keyframes bflfp-announce-pulse {
+        0%, 100% { opacity: 0.85; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(1.25); }
+    }
+    @media (max-width: 768px) {
+        .bflfp-announcement { font-size: 12px; }
+        .bflfp-announcement-inner { padding: 0 16px; }
+        .bflfp-announcement-date { display: none; }
+    }
+</style>
+
+<div class="bflfp-announcement" role="banner" aria-label="Site announcement">
+    <div class="bflfp-announcement-inner">
+        <span class="bflfp-announcement-text">
+            <span class="bflfp-announcement-icon">🔧</span>
+            BFLFP Maintenance System — Production Site | ระบบบำรุงรักษา BFLFP
+        </span>
+        <span class="bflfp-announcement-date" id="announcement-date">—</span>
+    </div>
+</div>
+
+<script>
+(function() {
+    function setAnnouncementDate() {
+        var el = document.getElementById('announcement-date');
+        if (!el) return;
+        var now = new Date();
+        var opts = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+        try {
+            el.textContent = now.toLocaleDateString('en-US', opts);
+        } catch (e) {
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            el.textContent = months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
+        }
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setAnnouncementDate);
+    } else {
+        setAnnouncementDate();
+    }
+})();
+</script>
