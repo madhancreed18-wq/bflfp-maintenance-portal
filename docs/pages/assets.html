@@ -1,0 +1,64 @@
+<!-- Assets — Asset Registry (152 assets) -->
+<section class="assets-page">
+    <header class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">Asset Registry <span class="title-th">ทะเบียนทรัพย์สิน</span></h1>
+            <p class="page-subtitle">152 machines, utilities and IT equipment across the BFLFP Wet Food plant. Click any row to view or print its PM checklist.</p>
+        </div>
+    </header>
+
+    <div class="assets-toolbar">
+        <div class="assets-stats" id="assets-stats">
+            <span class="stat-pill"><span class="stat-num" id="stat-total">—</span><span class="stat-label">Total</span></span>
+            <span class="stat-pill"><span class="stat-num" id="stat-machine">—</span><span class="stat-label">Machine</span></span>
+            <span class="stat-pill"><span class="stat-num" id="stat-utilities">—</span><span class="stat-label">Utilities</span></span>
+            <span class="stat-pill"><span class="stat-num" id="stat-it">—</span><span class="stat-label">IT</span></span>
+        </div>
+
+        <div class="assets-filters">
+            <input type="search" id="f-search" placeholder="Search by code, name, manufacturer…" class="filter-input" />
+            <select id="f-type" class="filter-select">
+                <option value="">All Types</option>
+                <option value="Machine">Machine</option>
+                <option value="Utilities">Utilities</option>
+                <option value="IT">IT</option>
+            </select>
+            <select id="f-class" class="filter-select">
+                <option value="">All Classes</option>
+            </select>
+            <select id="f-freq" class="filter-select">
+                <option value="">All PM Frequencies</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Bi-Annual">Bi-Annual</option>
+                <option value="Annual">Annual</option>
+            </select>
+            <button class="btn-clear" id="f-clear">Clear</button>
+        </div>
+    </div>
+
+    <div class="assets-table-wrap">
+        <table class="assets-table" id="assets-table">
+            <thead>
+                <tr>
+                    <th class="col-id">Asset ID</th>
+                    <th class="col-name">ชื่อ Asset</th>
+                    <th class="col-type">Type</th>
+                    <th class="col-class">Class</th>
+                    <th class="col-mfr">Manufacturer</th>
+                    <th class="col-loc">Location</th>
+                    <th class="col-crit">Criticality</th>
+                    <th class="col-freq">PM Freq</th>
+                    <th class="col-status">Status</th>
+                    <th class="col-action">Checklist</th>
+                </tr>
+            </thead>
+            <tbody id="assets-tbody">
+                <tr><td colspan="10" class="loading-row">Loading 152 assets…</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="assets-footer-note" id="assets-count-note"></p>
+</section>

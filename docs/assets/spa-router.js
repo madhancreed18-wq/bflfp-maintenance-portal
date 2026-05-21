@@ -15,6 +15,7 @@
     var ROUTES = {
         'home':            { fragment: 'pages/home.html',            script: 'assets/home.js',            title: 'Home' },
         'dashboard':       { fragment: 'pages/dashboard.html',       script: 'assets/dashboard.js',       title: 'Dashboard' },
+        'assets':          { fragment: 'pages/assets.html',          script: 'assets/assets.js',          title: 'Assets' },
         'maintenance-log': { fragment: 'pages/maintenance-log.html', script: 'assets/maintenance-log.js', title: 'Maintenance Log' },
         'reports':         { fragment: 'pages/reports.html',         script: 'assets/reports.js',         title: 'Reports' },
         'about':           { fragment: 'pages/about.html',           script: 'assets/about.js',           title: 'About' }
