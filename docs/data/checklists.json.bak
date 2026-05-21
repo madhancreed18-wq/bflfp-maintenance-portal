@@ -1,0 +1,7014 @@
+{
+  "version": 1,
+  "generated": "2026-05-20",
+  "checklist_count": 80,
+  "task_count_total": 630,
+  "checklists": [
+    {
+      "sheet_name": "ปั๊มลมสกรู Air Compressure",
+      "class_label": "AIR COMPRESSOR",
+      "assets_covered": [
+        "W01AC01",
+        "W01AC03"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค กรองอากาศ กรองน้ำมัน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค กรองดักน้ำ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจช็ค ระดับน้ำมันเกรดอาหาร",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค หน้าจอ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค คู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "เปลี่ยนถ่ายน้ำมันเกรดอาหารทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องทำลมแห้ง",
+      "class_label": "Air Compressure",
+      "assets_covered": [
+        "W01AC02",
+        "W01AC04"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค สวิตย์และหน้าจอ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค ตัวกรองน้ำ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค ระบบท่อ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค พัดลม",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ครวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตัวกรองฟิลเตอร์ 0.01microm",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 15,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "Chiller",
+      "class_label": "AIR CONDITIONER",
+      "assets_covered": [
+        "W01AI01",
+        "W01AI02"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค เทอร์โมมิเตอร์",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค น้ำมันคอมแอร์",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค เพรสเซอร์เกรส",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค ท่อน้ำยา",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องปรับอากาศ",
+      "class_label": "AIR CONITIONER",
+      "assets_covered": [
+        "W02AI03",
+        "W01AI04",
+        "W01AI05",
+        "W01AI06",
+        "W01AI07",
+        "W02AI21"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค สวิตย์ควบคุม",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค ท่อแอร์",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค แผงรังผึ้ง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค ฝาปิด",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค ฟิลเตอร์กรอง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 16,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ห้องเย็น",
+      "class_label": "AIR CONDITIONER",
+      "assets_covered": [
+        "W01AI08",
+        "W01AI09"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 17,
+          "description": "ตรวจเช็ค พัดลมคอยร้อน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 18,
+          "description": "ตรวจเช็ค พัดลมคอยร์เย็น",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 19,
+          "description": "ตรวจเช็ค ประตูห้องเย็น",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 20,
+          "description": "ตรวจเช็ค ท่อคอมเฟรสเซอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 21,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 22,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 23,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "คอยเย็น",
+      "class_label": "AIR CONDITIONER",
+      "assets_covered": [
+        "W02AI10",
+        "W02AI11",
+        "W02AI12",
+        "W02AI13",
+        "W02AI14",
+        "W02AI15",
+        "W02AI16",
+        "W02AI17",
+        "W02AI18",
+        "W02AI19",
+        "W02AI20"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 24,
+          "description": "ตรวจเช็ค มอเตอร์แอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 25,
+          "description": "ตรวจเช็ค ฟิลเตอร์กรองและทำความสะอาด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 26,
+          "description": "ตรวจเช็ค แผงควบคุม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 27,
+          "description": "ตรวจเช็ค ฟิวส์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 28,
+          "description": "ตรวจเช็ค ท่อเดนน้ำ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 29,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 30,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่นส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานผ่าท้องปลา",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC01"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค สายพานทิ้งไส้ปลา",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค สายพานควักไส้ปลา",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "เปลี่ยนน้ำมันเครื่องทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะมาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานขูดปลา",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC02"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค สายพานสีน้ำเงิน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค สายพานกระดูกงู และเฟือง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค โลว์ลูกกลิ้ง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 16,
+          "description": "เปลี่ยนน้ำมันเครื่องทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 17,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานชั่งน้าหนัก",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC03"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 18,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 19,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 20,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 21,
+          "description": "ตรวจเช็ค น๊อตล๊อค / หัวอัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 22,
+          "description": "ตรวจเช็คโครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 23,
+          "description": "ตรวจเช็คตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 24,
+          "description": "เปลี่ยนถ่ายน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 25,
+          "description": "การเลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานสามกลับ",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC04"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 26,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 27,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 28,
+          "description": "ตรวจเช็ค เฟือง / โซ่ ขับสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 29,
+          "description": "ตรวจเช็ค เฟืองซุปเปอร์ลีน / โซ่สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 30,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 31,
+          "description": "ตรวจเช็ค โครงสร้างทั่วไป",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 32,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 33,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 34,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานรับซองเพ้าช์",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC05"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 35,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 36,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 37,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 38,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 39,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 40,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 41,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานพากระป๋องเปล่า",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC06"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 42,
+          "description": "ตรวจลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 43,
+          "description": "ตรวจมอเตอร์ขับสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 44,
+          "description": "ตรวจเฟืองและโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 45,
+          "description": "ตรวจมอเตอร์เป่าลม/ฟิวเตอร์กรองลม",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 46,
+          "description": "ตรวจสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 47,
+          "description": "ตรวจโครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 48,
+          "description": "ตรวจวัดแรงลม",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "ทำ/เช็ค"
+        },
+        {
+          "task_no": 49,
+          "description": "ตรวจเช็คตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 50,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานตัดสแน็ค",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC07"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 51,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 52,
+          "description": "ตรวจเช็ค สายพานขับมอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 53,
+          "description": "ตรวจเช็ค มูเล่ย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 54,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 55,
+          "description": "ตรวจเช็ค พัดลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 56,
+          "description": "ตรวจเช็ค สายพานลำเลียงสแน็ค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 57,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานติดฉลาก",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC08"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 58,
+          "description": "ตรวจเช็ค X-LIFT",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 59,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 60,
+          "description": "ตรวจเช็ค ชุดปั๊มไฮดรอลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 61,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 62,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 63,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 64,
+          "description": "เปลี่ยนถ่ายน้ำมันไฮดรอริคทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 65,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพานลำเลียงกล่อง",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC09"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 66,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 67,
+          "description": "ตรวจเช็ค สายพานลำเลียง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 68,
+          "description": "ตรวจเช็ค เซ็นเซอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 69,
+          "description": "ตรวจเช็ค ไกค์ประคอง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 70,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 71,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 72,
+          "description": "เปลี่ยนถ่ายน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 73,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "สายพาน PACK กระป๋อง",
+      "class_label": "BELT CONVEYER",
+      "assets_covered": [
+        "W01BC10"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 74,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 75,
+          "description": "ตรวจเช็ค เซ็นเซอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 76,
+          "description": "ตรวจเช็ค เร็คกรูเรเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 77,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 78,
+          "description": "ตรวจเช็ค สายพานลำเลียง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 79,
+          "description": "ตรวจเช็ค กระบอกลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 80,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 81,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "รางสเปร์ยคูลลิ่งปลา",
+      "class_label": "COOLING",
+      "assets_covered": [
+        "W01CL01"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค หัวฉีดสเปร์ย",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็คร ระบบท่อ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "Cooling Water",
+      "class_label": "COOLING",
+      "assets_covered": [
+        "W01CW01",
+        "W01CW02"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ใบพัดและน๊อต",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค แผงรังผึ้ง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค ท่อเดนน้ำ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค ควบคุมตู้ไฟฟ้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "DAMPER",
+      "class_label": "DAMPER",
+      "assets_covered": [
+        "W01DP01"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค สายไฮโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค กระบอกไฮโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค น้ามัน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "เปลี่ยนถ่ายน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 9,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องบด",
+      "class_label": "DIGEST",
+      "assets_covered": [
+        "W01DI01",
+        "W01DI02",
+        "W01DI04"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค เฟืองและโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค สกรู",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "วัด"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค แผงรังผึ้ง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องบด 3",
+      "class_label": "DIGEST",
+      "assets_covered": [
+        "W01DI03"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค มูเล่ย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค กระบอกลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "วัด"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค ใบมีด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบีฟู้ดเกรด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 16,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องจ่ายกระป๋องเปล่า",
+      "class_label": "DISPENSER MACHINE",
+      "assets_covered": [
+        "W01DS01"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค มอเตอร์ขับจานหมุน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค เฟือง / โซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค หน้าจานปล่อยกระป๋อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 9,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องเป่ากระป๋องแห้ง",
+      "class_label": "DRYER",
+      "assets_covered": [
+        "W01DR01"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค เฟืองและโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค พัดลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค สายพานกลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค มอเตอร์ Blower",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 10,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ตู้อบสแน็ค",
+      "class_label": "DRYER",
+      "assets_covered": [
+        "W01DR02"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค ประเก็นหน้าตู้",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค วาล์วเปิด / ปิดสตีม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค เพรสเชอร์เกจ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 16,
+          "description": "ตรวจเช็ค กระบอกลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 17,
+          "description": "ตรวจเช็ค โซลินอยด์วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 18,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 19,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 20,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ตู้อบลมร้อน",
+      "class_label": "DRYER",
+      "assets_covered": [
+        "W01DR03",
+        "W01DR04"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 21,
+          "description": "ตรวจเช็ค แผงควบคุม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 22,
+          "description": "ตรวจเช็ค ประเก็นฝาตู้",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 23,
+          "description": "ตรวจเช็ค ชั้นวาง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 24,
+          "description": "ตรวจเช็ค บานประตู",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 25,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 26,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องเป่าซองPOUCH",
+      "class_label": "DRYER",
+      "assets_covered": [
+        "W01DR05"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 27,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 28,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 29,
+          "description": "ตรวจเช็ค สายพานกดซอง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 30,
+          "description": "ตรวจเช็ค โซ่สายพานพาซอง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 31,
+          "description": "ตรวจเช็ค โซ่ - เฟืองขับ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 32,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 33,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 34,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 35,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 36,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "HS R2 Dryer",
+      "class_label": "DRYER",
+      "assets_covered": [
+        "W01DR06"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 37,
+          "description": "ตรวจเช็ค Nozzles หัวเป่าลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 38,
+          "description": "ตรวจเช็ค Flexble Ducting",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 39,
+          "description": "ตรวจเช็ค Airknives",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 40,
+          "description": "ตรวจเช็ค Motor",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 41,
+          "description": "ตรวจเช็ค Filter",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 42,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 43,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องขึ้นรูปสแน็ค",
+      "class_label": "EXTRUDER",
+      "assets_covered": [
+        "W01EX01"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค มูเล่ย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค วาล์วไอและวาล์วน้ำ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค สกรูอัดงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค แบบอัด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 10,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องยิงโค๊ต",
+      "class_label": "INKJET",
+      "assets_covered": [
+        "W01IJ01",
+        "W01IJ02",
+        "W01IJ03"
+      ],
+      "task_count": 5,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค หลอดแสดงสถานะ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค หัวยิงหมึก",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค หัวเซ็นเซอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องพิมพ์ซองแมวเลีย",
+      "class_label": "INKJET",
+      "assets_covered": [
+        "W01IJ04"
+      ],
+      "task_count": 5,
+      "tasks": [
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค หน้าจอ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค สปริง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค ม้วนหมึก",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค เซ็นเซอร์จับชอง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องยิงกล่อง",
+      "class_label": "INKJET",
+      "assets_covered": [
+        "W01IJ05"
+      ],
+      "task_count": 5,
+      "tasks": [
+        {
+          "task_no": 11,
+          "description": "หน้าจอ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "หัวยิงหมึก",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "หมึก",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "การเคลียร์สื่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องปิดฉลาก",
+      "class_label": "LABELLING",
+      "assets_covered": [
+        "W01LB01"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค สายพานกาวเย็น",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค สายพานพากระป๋อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค น้ำมันไฮโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค เฟืองและโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค มอเตอร์ขับ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "เปลี่ยนถ่ายน้ำมันไฮดรอลิคทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 10,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องตรวจจับโลหะแบบท่อ",
+      "class_label": "MAGNET",
+      "assets_covered": [
+        "W01MN01",
+        "W01MN02"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็คท่อลำเลียงอาหาร",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค Solinoid Valve",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค Regulator",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องตรวจจับโลหะแบบสายพาน",
+      "class_label": "MAGNET",
+      "assets_covered": [
+        "W01MN03",
+        "W01MN04"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค ปุ่มEmergency",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค หลอดไฟแสดงสถานะ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องนวดผสม",
+      "class_label": "MASSAGE MACHINE",
+      "assets_covered": [
+        "W01MS01",
+        "W01MS02"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค มูเล่ย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/;ทำ"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ใบกวน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 9,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องนวดผสมแป้ง",
+      "class_label": "MASSAGE MACHINE",
+      "assets_covered": [
+        "W01MS03",
+        "W01MS04",
+        "W01MS05"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค แขวนนวดแป้ง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค เฟืองและโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค มอเตอร์ขับ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องตีเศษปลา",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI01",
+        "W01MI10"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค ทุ่นและใบมีด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องสับผสม",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI02"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค เกียร์ทด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค ใบมีด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค ใบมีด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 14,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "HI-HIIXER",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI03",
+        "W01MI04",
+        "W01MI12",
+        "W01MI13"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 16,
+          "description": "ตรวจเช็ค ใบกวน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 17,
+          "description": "ตรวรเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 18,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 19,
+          "description": "ตรวจช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 20,
+          "description": "ตรวจช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 21,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "MIXER",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI05",
+        "W01MI11"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 22,
+          "description": "ตรวจเช็ค วาล์วและท่อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 23,
+          "description": "ตรวจเช็ค หน้าปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 24,
+          "description": "ตรวจเช็ค มอเตอร์ลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 25,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 26,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 27,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 28,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 29,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "Ribbon",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI06",
+        "W01MI07"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 30,
+          "description": "ตรวจเช็ค ใบกวน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 31,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 32,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 33,
+          "description": "ตรวจเช็ค เฟือง / โซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 34,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 35,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 36,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 37,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "Ribbon3",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI14"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 38,
+          "description": "ตรวจเช็ค ใบกวน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 39,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 40,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 41,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 42,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 43,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 44,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องปั่นผสมแป้ง",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI07",
+        "W01MI08"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 45,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 46,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 47,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 48,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 49,
+          "description": "ตรวจเช็ค เพลาและชิลยาง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 50,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องปั่นผสมโฮโม",
+      "class_label": "MIXER",
+      "assets_covered": [
+        "W01MI09"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 51,
+          "description": "ตรวจเช็ค มอเตอร์ใบพัด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 52,
+          "description": "ตรวจเช็ค มอเตอร์ลอก",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 53,
+          "description": "ตรวจเช็ค ใบพัด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 54,
+          "description": "ตรวจเช็ค สายสลิง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 55,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 56,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 57,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "Filling",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK01"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค ลูกสูบกระบอกบรรจุ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค วาล์วบรรจุ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค ประเก็น Ferrule",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค โซลินอยวาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค สายพานลำเลียง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "เปลี่ยนถ่ายน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 10,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "Filler",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK02"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค สตาร์ทางเข้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค เกียร์ทดรอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค เฟือง / โซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 16,
+          "description": "ตรวจเช็ค สายพานพากระป๋อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 17,
+          "description": "ตรวจเช็ค โครงสร้างเครื่อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 18,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 19,
+          "description": "เปลี่ยนถ่ายน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 20,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "จานหมุนปล่อยกระป๋อง",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK03",
+        "W01PK04"
+      ],
+      "task_count": 11,
+      "tasks": [
+        {
+          "task_no": 21,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊มไฮโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 22,
+          "description": "ตรวจเช็ค สายไฮโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 23,
+          "description": "ตรวจเช็ค กระบอกไฮโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 24,
+          "description": "ตรวจเช็ค มูเล่ย์ / สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 25,
+          "description": "ตรวจเช็ค หน้าจานหมุนรับกระป๋อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 26,
+          "description": "ตรวจเช็ค เกียร์ทดรอบจานหมุน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 27,
+          "description": "ตรวจเช็ค น้ำมัน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 28,
+          "description": "ตรวจเช็ค มอเตอร์ขับสายพานจานหมุน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 29,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 30,
+          "description": "เปลี่ยนถ่ายน้ำมันไฮดรอลิค/น้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 31,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "HSS R2",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK21",
+        "W01PK22"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 32,
+          "description": "ตรวจเช็ค Platform",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 33,
+          "description": "ตรวจเช็ค Control Panel",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 34,
+          "description": "ตรวจเช็ค Lift Station",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 35,
+          "description": "ตรวจเช็ค Electrical Cabinet",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 36,
+          "description": "ตรวจเช็ค Mid Conveyor",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 37,
+          "description": "ตรวจเช็ค Sensor Post",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 38,
+          "description": "ตรวจเช็ค Safety fence",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 39,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องบรรจุซองเพ้าช์ TYJ",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK05"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 40,
+          "description": "ตรวจเช็ค สายพานกลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 41,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 42,
+          "description": "ตรวจเช็ค ตัวดูดปากและก้นถุง Suction pad",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 43,
+          "description": "ตรวจเช็ค หัวเติมอาหาร",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 44,
+          "description": "ตรวจเช็ค เทปทนความร้อน Tefion Sheet",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 45,
+          "description": "ตรวจเช็ค มอเตอร์Vaccum",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 46,
+          "description": "ตรวจเช็ค มอเตอร์ขับ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 47,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 48,
+          "description": "เปลี่ยนถ่ายน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 49,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องบรรจุซองเพ้าช์Dupex",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK06"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 50,
+          "description": "ตรวจเช็ค ตัวดูดปาก / ก้นถุง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 51,
+          "description": "ตรวจเช็ค สายพานกลมพาถุง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 52,
+          "description": "ตรวจเช็ค หัวเติมอาหาร",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 53,
+          "description": "ตรวจเช็ค กระบอกสูบอาหาร",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 54,
+          "description": "ตรวจเช็ค Regulator",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 55,
+          "description": "ตรวจเช็ค กรวยรับอหาร",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 56,
+          "description": "ตรวจเช็ค เทปทนความร้อน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 57,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์+เกียร์ทดรอบ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 58,
+          "description": "เปลี่ยนน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 59,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องบรรจุซองแมวเลีย",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK07"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 60,
+          "description": "ตรวจเช็ค มอเตอร์ปรับ Speed",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 61,
+          "description": "ตรวจเช็ค ลูกกลิ้งซีนร้อน-เย็น",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 62,
+          "description": "ตรวจเช็ค เฟือง / โซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 63,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 64,
+          "description": "ตรวจเช็ค เฟืองซุปเปอร์ลีน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 65,
+          "description": "ตรวจเช็ค Regulator",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 66,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 67,
+          "description": "เปลี่ยนถ่ายน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 68,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องปิดฝา",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK08"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 69,
+          "description": "ตรวจเช็ค สภาพเครื่อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 70,
+          "description": "ตรวจเช็ค Cover Index lever",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 71,
+          "description": "ตรวจเช็ค Rim Gear Feed Disc",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 72,
+          "description": "ตรวจเช็ค Auxiliary Feed Ring Gear 64T",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 73,
+          "description": "ตรวจเช็ค Screw Feed",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 74,
+          "description": "ตรวจเช็ค Cover Sparator Roll",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 75,
+          "description": "ตรวจเช็ค Cover Carier RDE 14/12",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 76,
+          "description": "ตรวจเช็ค  ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 77,
+          "description": "เปลี่ยนน้ำมันทุ่ก 3 เดือน",
+          "frequency": "Quarterly",
+          "freqs_on_row": [
+            "Quarterly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 78,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ปิดฝา Lifter",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK09"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 79,
+          "description": "ตรวจเช็ค Lifter Sping",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 80,
+          "description": "ตรวจเช็ค Lifter Bearing",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 81,
+          "description": "ตรวจเช็ค Lifter Adjusment nut",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 82,
+          "description": "ตรวจเช็ค Lifter Adjusment nut Spring washer",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 83,
+          "description": "ตรวจเช็ค Lifter Spring Tension nut",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 84,
+          "description": "ตรวจเช็ค Lifter Insert",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 85,
+          "description": "ตรวจเช็ค Lifter Plate",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 86,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ปิดฝาหัวSeam",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK10"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 87,
+          "description": "ตรวจเช็ค Knockout Pat",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 88,
+          "description": "ตรวจเช็ค Support Ring",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 89,
+          "description": "ตรวจเช็ค Head Chusion Spring",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 90,
+          "description": "ตรวจเช็ค Seaming Roll Bearing",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 91,
+          "description": "ตรวจเช็ค Seaming Roll 1st / 2nd",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 92,
+          "description": "ตรวจเช็ค Seaming Roll Ajusting Ring",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 93,
+          "description": "ตรวจเช็ค Seaming Roll Pin 1st / 2nd",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 94,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องsealถุง",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK11",
+        "W01PK14",
+        "W01PK15",
+        "W01PK16",
+        "W01PK24",
+        "W01PK25",
+        "W01PK26"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 95,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 96,
+          "description": "ตรวจเช็ค เฟือง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 97,
+          "description": "ตรวจเช็ค สายพานซีลร้อน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 98,
+          "description": "ตรวจเช็ค สานพานซีลเย็น",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 99,
+          "description": "ตรวจเช็ค สายพานลำเลียงซอง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 100,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องชั่งปลามัลติเฮด",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK12"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 101,
+          "description": "ตรวจเช็ค Linear Feeder Pan",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 102,
+          "description": "ตรวจเช็ค Feed Bucket",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 103,
+          "description": "ตรวจเช็ค สกรูพาถ้วย",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 104,
+          "description": "ตรวจเช็ค Regulator",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 105,
+          "description": "ตรวจเช็ค หน้าจอ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 106,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 107,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 108,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องชั่งเช็คเวท",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK13"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 109,
+          "description": "ตรวจเช็ค หน้าจอ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 110,
+          "description": "ตรวจเช็ค สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 111,
+          "description": "ตรวจเช็ค สายพานขับมอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 112,
+          "description": "ตรวจเช็ค Regulator",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 113,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 114,
+          "description": "ตรวจเช็ค มอเตอร์ขับ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 115,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 116,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "บรรจุซองแมวเลียTTK",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK17",
+        "W01PK18",
+        "W01PK19",
+        "W01PK23"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 117,
+          "description": "ตรวจเช็ค หน้าจอวัดอุณหภูมิ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 118,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 119,
+          "description": "ตรวจเช็ค บาร์ชิลร้อน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 120,
+          "description": "ตรวจเช็ค กระบอกลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 121,
+          "description": "ตรวจเช็ค วาล์วเติมอาหาร",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 122,
+          "description": "ตรวจเช็ค Regulator",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 123,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 124,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "TP R2",
+      "class_label": "PACKING",
+      "assets_covered": [
+        "W01PK20"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 125,
+          "description": "ตรวจเช็ค Form and Seal top",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 126,
+          "description": "ตรวจเช็ค Form and Seal Bottom",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 127,
+          "description": "ตรวจเช็ค Carton infeed",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 128,
+          "description": "ตรวจเช็ค Check jaw Gap",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 129,
+          "description": "ตรวจเช็ค Frame - Sensor",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 130,
+          "description": "ตรวจเช็ค Package Handling",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 131,
+          "description": "ตรวจเช็ค Bottom Flap Sealing",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 132,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ระบบน้าRO",
+      "class_label": "RO SYSTEM",
+      "assets_covered": [
+        "W01RO04"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค ไส้กรองเมมเบรน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ไส้กรองใยสังเคราะห์",
+          "frequency": "Quarterly",
+          "freqs_on_row": [
+            "Quarterly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค แอนทราไซค์ (50ลิตร)",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค แมงกานีส (50ลิตร)",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค คาร์บอน (100ลิตร)",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค เรซิ่น (100 ลิตร)",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ตู้นึ่งปลา",
+      "class_label": "STEAMING MACHINE",
+      "assets_covered": [
+        "W01ST01"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค ประเก็นฝาหม้อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค หัวฉีดสเปร์ย",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค ระบบท่อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค คอลโทรลวาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค เซฟตี้วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "หม้อฆ่าเชื้อกระป๋อง",
+      "class_label": "STEAMING MACHINE",
+      "assets_covered": [
+        "W01ST02"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค รูปล่อยน้ำ / รูปล่อยSTEAM",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค โลว์ลูกกลิ้งและลูกปืน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค โซ่และลูกปืน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค ประเก็นหน้าหม้อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค เซฟตี้วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์ขับโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 16,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 17,
+          "description": "เปลี่ยนถ่ายน้ำมันเกีนร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 18,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "หม้อฆ่าเชื้อเพ้าช์",
+      "class_label": "STEAMING MACHINE",
+      "assets_covered": [
+        "W01ST03"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 19,
+          "description": "ตรวจเช็ค หัวฉีดเสปรย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 20,
+          "description": "ตรวจเช็ค ประเก็นหน้าหม้อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 21,
+          "description": "ตรวจเช็ค เซฟตี้วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 22,
+          "description": "ตรวจเช็ค วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 23,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 24,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์ขับโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 25,
+          "description": "ตรวจเช็ค ระบบท่อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 26,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 27,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 28,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "หม้อฆ่าเชื้อกล่อง",
+      "class_label": "STEAMING MACHINE",
+      "assets_covered": [
+        "W01ST05"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 29,
+          "description": "ตรวจเช็ค หัวฉีดเสปรย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 30,
+          "description": "ตรวจเช็ค ประเก็นหน้าหม้อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 31,
+          "description": "ตรวจเช็ค เซฟตี้วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 32,
+          "description": "ตรวจเช็ค วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 33,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 34,
+          "description": "ตรวจเช็ค มอเตอร์เกียร์ขับโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 35,
+          "description": "ตรวจเช็ค ระบบท่อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 36,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 37,
+          "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 38,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ตู้นึ่งไก่",
+      "class_label": "STEAMING MACHINE",
+      "assets_covered": [
+        "W01ST04"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 39,
+          "description": "ตรวจเช็ค ฝาปิด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 40,
+          "description": "ตรวจเช็ค ประเก็น",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 41,
+          "description": "ตรวจเช็ค เกจวัดแรงดัน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 42,
+          "description": "ตรวจเช็ค เซฟตี้วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 43,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 44,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 45,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องกวนร้อน",
+      "class_label": "STIRRER MACHINE",
+      "assets_covered": [
+        "W01SR01"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ใบพัด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค หลอดวัดน้ำ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "อาคาร",
+      "class_label": "STRUCTURE",
+      "assets_covered": [
+        "W01SC01"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ปานประตู",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค หลังคาและผนังเมททอลชีท",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค ผนังปูน",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค บันไดขึ้นลง",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ท่อระบายน้ำฝนและรางน้ำฝน",
+      "class_label": "SANITATION SYSTEM",
+      "assets_covered": [
+        "W01SS01"
+      ],
+      "task_count": 4,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค รางน้ำฝน",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ท่อระบายน้ำฝน",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค ท่อน้ำฝน",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องเอียงตะกร้า",
+      "class_label": "TILTING MACHINE",
+      "assets_covered": [
+        "W01TT01"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค กระบอกไฮรโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค สายไฮโดรลิค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค ระดับน้ำมัน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค พัดลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค โลว์ลูกกลิ้ง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "เปลี่ยนถ่ายน้ำมันไฮดรอลิคทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 10,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ถังพักน้ำ WATER TANK",
+      "class_label": "WATER TANK",
+      "assets_covered": [
+        "W01WT01",
+        "W01WT02",
+        "W01WT03",
+        "W01WT04",
+        "W01WT05",
+        "W01WT06"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค ถังพักน้ำ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ระบบท่อส่งน้ำ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค วาล์ว",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค ท่อเติมน้ำเข้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องล้างกระป๋อง",
+      "class_label": "WASHER MACHINE",
+      "assets_covered": [
+        "W01WS01"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค หัวฉีดเสปรย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค โซ่พากระป๋อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค เฟืองและโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ท่อ Steamและวาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค  ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค มอเตอร์ขับ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ปั๊มวัตถุดิบFEED PUMP",
+      "class_label": "FEED PUMP",
+      "assets_covered": [
+        "W01FP01",
+        "W01FP02",
+        "W01FP03",
+        "W01FP04"
+      ],
+      "task_count": 6,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค กระบอกปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค น๊อตยึดหน้าปั๊ม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "ปั๊มน้ำCooling",
+      "class_label": "WATER PUMP",
+      "assets_covered": [
+        "W01WP01",
+        "W01WP02",
+        "W01WP03",
+        "W01WP04",
+        "W01WP05",
+        "W01WP06",
+        "W01WP07",
+        "W01WP08",
+        "W01WP09"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค มอเตอร์ปั๊ม",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค เกจวัดแรงดันน้ำ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค วาล์วน้ำ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ถอดล้าง สแตนเนอร์",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค เทอร์มินอลและขั้วสายไฟ",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "ตรวจเช็ค สลับการใช้ปั๊มน้ำทุก 1 เดือน",
+          "frequency": "Monthly",
+          "freqs_on_row": [
+            "Monthly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องตัดปลา",
+      "class_label": "CUTTER",
+      "assets_covered": [
+        "W01CT01",
+        "W01CT02",
+        "W01CT03",
+        "W01CT04",
+        "W01CT05",
+        "W01CT06"
+      ],
+      "task_count": 7,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค ใบมีดตัดปลา",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค มูเล่ย์และสายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค เฟืองและโซ่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องตัดสแน็ค",
+      "class_label": "CUTTER",
+      "assets_covered": [
+        "W01CT07"
+      ],
+      "task_count": 9,
+      "tasks": [
+        {
+          "task_no": 8,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค สายพาน/มูเล่ย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค เฟือง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค โซลินอยด์วาล์ว",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค กระบอกลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค ใบมีด",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "ตรวจเช็ค ตู้ควบคุมไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 16,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องตัดปลาซาดีน",
+      "class_label": "CUTTER",
+      "assets_covered": [
+        "W01CT08"
+      ],
+      "task_count": 10,
+      "tasks": [
+        {
+          "task_no": 17,
+          "description": "ตรวจเช็ค ลูกปืน/อัดจาระบี",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค/ทำ"
+        },
+        {
+          "task_no": 18,
+          "description": "ตรวจเช็ค มอเตอร์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 19,
+          "description": "ตรวจเช็ค โซ่สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 20,
+          "description": "ตรวจเช็ค ใบมีดตัดปลา",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 21,
+          "description": "ตรวจเช็ค โซ่-เฟือง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 22,
+          "description": "ตรวจเช็ค โครงสร้าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 23,
+          "description": "ตรวจเช็ค มูเล่ย์-เฟือง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 24,
+          "description": "ตรวจเช็ค ตู้ควบคุมระบบไฟฟ้า",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 25,
+          "description": "เปลี่ยนน้ำมันทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 26,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "รถโฟคลิฟไฟฟ้า",
+      "class_label": "รถโฟคลิฟ",
+      "assets_covered": [
+        "W01CA01",
+        "W01CA02"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค ระบบเบรค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ล้อรถ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค โซ่สายพาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค งาตักของ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "ตรวจเช็ค ไฟส่องสว่าง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 6,
+          "description": "ตรวจเช็ค แบตเตอร์รี่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 7,
+          "description": "เปลี่ยนถ่ายน้ำมันไฮดรอลิคทุ่ก 6 เดือน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "รถโฟคลิฟน้ำมัน",
+      "class_label": "รถโฟคลิฟ",
+      "assets_covered": [
+        "W01CA03"
+      ],
+      "task_count": 8,
+      "tasks": [
+        {
+          "task_no": 9,
+          "description": "ตรวจเช็ค ระบบเบรค",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 10,
+          "description": "ตรวจเช็ค ใส้กรอง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 11,
+          "description": "ตรวจเช็ค แบตเตอร์รี่",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 12,
+          "description": "ตรวจเช็ค ล้อรถ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 13,
+          "description": "ตรวจเช็ค โซ่/งายกของ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 14,
+          "description": "ตรวจเช็ค น้ำมันเครื่อง",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 15,
+          "description": "เปลี่ยนถ่ายน้ำมันไฮดรอลิคทุ่ก 6 เดือน",
+          "frequency": "Bi-Annual",
+          "freqs_on_row": [
+            "Bi-Annual"
+          ],
+          "method": "ทำ"
+        },
+        {
+          "task_no": 16,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "คอมพิวเตอร์",
+      "class_label": "คอมพิวเตอร์",
+      "assets_covered": [
+        "W02IT01",
+        "W02IT02",
+        "W02IT03",
+        "W02IT04",
+        "W02IT05"
+      ],
+      "task_count": 5,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค พัดลมระบายความร้อน",
+          "frequency": "Quarterly",
+          "freqs_on_row": [
+            "Quarterly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ฝุ่นฝง",
+          "frequency": "Quarterly",
+          "freqs_on_row": [
+            "Quarterly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค เครื่องจ่ายไฟสำรอง",
+          "frequency": "Quarterly",
+          "freqs_on_row": [
+            "Quarterly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค Hard Disk",
+          "frequency": "Quarterly",
+          "freqs_on_row": [
+            "Quarterly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    },
+    {
+      "sheet_name": "เครื่องทำลมแห้ง AIR DRYER",
+      "class_label": "AIR DRYER",
+      "assets_covered": [
+        "W01AD01"
+      ],
+      "task_count": 5,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "ตรวจเช็ค หน้าจอและสวิตย์",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 2,
+          "description": "ตรวจเช็ค ตัวกรองลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 3,
+          "description": "ตรวจเช็ค ระบบท่อ",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 4,
+          "description": "ตรวจเช็ค พัดลม",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "เช็ค"
+        },
+        {
+          "task_no": 5,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบงาน",
+          "frequency": "Weekly",
+          "freqs_on_row": [
+            "Weekly"
+          ],
+          "method": "ทำ"
+        }
+      ]
+    }
+  ],
+  "asset_to_sheets": {
+    "W01AC01": [
+      "ปั๊มลมสกรู Air Compressure"
+    ],
+    "W01AC03": [
+      "ปั๊มลมสกรู Air Compressure"
+    ],
+    "W01AC02": [
+      "เครื่องทำลมแห้ง"
+    ],
+    "W01AC04": [
+      "เครื่องทำลมแห้ง"
+    ],
+    "W01AI01": [
+      "Chiller"
+    ],
+    "W01AI02": [
+      "Chiller"
+    ],
+    "W02AI03": [
+      "เครื่องปรับอากาศ"
+    ],
+    "W01AI04": [
+      "เครื่องปรับอากาศ"
+    ],
+    "W01AI05": [
+      "เครื่องปรับอากาศ"
+    ],
+    "W01AI06": [
+      "เครื่องปรับอากาศ"
+    ],
+    "W01AI07": [
+      "เครื่องปรับอากาศ"
+    ],
+    "W02AI21": [
+      "เครื่องปรับอากาศ"
+    ],
+    "W01AI08": [
+      "ห้องเย็น"
+    ],
+    "W01AI09": [
+      "ห้องเย็น"
+    ],
+    "W02AI10": [
+      "คอยเย็น"
+    ],
+    "W02AI11": [
+      "คอยเย็น"
+    ],
+    "W02AI12": [
+      "คอยเย็น"
+    ],
+    "W02AI13": [
+      "คอยเย็น"
+    ],
+    "W02AI14": [
+      "คอยเย็น"
+    ],
+    "W02AI15": [
+      "คอยเย็น"
+    ],
+    "W02AI16": [
+      "คอยเย็น"
+    ],
+    "W02AI17": [
+      "คอยเย็น"
+    ],
+    "W02AI18": [
+      "คอยเย็น"
+    ],
+    "W02AI19": [
+      "คอยเย็น"
+    ],
+    "W02AI20": [
+      "คอยเย็น"
+    ],
+    "W01BC01": [
+      "สายพานผ่าท้องปลา"
+    ],
+    "W01BC02": [
+      "สายพานขูดปลา"
+    ],
+    "W01BC03": [
+      "สายพานชั่งน้าหนัก"
+    ],
+    "W01BC04": [
+      "สายพานสามกลับ"
+    ],
+    "W01BC05": [
+      "สายพานรับซองเพ้าช์"
+    ],
+    "W01BC06": [
+      "สายพานพากระป๋องเปล่า"
+    ],
+    "W01BC07": [
+      "สายพานตัดสแน็ค"
+    ],
+    "W01BC08": [
+      "สายพานติดฉลาก"
+    ],
+    "W01BC09": [
+      "สายพานลำเลียงกล่อง"
+    ],
+    "W01BC10": [
+      "สายพาน PACK กระป๋อง"
+    ],
+    "W01CL01": [
+      "รางสเปร์ยคูลลิ่งปลา"
+    ],
+    "W01CW01": [
+      "Cooling Water"
+    ],
+    "W01CW02": [
+      "Cooling Water"
+    ],
+    "W01DP01": [
+      "DAMPER"
+    ],
+    "W01DI01": [
+      "เครื่องบด"
+    ],
+    "W01DI02": [
+      "เครื่องบด"
+    ],
+    "W01DI04": [
+      "เครื่องบด"
+    ],
+    "W01DI03": [
+      "เครื่องบด 3"
+    ],
+    "W01DS01": [
+      "เครื่องจ่ายกระป๋องเปล่า"
+    ],
+    "W01DR01": [
+      "เครื่องเป่ากระป๋องแห้ง"
+    ],
+    "W01DR02": [
+      "ตู้อบสแน็ค"
+    ],
+    "W01DR03": [
+      "ตู้อบลมร้อน"
+    ],
+    "W01DR04": [
+      "ตู้อบลมร้อน"
+    ],
+    "W01DR05": [
+      "เครื่องเป่าซองPOUCH"
+    ],
+    "W01DR06": [
+      "HS R2 Dryer"
+    ],
+    "W01EX01": [
+      "เครื่องขึ้นรูปสแน็ค"
+    ],
+    "W01IJ01": [
+      "เครื่องยิงโค๊ต"
+    ],
+    "W01IJ02": [
+      "เครื่องยิงโค๊ต"
+    ],
+    "W01IJ03": [
+      "เครื่องยิงโค๊ต"
+    ],
+    "W01IJ04": [
+      "เครื่องพิมพ์ซองแมวเลีย"
+    ],
+    "W01IJ05": [
+      "เครื่องยิงกล่อง"
+    ],
+    "W01LB01": [
+      "เครื่องปิดฉลาก"
+    ],
+    "W01MN01": [
+      "เครื่องตรวจจับโลหะแบบท่อ"
+    ],
+    "W01MN02": [
+      "เครื่องตรวจจับโลหะแบบท่อ"
+    ],
+    "W01MN03": [
+      "เครื่องตรวจจับโลหะแบบสายพาน"
+    ],
+    "W01MN04": [
+      "เครื่องตรวจจับโลหะแบบสายพาน"
+    ],
+    "W01MS01": [
+      "เครื่องนวดผสม"
+    ],
+    "W01MS02": [
+      "เครื่องนวดผสม"
+    ],
+    "W01MS03": [
+      "เครื่องนวดผสมแป้ง"
+    ],
+    "W01MS04": [
+      "เครื่องนวดผสมแป้ง"
+    ],
+    "W01MS05": [
+      "เครื่องนวดผสมแป้ง"
+    ],
+    "W01MI01": [
+      "เครื่องตีเศษปลา"
+    ],
+    "W01MI10": [
+      "เครื่องตีเศษปลา"
+    ],
+    "W01MI02": [
+      "เครื่องสับผสม"
+    ],
+    "W01MI03": [
+      "HI-HIIXER"
+    ],
+    "W01MI04": [
+      "HI-HIIXER"
+    ],
+    "W01MI12": [
+      "HI-HIIXER"
+    ],
+    "W01MI13": [
+      "HI-HIIXER"
+    ],
+    "W01MI05": [
+      "MIXER"
+    ],
+    "W01MI11": [
+      "MIXER"
+    ],
+    "W01MI06": [
+      "Ribbon"
+    ],
+    "W01MI07": [
+      "Ribbon",
+      "เครื่องปั่นผสมแป้ง"
+    ],
+    "W01MI14": [
+      "Ribbon3"
+    ],
+    "W01MI08": [
+      "เครื่องปั่นผสมแป้ง"
+    ],
+    "W01MI09": [
+      "เครื่องปั่นผสมโฮโม"
+    ],
+    "W01PK01": [
+      "Filling"
+    ],
+    "W01PK02": [
+      "Filler"
+    ],
+    "W01PK03": [
+      "จานหมุนปล่อยกระป๋อง"
+    ],
+    "W01PK04": [
+      "จานหมุนปล่อยกระป๋อง"
+    ],
+    "W01PK21": [
+      "HSS R2"
+    ],
+    "W01PK22": [
+      "HSS R2"
+    ],
+    "W01PK05": [
+      "เครื่องบรรจุซองเพ้าช์ TYJ"
+    ],
+    "W01PK06": [
+      "เครื่องบรรจุซองเพ้าช์Dupex"
+    ],
+    "W01PK07": [
+      "เครื่องบรรจุซองแมวเลีย"
+    ],
+    "W01PK08": [
+      "เครื่องปิดฝา"
+    ],
+    "W01PK09": [
+      "ปิดฝา Lifter"
+    ],
+    "W01PK10": [
+      "ปิดฝาหัวSeam"
+    ],
+    "W01PK11": [
+      "เครื่องsealถุง"
+    ],
+    "W01PK14": [
+      "เครื่องsealถุง"
+    ],
+    "W01PK15": [
+      "เครื่องsealถุง"
+    ],
+    "W01PK16": [
+      "เครื่องsealถุง"
+    ],
+    "W01PK24": [
+      "เครื่องsealถุง"
+    ],
+    "W01PK25": [
+      "เครื่องsealถุง"
+    ],
+    "W01PK26": [
+      "เครื่องsealถุง"
+    ],
+    "W01PK12": [
+      "เครื่องชั่งปลามัลติเฮด"
+    ],
+    "W01PK13": [
+      "เครื่องชั่งเช็คเวท"
+    ],
+    "W01PK17": [
+      "บรรจุซองแมวเลียTTK"
+    ],
+    "W01PK18": [
+      "บรรจุซองแมวเลียTTK"
+    ],
+    "W01PK19": [
+      "บรรจุซองแมวเลียTTK"
+    ],
+    "W01PK23": [
+      "บรรจุซองแมวเลียTTK"
+    ],
+    "W01PK20": [
+      "TP R2"
+    ],
+    "W01RO04": [
+      "ระบบน้าRO"
+    ],
+    "W01ST01": [
+      "ตู้นึ่งปลา"
+    ],
+    "W01ST02": [
+      "หม้อฆ่าเชื้อกระป๋อง"
+    ],
+    "W01ST03": [
+      "หม้อฆ่าเชื้อเพ้าช์"
+    ],
+    "W01ST05": [
+      "หม้อฆ่าเชื้อกล่อง"
+    ],
+    "W01ST04": [
+      "ตู้นึ่งไก่"
+    ],
+    "W01SR01": [
+      "เครื่องกวนร้อน"
+    ],
+    "W01SC01": [
+      "อาคาร"
+    ],
+    "W01SS01": [
+      "ท่อระบายน้ำฝนและรางน้ำฝน"
+    ],
+    "W01TT01": [
+      "เครื่องเอียงตะกร้า"
+    ],
+    "W01WT01": [
+      "ถังพักน้ำ WATER TANK"
+    ],
+    "W01WT02": [
+      "ถังพักน้ำ WATER TANK"
+    ],
+    "W01WT03": [
+      "ถังพักน้ำ WATER TANK"
+    ],
+    "W01WT04": [
+      "ถังพักน้ำ WATER TANK"
+    ],
+    "W01WT05": [
+      "ถังพักน้ำ WATER TANK"
+    ],
+    "W01WT06": [
+      "ถังพักน้ำ WATER TANK"
+    ],
+    "W01WS01": [
+      "เครื่องล้างกระป๋อง"
+    ],
+    "W01FP01": [
+      "ปั๊มวัตถุดิบFEED PUMP"
+    ],
+    "W01FP02": [
+      "ปั๊มวัตถุดิบFEED PUMP"
+    ],
+    "W01FP03": [
+      "ปั๊มวัตถุดิบFEED PUMP"
+    ],
+    "W01FP04": [
+      "ปั๊มวัตถุดิบFEED PUMP"
+    ],
+    "W01WP01": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP02": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP03": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP04": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP05": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP06": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP07": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP08": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01WP09": [
+      "ปั๊มน้ำCooling"
+    ],
+    "W01CT01": [
+      "เครื่องตัดปลา"
+    ],
+    "W01CT02": [
+      "เครื่องตัดปลา"
+    ],
+    "W01CT03": [
+      "เครื่องตัดปลา"
+    ],
+    "W01CT04": [
+      "เครื่องตัดปลา"
+    ],
+    "W01CT05": [
+      "เครื่องตัดปลา"
+    ],
+    "W01CT06": [
+      "เครื่องตัดปลา"
+    ],
+    "W01CT07": [
+      "เครื่องตัดสแน็ค"
+    ],
+    "W01CT08": [
+      "เครื่องตัดปลาซาดีน"
+    ],
+    "W01CA01": [
+      "รถโฟคลิฟไฟฟ้า"
+    ],
+    "W01CA02": [
+      "รถโฟคลิฟไฟฟ้า"
+    ],
+    "W01CA03": [
+      "รถโฟคลิฟน้ำมัน"
+    ],
+    "W02IT01": [
+      "คอมพิวเตอร์"
+    ],
+    "W02IT02": [
+      "คอมพิวเตอร์"
+    ],
+    "W02IT03": [
+      "คอมพิวเตอร์"
+    ],
+    "W02IT04": [
+      "คอมพิวเตอร์"
+    ],
+    "W02IT05": [
+      "คอมพิวเตอร์"
+    ],
+    "W01AD01": [
+      "เครื่องทำลมแห้ง AIR DRYER"
+    ]
+  }
+}
