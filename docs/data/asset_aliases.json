@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "generated": "2026-05-21",
+  "comment": "Maps free-text Machine values in SharePoint to canonical Asset IDs. Lowercase keys.",
+  "aliases": {
+    "tetrapak": "W01PK20",
+    "tetra pak": "W01PK20",
+    "tp r2": "W01PK20",
+    "ปั้มดูดอาหาร tetrapak": "W01PK20",
+    "w01pk20 เครื่อง seal กล่อง tp r2": "W01PK20",
+    "w01pk10 เครื่องปิดฝา หัวseam": "W01PK10",
+    "can filling": "W01PK08",
+    "duplex": "W01PK06",
+    "retrort 2": "W01ST02",
+    "seamer": "W01PK08",
+    "tony": "W01PK19",
+    "ttk 1": "W01PK17",
+    "w01bc08 สายพานติดฉลาก": "W01BC08",
+    "w01bc10 สายพาน pack กระป๋อง": "W01BC10",
+    "w01ct01 เครื่องตัดปลา#1": "W01CT01",
+    "w01ex01 เครื่องขึ้นรูปสแน็ค (extruder)": "W01EX01",
+    "w01lb01 เครื่องปิดฉลากกระป๋อง (can labelling)": "W01LB01",
+    "w01mi08 เครื่องปั่นผสมแป้ง#1": "W01MI08",
+    "w01pk03 เครื่องจานหมุน (x-lift can)#1": "W01PK03",
+    "w01pk05 เครื่องบรรจุซองเพ้าช์ tyj": "W01PK05",
+    "w01pk06 เครื่องบรรจุซองเพ้าช์ dupex": "W01PK06",
+    "w01pk07 เครื่องบรรจุซองแมวเลีย (treats cat filler)": "W01PK07",
+    "w01pk08 เครื่องปิดฝากระป๋อง (can seaming)": "W01PK08",
+    "w01pk11 เครื่องsealถุง (band sealer)#1": "W01PK11",
+    "w01pk17 บรรจุซองแมวเลีย ttk #1": "W01PK17",
+    "w01pk18 บรรจุซองแมวเลีย ttk #2": "W01PK18",
+    "w01pk19 บรรจุซองแมวเลีย tony #1": "W01PK19",
+    "w01st02 เครื่อง retort steam หม้อฆ่าเชื้อกระป๋อง": "W01ST02",
+    "w01wt01 ถังพักน้ำ#1": "W01WT01",
+    "w01wt03 ถังพักน้ำล้างพื้น": "W01WT03",
+    "w01wt04 ถังพักน้ำซอฟ#1": "W01WT04",
+    "กระบอก fill อาหารเครื่อง duplex เสีย": "W01PK06"
+  },
+  "ignore_patterns": [
+    "room issue",
+    "office",
+    "ห้องน้ำ"
+  ],
+  "ignore_exact": [
+    "-",
+    "n/a",
+    "na",
+    "test"
+  ]
+}

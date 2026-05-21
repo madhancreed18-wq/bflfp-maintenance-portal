@@ -1,6 +1,8 @@
 /* ============================================
    BFLFP MAINTENANCE LOG — JS
    Live data from Power Automate flow
+   + Asset Resolver integration (canonical names)
+   + Map-to-Asset edit mode (localhost or ?edit=1)
    ============================================ */
 
 (function() {
@@ -14,8 +16,17 @@
         page: 1,
         pageSize: 50,
         sortKey: 'StartTime',
-        sortDir: 'desc'
+        sortDir: 'desc',
+        resolved: false
     };
+
+    function isEditMode() {
+        var h = location.hostname;
+        if (h === 'localhost' || h === '127.0.0.1' || h === '') return true;
+        return /[?&]edit=1\b/.test(location.search);
+    }
+    var EDIT_MODE = isEditMode();
+    var aliasMapTarget = null;
 
     function $(id) { return document.getElementById(id); }
     function safeText(v) { return (v === null || v === undefined) ? '' : String(v); }
@@ -73,7 +84,43 @@
         return 'pill-st-default';
     }
 
-    // PAYLOAD NORMALIZER (same as Dashboard/Home)
+    function ensureResolver() {
+        if (window.BFLFP_Resolver) return Promise.resolve();
+        return new Promise(function(resolve, reject){
+            if (document.querySelector('script[data-bflfp-resolver]')) {
+                var tries = 0;
+                var poll = setInterval(function(){
+                    if (window.BFLFP_Resolver) { clearInterval(poll); resolve(); }
+                    else if (++tries > 50) { clearInterval(poll); reject(new Error('Resolver load timeout')); }
+                }, 100);
+                return;
+            }
+            var s = document.createElement('script');
+            s.src = 'assets/asset-resolver.js?v=' + Date.now();
+            s.dataset.bflfpResolver = '1';
+            s.onload = function(){ resolve(); };
+            s.onerror = function(){ reject(new Error('Failed to load asset-resolver.js')); };
+            document.head.appendChild(s);
+        });
+    }
+    function loadResolverData() {
+        return ensureResolver().then(function(){
+            return window.BFLFP_Resolver.load('./data');
+        }).then(function(stats){
+            STATE.resolved = true;
+            console.log('[MaintenanceLog] Resolver loaded:', stats);
+        }).catch(function(err){
+            console.warn('[MaintenanceLog] Resolver unavailable:', err);
+            STATE.resolved = false;
+        });
+    }
+    function resolveMachine(raw) {
+        if (!STATE.resolved || !window.BFLFP_Resolver) {
+            return { status: 'unknown', asset_id: null, canonical_name: null, raw: raw };
+        }
+        return window.BFLFP_Resolver.resolve(raw);
+    }
+
     function normalizePayload(p) {
         if (!p) return [];
         if (typeof p === 'string') { try { p = JSON.parse(p); } catch (e) { return []; } }
@@ -121,27 +168,28 @@
         return find(p, 0) || [];
     }
 
-    // STATE TOGGLE
     function show(which) {
         $('mlog-loading').style.display = (which === 'loading') ? 'block' : 'none';
-        $('mlog-error').style.display = (which === 'error') ? 'block' : 'none';
-        $('mlog-main').style.display = (which === 'ready') ? 'block' : 'none';
+        $('mlog-error').style.display   = (which === 'error')   ? 'block' : 'none';
+        $('mlog-main').style.display    = (which === 'ready')   ? 'block' : 'none';
     }
 
-    // FETCH
     function fetchData() {
         show('loading');
         function p() { return fetch(DATA_URL, { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, body: '{}' }); }
         function g() { return fetch(DATA_URL, { method: 'GET', headers: { 'Accept': 'application/json' } }); }
-        p().then(function(r){
-            if (r.ok) return r;
-            if (r.status === 400 || r.status === 405) return g();
-            throw new Error('HTTP ' + r.status);
-        }).then(function(r){
-            if (!r.ok) throw new Error('HTTP ' + r.status);
-            return r.json();
-        }).then(function(json){
-            STATE.raw = normalizePayload(json);
+        Promise.all([
+            loadResolverData(),
+            p().then(function(r){
+                if (r.ok) return r;
+                if (r.status === 400 || r.status === 405) return g();
+                throw new Error('HTTP ' + r.status);
+            }).then(function(r){
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.json();
+            })
+        ]).then(function(both){
+            STATE.raw = normalizePayload(both[1]);
             if (!STATE.raw.length) throw new Error('No records returned from flow.');
             populateFilters();
             applyFilters();
@@ -158,20 +206,42 @@
             var sel = $(id);
             if (!sel) return;
             var current = sel.value;
-            // keep first <option> as "All …" and clear others
             sel.length = 1;
             values.forEach(function(v){
                 var o = document.createElement('option');
-                o.value = v;
-                o.textContent = v;
+                o.value = v; o.textContent = v;
                 sel.appendChild(o);
             });
             if (current && values.indexOf(current) >= 0) sel.value = current;
         }
-        fill('mlog-status', unique(STATE.raw.map(function(j){ return normStatus(j.Status); })));
-        fill('mlog-jobtype', unique(STATE.raw.map(function(j){ return j.JobType; })));
+        fill('mlog-status',   unique(STATE.raw.map(function(j){ return normStatus(j.Status); })));
+        fill('mlog-jobtype',  unique(STATE.raw.map(function(j){ return j.JobType; })));
         fill('mlog-priority', unique(STATE.raw.map(function(j){ return j.Priority; })));
-        fill('mlog-machine', unique(STATE.raw.map(function(j){ return j.Machine; })));
+
+        var canonicals = {};
+        var otherCount = 0;
+        STATE.raw.forEach(function(j){
+            var r = resolveMachine(j.Machine);
+            if (r.status === 'matched') canonicals[r.canonical_name] = true;
+            else if (r.status === 'other') otherCount += 1;
+        });
+        fill('mlog-machine', Object.keys(canonicals).sort());
+        if (otherCount > 0) {
+            var o = document.createElement('option');
+            o.value = '__OTHER__';
+            o.textContent = '⚠ Other / Unmapped (' + otherCount + ')';
+            $('mlog-machine').appendChild(o);
+        }
+
+        var otherPill = $('mlog-other-count');
+        if (otherPill) {
+            if (otherCount > 0) {
+                otherPill.style.display = '';
+                otherPill.textContent = '⚠ ' + otherCount + ' unmapped';
+            } else {
+                otherPill.style.display = 'none';
+            }
+        }
     }
 
     function readFilters() {
@@ -181,57 +251,60 @@
             jobtype: $('mlog-jobtype').value,
             priority: $('mlog-priority').value,
             machine: $('mlog-machine').value,
+            mapstatus: ($('mlog-mapstatus') ? $('mlog-mapstatus').value : ''),
             from: $('mlog-datefrom').value,
-            to: $('mlog-dateto').value
+            to:   $('mlog-dateto').value
         };
     }
 
     function applyFilters() {
         var f = readFilters();
         var fromT = f.from ? new Date(f.from).getTime() : null;
-        var toT = f.to ? new Date(f.to).getTime() + 86400000 - 1 : null;
-
+        var toT   = f.to   ? new Date(f.to).getTime() + 86400000 - 1 : null;
         STATE.filtered = STATE.raw.filter(function(j){
+            var r = resolveMachine(j.Machine);
             if (f.status && normStatus(j.Status) !== f.status) return false;
             if (f.jobtype && j.JobType !== f.jobtype) return false;
             if (f.priority && j.Priority !== f.priority) return false;
-            if (f.machine && j.Machine !== f.machine) return false;
+            if (f.machine === '__OTHER__') {
+                if (r.status !== 'other') return false;
+            } else if (f.machine) {
+                if (r.canonical_name !== f.machine) return false;
+            }
+            if (f.mapstatus && r.status !== f.mapstatus) return false;
             var ref = j.StartTime || j.Created;
             if (fromT && ref) { var t = new Date(ref).getTime(); if (isNaN(t) || t < fromT) return false; }
-            if (toT && ref) { var t2 = new Date(ref).getTime(); if (isNaN(t2) || t2 > toT) return false; }
+            if (toT && ref)   { var t2 = new Date(ref).getTime(); if (isNaN(t2) || t2 > toT) return false; }
             if (f.search) {
-                var blob = [j.JobID, j.Machine, j.RootCause, j.Solution, j.Problem, j.ActionBy, j.AssignedTo, j.JobType, j.Priority]
+                var blob = [j.JobID, j.Machine, r.canonical_name, j.RootCause, j.Solution, j.Problem, j.ActionBy, j.AssignedTo, j.JobType, j.Priority]
                     .map(safeText).join(' ').toLowerCase();
                 if (blob.indexOf(f.search) < 0) return false;
             }
             return true;
         });
-
         STATE.page = 1;
         renderActiveFilters(f);
         renderTable();
     }
 
     function renderActiveFilters(f) {
-        var el = $('mlog-active-filters');
-        if (!el) return;
+        var el = $('mlog-active-filters'); if (!el) return;
         var chips = [];
         if (f.search) chips.push(chip('Search: "' + f.search + '"'));
         if (f.status) chips.push(chip('Status: ' + f.status));
         if (f.jobtype) chips.push(chip('Type: ' + f.jobtype));
         if (f.priority) chips.push(chip('Priority: ' + f.priority));
-        if (f.machine) chips.push(chip('Machine: ' + f.machine));
+        if (f.machine) chips.push(chip('Machine: ' + (f.machine === '__OTHER__' ? 'Other / Unmapped' : f.machine)));
+        if (f.mapstatus) chips.push(chip('Map Status: ' + f.mapstatus));
         if (f.from) chips.push(chip('From: ' + f.from));
-        if (f.to) chips.push(chip('To: ' + f.to));
+        if (f.to)   chips.push(chip('To: ' + f.to));
         el.innerHTML = chips.length ? '<span style="font-weight:500">Active filters:</span> ' + chips.join('') : '';
     }
-    function chip(text) {
-        return '<span class="mlog-active-chip">' + escapeHTML(text) + '</span>';
-    }
+    function chip(text) { return '<span class="mlog-active-chip">' + escapeHTML(text) + '</span>'; }
 
     function clearFilters() {
-        ['mlog-status','mlog-jobtype','mlog-priority','mlog-machine','mlog-datefrom','mlog-dateto','mlog-search'].forEach(function(id){
-            $(id).value = '';
+        ['mlog-status','mlog-jobtype','mlog-priority','mlog-machine','mlog-mapstatus','mlog-datefrom','mlog-dateto','mlog-search'].forEach(function(id){
+            var el = $(id); if (el) el.value = '';
         });
         applyFilters();
     }
@@ -247,6 +320,9 @@
             } else if (key === 'StartTime') {
                 va = new Date(a.StartTime || a.Created || 0).getTime();
                 vb = new Date(b.StartTime || b.Created || 0).getTime();
+            } else if (key === 'Machine') {
+                va = (resolveMachine(a.Machine).canonical_name || safeText(a.Machine)).toLowerCase();
+                vb = (resolveMachine(b.Machine).canonical_name || safeText(b.Machine)).toLowerCase();
             } else {
                 va = safeText(a[key]).toLowerCase();
                 vb = safeText(b[key]).toLowerCase();
@@ -257,13 +333,42 @@
         });
     }
 
+    function machineCellHTML(j) {
+        var r = resolveMachine(j.Machine);
+        var raw = safeText(j.Machine);
+        var pill, display, mapBtn = '';
+        if (r.status === 'matched') {
+            pill = '<span class="mlog-mappill mp-ok" title="Resolved via ' + r.via + '">✓</span>';
+            display = '<strong>' + escapeHTML(r.canonical_name) + '</strong>' +
+                      ' <code class="mlog-code">' + escapeHTML(r.asset_id) + '</code>';
+            if (r.via && r.via.indexOf('alias') === 0) {
+                display += ' <em class="mlog-raw" title="Raw SharePoint value">"' + escapeHTML(raw) + '"</em>';
+            }
+        } else if (r.status === 'ignored') {
+            pill = '<span class="mlog-mappill mp-ig" title="Ignored (' + r.via + ')">⛔</span>';
+            display = '<span class="mlog-other">' + escapeHTML(raw || '—') + '</span>';
+        } else if (r.status === 'other') {
+            pill = '<span class="mlog-mappill mp-other" title="Not in asset registry">⚠</span>';
+            display = '<span class="mlog-other">' + escapeHTML(raw || '—') + '</span>';
+            if (EDIT_MODE) {
+                mapBtn = ' <button class="mlog-map-btn" data-map-raw="' + escapeHTML(raw) + '" title="Map to asset">✏️ Map</button>';
+            }
+        } else if (r.status === 'empty') {
+            pill = '<span class="mlog-mappill mp-empty">·</span>';
+            display = '<span class="mlog-other">—</span>';
+        } else {
+            pill = '';
+            display = escapeHTML(raw || '—');
+        }
+        return pill + ' ' + display + mapBtn;
+    }
+
     function renderTable() {
         sortData();
         var tbody = document.querySelector('#mlog-table tbody');
         var total = STATE.filtered.length;
         $('mlog-count').textContent = total + ' rows';
 
-        // Update sort arrows
         document.querySelectorAll('#mlog-table th.sortable').forEach(function(th){
             th.classList.remove('sort-asc','sort-desc');
             if (th.dataset.sort === STATE.sortKey) {
@@ -288,9 +393,9 @@
             var dt = hours(j.StartTime, j.EndTime);
             return '<tr data-idx="' + (start + idx) + '">' +
                 '<td>' + escapeHTML(safeText(j.JobID)) + '</td>' +
-                '<td>' + escapeHTML(safeText(j.Machine)) + '</td>' +
+                '<td>' + machineCellHTML(j) + '</td>' +
                 '<td class="col-truncate" title="' + escapeHTML(safeText(j.RootCause)) + '">' + escapeHTML(safeText(j.RootCause) || '—') + '</td>' +
-                '<td class="col-truncate" title="' + escapeHTML(safeText(j.Solution)) + '">' + escapeHTML(safeText(j.Solution) || '—') + '</td>' +
+                '<td class="col-truncate" title="' + escapeHTML(safeText(j.Solution))  + '">' + escapeHTML(safeText(j.Solution)  || '—') + '</td>' +
                 '<td><span class="mlog-pill pill-type">' + escapeHTML(safeText(j.JobType) || '—') + '</span></td>' +
                 '<td><span class="mlog-pill ' + priorityClass(j.Priority) + '">' + escapeHTML(safeText(j.Priority) || '—') + '</span></td>' +
                 '<td><span class="mlog-pill ' + statusClass(j.Status) + '">' + escapeHTML(normStatus(j.Status)) + '</span></td>' +
@@ -300,9 +405,14 @@
                 '</tr>';
         }).join('');
 
-        // Row click → open detail modal
         Array.prototype.forEach.call(tbody.querySelectorAll('tr'), function(tr){
-            tr.addEventListener('click', function(){
+            tr.addEventListener('click', function(e){
+                var btn = e.target.closest('.mlog-map-btn');
+                if (btn) {
+                    e.stopPropagation();
+                    openMapModal(btn.getAttribute('data-map-raw'));
+                    return;
+                }
                 var idx = parseInt(tr.dataset.idx, 10);
                 if (!isNaN(idx) && STATE.filtered[idx]) openDetail(STATE.filtered[idx]);
             });
@@ -311,25 +421,30 @@
         $('mlog-page-info').textContent = (start + 1) + '–' + Math.min(start + STATE.pageSize, total) + ' of ' + total;
         $('mlog-page-current').textContent = 'Page ' + STATE.page + ' / ' + totalPages;
         $('mlog-first').disabled = STATE.page <= 1;
-        $('mlog-prev').disabled = STATE.page <= 1;
-        $('mlog-next').disabled = STATE.page >= totalPages;
-        $('mlog-last').disabled = STATE.page >= totalPages;
+        $('mlog-prev').disabled  = STATE.page <= 1;
+        $('mlog-next').disabled  = STATE.page >= totalPages;
+        $('mlog-last').disabled  = STATE.page >= totalPages;
     }
 
-    // DETAIL MODAL
     function openDetail(j) {
+        var r = resolveMachine(j.Machine);
+        var titleMachine = r.status === 'matched' ? (r.canonical_name + ' (' + r.asset_id + ')') : (safeText(j.Machine) + (r.status === 'other' ? ' — ⚠ unmapped' : ''));
         $('modal-eyebrow').textContent = safeText(j.JobType) || 'Job';
-        $('modal-title').textContent = safeText(j.JobID) + ' — ' + safeText(j.Machine);
-
+        $('modal-title').textContent = safeText(j.JobID) + ' — ' + titleMachine;
+        var machineCell = r.status === 'matched'
+            ? '<strong>' + escapeHTML(r.canonical_name) + '</strong> <code class="mlog-code">' + escapeHTML(r.asset_id) + '</code>' +
+              '<br><small style="color:#94A3B8">SharePoint raw: "' + escapeHTML(safeText(j.Machine)) + '"</small>'
+            : '<span class="mlog-other">' + escapeHTML(safeText(j.Machine) || '—') + '</span>' +
+              ' <span class="mlog-mappill mp-other">⚠ unmapped</span>';
         var rows = [
-            ['Job ID', safeText(j.JobID)],
-            ['Machine / เครื่องจักร', safeText(j.Machine)],
+            ['Job ID', escapeHTML(safeText(j.JobID))],
+            ['Machine / เครื่องจักร', machineCell],
             ['Status', '<span class="mlog-pill ' + statusClass(j.Status) + '">' + escapeHTML(normStatus(j.Status)) + '</span>'],
             ['Priority', '<span class="mlog-pill ' + priorityClass(j.Priority) + '">' + escapeHTML(safeText(j.Priority) || '—') + '</span>'],
-            ['Job Type', safeText(j.JobType) || '—'],
-            ['Job Source', safeText(j.JobSource) || '—'],
-            ['Assigned To', safeText(j.AssignedTo) || '—'],
-            ['Action By', safeText(j.ActionBy) || '—'],
+            ['Job Type', escapeHTML(safeText(j.JobType) || '—')],
+            ['Job Source', escapeHTML(safeText(j.JobSource) || '—')],
+            ['Assigned To', escapeHTML(safeText(j.AssignedTo) || '—')],
+            ['Action By', escapeHTML(safeText(j.ActionBy) || '—')],
             ['Due Date', fmtDate(j.DueDate)],
             ['Start Time', fmtDateTime(j.StartTime)],
             ['End Time', fmtDateTime(j.EndTime)],
@@ -337,32 +452,121 @@
             ['Created', fmtDateTime(j.Created)],
             ['Modified', fmtDateTime(j.Modified)]
         ];
-
-        var gridHTML = '<div class="mlog-detail-grid">' + rows.map(function(r){
+        var gridHTML = '<div class="mlog-detail-grid">' + rows.map(function(r2){
             return '<div class="mlog-detail-row">' +
-                   '<span class="mlog-detail-label">' + escapeHTML(r[0]) + '</span>' +
-                   '<span class="mlog-detail-value">' + r[1] + '</span>' +
+                   '<span class="mlog-detail-label">' + escapeHTML(r2[0]) + '</span>' +
+                   '<span class="mlog-detail-value">' + r2[1] + '</span>' +
                    '</div>';
         }).join('') + '</div>';
-
         var textSections = '';
-        if (j.Problem) textSections += '<div class="mlog-detail-section"><h4>Problem · ปัญหา</h4><p>' + escapeHTML(j.Problem) + '</p></div>';
+        if (j.Problem)   textSections += '<div class="mlog-detail-section"><h4>Problem · ปัญหา</h4><p>'    + escapeHTML(j.Problem) + '</p></div>';
         if (j.RootCause) textSections += '<div class="mlog-detail-section"><h4>Root Cause · สาเหตุ</h4><p>' + escapeHTML(j.RootCause) + '</p></div>';
-        if (j.Solution) textSections += '<div class="mlog-detail-section"><h4>Solution · วิธีการแก้ไข</h4><p>' + escapeHTML(j.Solution) + '</p></div>';
-
+        if (j.Solution)  textSections += '<div class="mlog-detail-section"><h4>Solution · วิธีการแก้ไข</h4><p>' + escapeHTML(j.Solution) + '</p></div>';
         $('modal-body').innerHTML = gridHTML + textSections;
         $('mlog-modal-backdrop').style.display = 'flex';
     }
     function closeDetail() { $('mlog-modal-backdrop').style.display = 'none'; }
 
-    // CSV EXPORT
+    function openMapModal(rawValue) {
+        if (!EDIT_MODE) return;
+        aliasMapTarget = rawValue || '';
+        $('mlog-map-raw').textContent = aliasMapTarget || '(empty)';
+        $('mlog-map-search').value = '';
+        $('mlog-map-error').hidden = true;
+        var dl = $('mlog-map-list');
+        if (dl && !dl.children.length && window.BFLFP_Resolver) {
+            var assets = window.BFLFP_Resolver.getAllAssets();
+            dl.innerHTML = assets.map(function(a){
+                var label = a.asset_id + ' — ' + (a.name || '') + (a.manufacturer ? ' (' + a.manufacturer + ')' : '');
+                return '<option value="' + escapeHTML(label) + '"></option>';
+            }).join('');
+        }
+        $('mlog-map-backdrop').style.display = 'flex';
+        setTimeout(function(){ $('mlog-map-search').focus(); }, 50);
+    }
+    function closeMapModal() {
+        $('mlog-map-backdrop').style.display = 'none';
+        aliasMapTarget = null;
+    }
+    function saveMapping() {
+        if (!aliasMapTarget) return;
+        var input = $('mlog-map-search').value.trim();
+        if (!input) {
+            $('mlog-map-error').hidden = false;
+            $('mlog-map-error').textContent = 'Pick an asset from the list (or type its Asset ID).';
+            return;
+        }
+        var assetId;
+        var m = input.match(/^(W\d{2}[A-Z]{1,3}\d{2,3})\b/i);
+        if (m) assetId = m[1].toUpperCase();
+        else {
+            var hit = window.BFLFP_Resolver.getAllAssets().find(function(a){
+                return (a.name || '').toLowerCase() === input.toLowerCase();
+            });
+            if (hit) assetId = hit.asset_id;
+        }
+        if (!assetId) {
+            $('mlog-map-error').hidden = false;
+            $('mlog-map-error').textContent = 'No asset matched "' + input + '". Use the format W01AC05 or pick from the dropdown.';
+            return;
+        }
+        var ok = window.BFLFP_Resolver.addAlias(aliasMapTarget, assetId);
+        if (!ok) {
+            $('mlog-map-error').hidden = false;
+            $('mlog-map-error').textContent = 'Could not add mapping. Check the Asset ID exists.';
+            return;
+        }
+        markAliasesDirty();
+        closeMapModal();
+        populateFilters();
+        applyFilters();
+    }
+    function saveIgnore() {
+        if (!aliasMapTarget) return;
+        window.BFLFP_Resolver.addIgnoreExact(aliasMapTarget);
+        markAliasesDirty();
+        closeMapModal();
+        populateFilters();
+        applyFilters();
+    }
+    function markAliasesDirty() {
+        var btn = $('mlog-edit-download');
+        if (!btn) return;
+        btn.disabled = false;
+        btn.classList.add('mlog-edit-download-active');
+    }
+    function downloadAliasesJSON() {
+        if (!window.BFLFP_Resolver) return;
+        var payload = window.BFLFP_Resolver.exportAliasesJSON();
+        var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'asset_aliases.json';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function(){ document.body.removeChild(a); URL.revokeObjectURL(url); }, 100);
+    }
+
     function exportCSV() {
         if (!STATE.filtered.length) return alert('No rows to export.');
-        var cols = ['JobID','Machine','JobType','Priority','Status','Problem','RootCause','Solution','AssignedTo','ActionBy','DueDate','StartTime','EndTime','Created','Modified'];
+        var cols = ['JobID','Machine_Raw','Machine_Canonical','Asset_ID','Map_Status','JobType','Priority','Status','Problem','RootCause','Solution','AssignedTo','ActionBy','DueDate','StartTime','EndTime','Created','Modified'];
         var lines = [cols.join(',')];
         STATE.filtered.forEach(function(j){
+            var r = resolveMachine(j.Machine);
+            var row = {
+                JobID: j.JobID, Machine_Raw: j.Machine,
+                Machine_Canonical: r.canonical_name || '',
+                Asset_ID: r.asset_id || '',
+                Map_Status: r.status,
+                JobType: j.JobType, Priority: j.Priority, Status: j.Status,
+                Problem: j.Problem, RootCause: j.RootCause, Solution: j.Solution,
+                AssignedTo: j.AssignedTo, ActionBy: j.ActionBy,
+                DueDate: j.DueDate, StartTime: j.StartTime, EndTime: j.EndTime,
+                Created: j.Created, Modified: j.Modified
+            };
             lines.push(cols.map(function(c){
-                var v = j[c];
+                var v = row[c];
                 if (v === null || v === undefined) return '';
                 var s = String(v).replace(/"/g, '""');
                 return /[",\n]/.test(s) ? '"' + s + '"' : s;
@@ -379,10 +583,9 @@
         URL.revokeObjectURL(url);
     }
 
-    // WIRE EVENTS
     function wire() {
-        ['mlog-status','mlog-jobtype','mlog-priority','mlog-machine','mlog-datefrom','mlog-dateto'].forEach(function(id){
-            $(id).addEventListener('change', applyFilters);
+        ['mlog-status','mlog-jobtype','mlog-priority','mlog-machine','mlog-mapstatus','mlog-datefrom','mlog-dateto'].forEach(function(id){
+            var el = $(id); if (el) el.addEventListener('change', applyFilters);
         });
         var t;
         $('mlog-search').addEventListener('input', function(){
@@ -395,9 +598,9 @@
         $('mlog-export').addEventListener('click', exportCSV);
 
         $('mlog-first').addEventListener('click', function(){ STATE.page = 1; renderTable(); });
-        $('mlog-prev').addEventListener('click', function(){ STATE.page = Math.max(1, STATE.page - 1); renderTable(); });
-        $('mlog-next').addEventListener('click', function(){ STATE.page += 1; renderTable(); });
-        $('mlog-last').addEventListener('click', function(){
+        $('mlog-prev').addEventListener('click',  function(){ STATE.page = Math.max(1, STATE.page - 1); renderTable(); });
+        $('mlog-next').addEventListener('click',  function(){ STATE.page += 1; renderTable(); });
+        $('mlog-last').addEventListener('click',  function(){
             STATE.page = Math.max(1, Math.ceil(STATE.filtered.length / STATE.pageSize));
             renderTable();
         });
@@ -420,12 +623,36 @@
             });
         });
 
-        $('mlog-modal-close').addEventListener('click', closeDetail);
-        $('mlog-modal-backdrop').addEventListener('click', function(e){
-            if (e.target === this) closeDetail();
-        });
+        if ($('mlog-modal-close')) $('mlog-modal-close').addEventListener('click', closeDetail);
+        if ($('mlog-modal-backdrop')) {
+            $('mlog-modal-backdrop').addEventListener('click', function(e){
+                if (e.target === this) closeDetail();
+            });
+        }
+
+        if (EDIT_MODE) {
+            var banner = $('mlog-edit-banner');
+            if (banner) banner.hidden = false;
+            var dl = $('mlog-edit-download');
+            if (dl) dl.addEventListener('click', downloadAliasesJSON);
+            if ($('mlog-map-close'))  $('mlog-map-close').addEventListener('click', closeMapModal);
+            if ($('mlog-map-cancel')) $('mlog-map-cancel').addEventListener('click', closeMapModal);
+            if ($('mlog-map-save'))   $('mlog-map-save').addEventListener('click', saveMapping);
+            if ($('mlog-map-ignore')) $('mlog-map-ignore').addEventListener('click', saveIgnore);
+            if ($('mlog-map-backdrop')) {
+                $('mlog-map-backdrop').addEventListener('click', function(e){
+                    if (e.target === this) closeMapModal();
+                });
+            }
+            if ($('mlog-map-search')) {
+                $('mlog-map-search').addEventListener('keydown', function(e){
+                    if (e.key === 'Enter') { e.preventDefault(); saveMapping(); }
+                });
+            }
+        }
+
         document.addEventListener('keydown', function(e){
-            if (e.key === 'Escape') closeDetail();
+            if (e.key === 'Escape') { closeDetail(); closeMapModal(); }
         });
     }
 

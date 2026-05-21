@@ -7,6 +7,13 @@
         </div>
     </header>
 
+    <!-- EDIT MODE BANNER (shown only when edit mode is active) -->
+    <div class="edit-mode-banner" id="edit-mode-banner" hidden>
+        <span class="edit-mode-label">🔒 Edit Mode Active</span>
+        <span class="edit-mode-sub">Changes are stored in your browser. Use the download button to export updated JSON when done.</span>
+        <button class="btn-download" id="btn-download" disabled>💾 Download updated assets.json</button>
+    </div>
+
     <div class="assets-toolbar">
         <div class="assets-stats" id="assets-stats">
             <span class="stat-pill"><span class="stat-num" id="stat-total">—</span><span class="stat-label">Total</span></span>
@@ -34,7 +41,15 @@
                 <option value="Bi-Annual">Bi-Annual</option>
                 <option value="Annual">Annual</option>
             </select>
+            <select id="f-status" class="filter-select">
+                <option value="">All Status</option>
+                <option value="Active">Active</option>
+                <option value="Under PM">Under PM</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Scrapped">Scrapped</option>
+            </select>
             <button class="btn-clear" id="f-clear">Clear</button>
+            <button class="btn-add" id="btn-add" hidden>+ Add Asset</button>
         </div>
     </div>
 
@@ -51,7 +66,7 @@
                     <th class="col-crit">Criticality</th>
                     <th class="col-freq">PM Freq</th>
                     <th class="col-status">Status</th>
-                    <th class="col-action">Checklist</th>
+                    <th class="col-action">Actions</th>
                 </tr>
             </thead>
             <tbody id="assets-tbody">
@@ -62,3 +77,130 @@
 
     <p class="assets-footer-note" id="assets-count-note"></p>
 </section>
+
+<!-- =========================================================
+     ADD / EDIT ASSET MODAL
+     ========================================================= -->
+<div class="modal-overlay" id="asset-modal" hidden>
+    <div class="modal-panel" role="dialog" aria-labelledby="modal-title">
+        <header class="modal-header">
+            <h2 id="modal-title">Add Asset</h2>
+            <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+        </header>
+
+        <form class="modal-body" id="asset-form" novalidate>
+            <input type="hidden" id="f-original-id" value="" />
+
+            <fieldset class="form-section">
+                <legend>Identity</legend>
+                <div class="form-grid">
+                    <label class="form-cell">
+                        <span class="label-text">รหัส (Asset ID) <em>*</em></span>
+                        <input type="text" id="fld-id" required pattern="^W\d{2}[A-Z]{1,3}\d{2,3}$" placeholder="e.g. W01AC05" />
+                        <small class="hint" id="hint-id">Format: W + area(2) + class(2-3) + seq(2-3). Auto-suggested when you pick a class.</small>
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">ชื่อ (Name) <em>*</em></span>
+                        <input type="text" id="fld-name" required maxlength="120" placeholder="e.g. ปั๊มลมสกรู (Air Compressor) #5" />
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">กลุ่มเครื่องจักร (Class) <em>*</em></span>
+                        <input type="text" id="fld-class" list="class-list" required placeholder="e.g. AIR COMPRESSOR" />
+                        <datalist id="class-list"></datalist>
+                        <small class="hint">Pick existing or type a new class name (UPPERCASE preferred).</small>
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">ประเภท (Type) <em>*</em></span>
+                        <select id="fld-type" required>
+                            <option value="Machine">Machine</option>
+                            <option value="Utilities">Utilities</option>
+                            <option value="IT">IT</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Equipment Details</legend>
+                <div class="form-grid">
+                    <label class="form-cell">
+                        <span class="label-text">ผู้ผลิต (Manufacturer)</span>
+                        <input type="text" id="fld-mfr" maxlength="60" />
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">ประเทศที่ผลิต (Country)</span>
+                        <input type="text" id="fld-country" maxlength="40" />
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">ขนาด (Size / Capacity)</span>
+                        <input type="text" id="fld-size" maxlength="40" placeholder="e.g. 25 hp" />
+                    </label>
+                    <label class="form-cell form-cell-wide">
+                        <span class="label-text">อะไหล่หลัก (Main Spares)</span>
+                        <input type="text" id="fld-spares" maxlength="200" placeholder="e.g. Air filter, Oil filter, V-Belt" />
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Location</legend>
+                <div class="form-grid">
+                    <label class="form-cell">
+                        <span class="label-text">สถานที่ตั้ง (Location / Line)</span>
+                        <input type="text" id="fld-loc" maxlength="60" placeholder="e.g. Wet Food" />
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">ชั้นที่ (Floor)</span>
+                        <input type="text" id="fld-floor" maxlength="6" placeholder="1" />
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Operational</legend>
+                <div class="form-grid">
+                    <label class="form-cell">
+                        <span class="label-text">Criticality</span>
+                        <select id="fld-crit">
+                            <option value="Critical (A)">Critical (A)</option>
+                            <option value="Major (B)" selected>Major (B)</option>
+                            <option value="Minor (C)">Minor (C)</option>
+                        </select>
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">Status</span>
+                        <select id="fld-status">
+                            <option value="Active" selected>Active</option>
+                            <option value="Under PM">Under PM</option>
+                            <option value="Inactive">Inactive</option>
+                            <option value="Scrapped">Scrapped (Soft Delete)</option>
+                        </select>
+                    </label>
+                    <label class="form-cell">
+                        <span class="label-text">PM Frequency</span>
+                        <select id="fld-freq">
+                            <option value="">— None —</option>
+                            <option value="Daily">Daily</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Quarterly">Quarterly</option>
+                            <option value="Bi-Annual">Bi-Annual</option>
+                            <option value="Annual">Annual</option>
+                        </select>
+                    </label>
+                    <label class="form-cell form-cell-wide">
+                        <span class="label-text">หมายเหตุ (Notes)</span>
+                        <textarea id="fld-notes" rows="2" maxlength="500"></textarea>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-error" id="form-error" hidden></div>
+
+            <footer class="modal-footer">
+                <button type="button" class="btn-secondary" id="btn-cancel">Cancel</button>
+                <button type="submit" class="btn-primary" id="btn-save">Save Asset</button>
+            </footer>
+        </form>
+    </div>
+</div>

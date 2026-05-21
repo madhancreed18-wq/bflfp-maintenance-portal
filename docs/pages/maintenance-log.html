@@ -17,6 +17,7 @@
             </div>
             <div class="mlog-actions">
                 <span class="mlog-count-pill" id="mlog-count">— rows</span>
+                <span class="mlog-count-pill mlog-count-other" id="mlog-other-count" style="display:none;">⚠ — unmapped</span>
                 <button class="mlog-btn mlog-btn-outline" id="mlog-export">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Export CSV
@@ -29,6 +30,13 @@
         </div>
     </header>
 
+    <!-- EDIT MODE BANNER (shown only on localhost or ?edit=1) -->
+    <div class="mlog-edit-banner" id="mlog-edit-banner" hidden>
+        <span class="mlog-edit-label">🔒 Edit Mode — Alias Mapping</span>
+        <span class="mlog-edit-sub">Click <strong>"Map"</strong> on any ⚠ Other row to link it to an asset. Changes stay in this browser until you download.</span>
+        <button class="mlog-edit-download" id="mlog-edit-download" disabled>💾 Download asset_aliases.json</button>
+    </div>
+
     <!-- FILTER BAR -->
     <section class="mlog-filterbar">
         <div class="mlog-filterbar-inner">
@@ -36,17 +44,17 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                 <input type="text" id="mlog-search" placeholder="Search by Job ID, machine, root cause, solution, technician…"/>
             </div>
+            <div class="mlog-filter"><select id="mlog-status"><option value="">All Statuses</option></select></div>
+            <div class="mlog-filter"><select id="mlog-jobtype"><option value="">All Types</option></select></div>
+            <div class="mlog-filter"><select id="mlog-priority"><option value="">All Priorities</option></select></div>
+            <div class="mlog-filter"><select id="mlog-machine"><option value="">All Machines (canonical)</option></select></div>
             <div class="mlog-filter">
-                <select id="mlog-status"><option value="">All Statuses</option></select>
-            </div>
-            <div class="mlog-filter">
-                <select id="mlog-jobtype"><option value="">All Types</option></select>
-            </div>
-            <div class="mlog-filter">
-                <select id="mlog-priority"><option value="">All Priorities</option></select>
-            </div>
-            <div class="mlog-filter">
-                <select id="mlog-machine"><option value="">All Machines</option></select>
+                <select id="mlog-mapstatus">
+                    <option value="">All Map Status</option>
+                    <option value="matched">✅ Matched</option>
+                    <option value="other">⚠ Other (unmapped)</option>
+                    <option value="ignored">⛔ Ignored</option>
+                </select>
             </div>
             <div class="mlog-filter mlog-filter-date">
                 <input type="date" id="mlog-datefrom" title="From date"/>
@@ -106,3 +114,51 @@
                 </select>
             </div>
         </div>
+    </main>
+
+    <!-- DETAIL MODAL -->
+    <div class="mlog-modal-backdrop" id="mlog-modal-backdrop" style="display:none;">
+        <div class="mlog-modal">
+            <header class="mlog-modal-header">
+                <div>
+                    <div class="mlog-modal-eyebrow" id="modal-eyebrow">Job</div>
+                    <h2 id="modal-title">—</h2>
+                </div>
+                <button class="mlog-modal-close" id="mlog-modal-close" aria-label="Close">×</button>
+            </header>
+            <div class="mlog-modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- MAP-TO-ASSET MODAL (edit mode) -->
+    <div class="mlog-modal-backdrop" id="mlog-map-backdrop" style="display:none;">
+        <div class="mlog-modal mlog-modal-map">
+            <header class="mlog-modal-header">
+                <div>
+                    <div class="mlog-modal-eyebrow">Map to Asset</div>
+                    <h2>Resolve unmapped Machine value</h2>
+                </div>
+                <button class="mlog-modal-close" id="mlog-map-close" aria-label="Close">×</button>
+            </header>
+            <div class="mlog-modal-body">
+                <p class="mlog-map-intro">
+                    The SharePoint event has <code id="mlog-map-raw">—</code> as the Machine value.
+                    Pick the matching asset from the registry, or mark this value as <em>ignore</em> (e.g. room issues, test entries).
+                </p>
+                <label class="mlog-map-field">
+                    <span>Asset (search by ID, name or manufacturer)</span>
+                    <input type="text" id="mlog-map-search" list="mlog-map-list" placeholder="W01PK20 — เครื่อง Seal กล่อง TP R2" />
+                    <datalist id="mlog-map-list"></datalist>
+                </label>
+                <div class="mlog-map-error" id="mlog-map-error" hidden></div>
+                <div class="mlog-map-actions">
+                    <button class="mlog-btn mlog-btn-outline" id="mlog-map-ignore">⛔ Add to Ignore List</button>
+                    <span style="flex:1"></span>
+                    <button class="mlog-btn mlog-btn-outline" id="mlog-map-cancel">Cancel</button>
+                    <button class="mlog-btn mlog-btn-primary" id="mlog-map-save">Save Mapping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
