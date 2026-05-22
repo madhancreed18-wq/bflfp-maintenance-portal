@@ -25,42 +25,48 @@
           "description": "ใบมีด",
           "standard": "ไม่แตกหักและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลา/task01.png"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน / อัดจาระบี",
           "standard": "ไม่หลวมคอนหรือแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลา/task02.png"
         },
         {
           "task_no": 3,
           "description": "มูเลย์และสายพาน",
           "standard": "มูลเล่ย์ต้องไม่ชำรุด  สายพานไม่ขาดหรือหย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลา/task03.png"
         },
         {
           "task_no": 4,
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดัง  และไม่มีกลิ่นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลา/task04.png"
         },
         {
           "task_no": 5,
           "description": "เฟืองและโซ่",
           "standard": "เฟืองไม่แหลมคม   โซ่ ข้อต่อต้องไม่หลวมและไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลา/task05.png"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลา/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -92,56 +98,64 @@
           "description": "ลูกปืน / อัดจาระบี",
           "standard": "ลูกปืนต้องไม่แตก ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "โซ่สายพาน",
           "standard": "ต้องไม่ขาด ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ใบมีดตัดปลา",
           "standard": "ต้องไม่หักบิ่น",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โซ่-เฟือง",
           "standard": "โซ่ต้องไม่ขาดหรือหย่อน-เฟืองต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุด หัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "มูเล่ย์-สายพาน",
           "standard": "มูเล่ย์ต้องต้องไม่แตก-สายพานต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดปลาชาดีน/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -174,42 +188,48 @@
           "description": "พัดลมคอยร้อน",
           "standard": "ใบพัดลมต้องไม่ชำรุด หมุนได้ปกติดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ห้องเย็น/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "พัดลมคอยร์เย็น",
           "standard": "ใบพัดต้องหมุนได้ปกติ ไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ห้องเย็น/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ประตูห้องเย็น",
           "standard": "ต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ห้องเย็น/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ท่อคอมเฟรสเซอร์",
           "standard": "ไม่ชำรุดไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ห้องเย็น/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "ต้องอยู่ในสภาพสมบูณร์",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ห้องเย็น/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ห้องเย็น/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -241,49 +261,56 @@
           "description": "มอเตอร์เกียร์",
           "standard": "ไม่มีเสียงดัง ไม่มีกลิ่นไหม้  เกียร์ไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานขูดปลา/task01.png"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนและไม่แตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานขูดปลา/task02.png"
         },
         {
           "task_no": 3,
           "description": "สายพานสีน้ำเงิน",
           "standard": "สายพานต้องไม่ขาดและไม่หย่อนหรือเบียดข้างซ้าย-ขวา",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานขูดปลา/task03.png"
         },
         {
           "task_no": 4,
           "description": "สายพานกระดูกงูและเฟือง",
           "standard": "สายพานต้องไม่มีรอยร้าวหรือแตกชำรุด เฟืองไม่แตกหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานขูดปลา/task04.png"
         },
         {
           "task_no": 5,
           "description": "โลว์ลูกกลิ้ง",
           "standard": "ยางหุ้มโลว์ต้องไม่หลุดหรือชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานขูดปลา/task05.png"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ไม่ชำรุดหักหรือเป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานขูดปลา/task06.png"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานขูดปลา/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -315,42 +342,48 @@
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง ไม่มีกลิ่นเหม็นไหม้ เกีรย์ต้องไม่มีน้ำมันรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานผ่าท้องปลา/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน ไม่ชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานผ่าท้องปลา/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายพานทิ้งไส้ปลา",
           "standard": "สายพานต้องไม่ชำรุดขาด และไม่หย่อนหรือเบียดซ้าย-ขวา",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานผ่าท้องปลา/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "สายพานควักไส้",
           "standard": "น๊อตลอ๊คสายพานต้องอยู่ครบ สายพานต้องไม่เป็นสมิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานผ่าท้องปลา/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "สภาพโครงสร้างต้องไม่หักชำรุด และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานผ่าท้องปลา/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานผ่าท้องปลา/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -382,49 +415,56 @@
           "description": "มอเตอร์ปั๊ม",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง และไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Dumper/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายไฮโดรลิค",
           "standard": "สภาพสายต้องไม่ชำรุดขาด ไม่มีน้ำมันรั่วชึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Dumper/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "กระบอกไฮโดรลิค",
           "standard": "สภาพต้องไม่มีน้ำมันรั่วชึม แกนต้องไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Dumper/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "น้ำมัน",
           "standard": "น้ำมันต้องมีเพียงพอ ระดับน้ำมันต้องไม่ต่ำกว่าขีดแดง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Dumper/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ต้องไม่หลวมคอน และชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Dumper/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่มีรอยชำรุดหัก และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Dumper/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Dumper/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -456,35 +496,40 @@
           "description": "หัวฉีดสเปร์ย",
           "standard": "หัวฉีดตัองอยู่ครบ ไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/รางสเปร์ยคูลลิ่งปลา/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ระบบท่อ",
           "standard": "ท่อต้องไม่มีน้ำรั่ว",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/รางสเปร์ยคูลลิ่งปลา/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "โครงสร้าง",
           "standard": "โครงสร้างต้องไม่ชำรุดหัก ไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/รางสเปร์ยคูลลิ่งปลา/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มอเตอร์ปั๊ม",
           "standard": "มอเตอร์ปั๊มต้องไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/รางสเปร์ยคูลลิ่งปลา/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/รางสเปร์ยคูลลิ่งปลา/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -523,49 +568,56 @@
           "description": "ประเก็นฝาหม้อ",
           "standard": "ต้องไม่ฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งปลา/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "หัวฉีดสเปรย์",
           "standard": "ไม่อุดตันและต้องมีครบ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งปลา/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ระบบท่อ",
           "standard": "ไม่ชำรุดหรือรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งปลา/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "คอลโทรลวาล์ว",
           "standard": "ทำงานได้ปกติ ไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งปลา/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "เซฟตี้วาล์ว",
           "standard": "สามารถใช้งานได้ปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งปลา/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ไม่ชำรุด ไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งปลา/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งปลา/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -591,35 +643,40 @@
           "description": "1W",
           "standard": "ท่อลำเลียงอาหาร",
           "method": null,
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตรวจจับโลหะแบบท่อ/task01.png"
         },
         {
           "task_no": 2,
           "description": "1W",
           "standard": "Solinoid Valve",
           "method": null,
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตรวจจับโลหะแบบท่อ/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "1W",
           "standard": "Regulator",
           "method": null,
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตรวจจับโลหะแบบท่อ/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "1W",
           "standard": "โครงสร้าง",
           "method": null,
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตรวจจับโลหะแบบท่อ/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": null,
           "standard": "ตู้ควบคุมระบบไฟฟ้า",
           "method": null,
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตรวจจับโลหะแบบท่อ/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -656,42 +713,48 @@
           "description": "แผงรังผึ้ง",
           "standard": "ต้องไม่รั่วไม่ชำรุด",
           "method": null,
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/ตู้แช่ทำความเย็น/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "เบเกอร์-ฟิวส์",
           "standard": "เบเกิร์ต้องไม่ชำรุด/ฟิวส์ไม่ขาด",
           "method": null,
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/ตู้แช่ทำความเย็น/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "หน้าจอ",
           "standard": "ต้องไม่แตกชำรุด",
           "method": null,
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/ตู้แช่ทำความเย็น/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "พัดลม",
           "standard": "ใบพัดต้องไม่ชำรุดแตก",
           "method": null,
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/ตู้แช่ทำความเย็น/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ประเก็นฝา",
           "standard": "ต้องไม่ขาดชำรุด",
           "method": null,
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/ตู้แช่ทำความเย็น/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่หักชำรุด",
           "method": null,
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/ตู้แช่ทำความเย็น/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -723,49 +786,56 @@
           "description": "หน้าจอ",
           "standard": "หน้าจอต้องไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งเช็คเวท/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายพาน",
           "standard": "ไม่ชำรุดขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งเช็คเวท/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายพานขับมอเตอร์",
           "standard": "สายพานไม่หย่อนไม่ชำรุดขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งเช็คเวท/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "Regulator",
           "standard": "ไม่ชำรุดแตกไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งเช็คเวท/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุดหักไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งเช็คเวท/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "มอเตอร์ขับ",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งเช็คเวท/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งเช็คเวท/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -793,35 +863,40 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มวัตถุดิบ/task01.png"
         },
         {
           "task_no": 2,
           "description": "กระบอกปั๊ม",
           "standard": "ต้องไม่รั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มวัตถุดิบ/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "น๊อตยึดหน้าปั๊ม",
           "standard": "หน้าแปลนต้องสนิทไม่รั่วซึม น๊อตครบตามจำนวน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มวัตถุดิบ/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุด ไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มวัตถุดิบ/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มวัตถุดิบ/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -860,49 +935,56 @@
           "description": "Feed Bucket",
           "standard": "ต้องให้ตัวได้สภาพต้องสมบูณร์ไม่ปิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งปลามัลติเฮด/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "Linear Feeder Pan",
           "standard": "สภาพต้องไม่ปิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งปลามัลติเฮด/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สกรูพาถ้วย",
           "standard": "ต้องไม่ชำรุดจังหวะพาถ้วยถูกต้อง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งปลามัลติเฮด/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "Regulator",
           "standard": "ไม่ชำรุดแตกลมไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งปลามัลติเฮด/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "หน้าจอ",
           "standard": "หน้าจอไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งปลามัลติเฮด/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "โครงสร้าไม่ชำรุดหักไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งปลามัลติเฮด/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องชั่งปลามัลติเฮด/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -927,56 +1009,64 @@
           "description": "สายพานกลม",
           "standard": "สายพานไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task01.png"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอน",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ตัวดูดปากและก้นถุง",
           "standard": "ไม่ชำรุด ฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "หัวเติมอาหาร",
           "standard": "ไม่ชำรุดหรือเป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task04.png"
         },
         {
           "task_no": 5,
           "description": "เทปทนความร้อน            Teflon Sheet",
           "standard": "ไม่ฉีกขาด สะอาดพร้อมใช้งาน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "มอเตอร์ Vaccum",
           "standard": "ไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task06.png"
         },
         {
           "task_no": 7,
           "description": "มอเตอร์ขับ",
           "standard": "มอเตอร์ขับเกียร์ต้องไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุซองเพ้าช์TYJ/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -1008,56 +1098,64 @@
           "description": "ตัวดุดปาก / ก้นถุง",
           "standard": "ต้องไม่ฉีกขาดดูดถุงได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายพานกลมพาถุง",
           "standard": "ต้องไม่ชำรุดฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "หัวเติมอาหาร",
           "standard": "ต้องไม่ชำรุดและรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "กระบอกสูบอาหาร",
           "standard": "อาหารต้องไม่รั่วและชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Regulator",
           "standard": "ไม่ชำรุดแตก ลมไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "กรวยรับอาหาร",
           "standard": "สภาพไม่แตกหักบิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "เทปทนความร้อน",
           "standard": "สภาพต้องไม่ฉีกขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "มอเตอร์เกียร์+เกียร์ทดรอบ",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง/เกียร์น้ำมันไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบรรจุเพ้าช์_Dupex/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -1089,56 +1187,64 @@
           "description": "สภาพตัวเครื่อง",
           "standard": "จะต้องไม่เป็นสนิม สีต้องไม่หลุดร่อน ต้องสะอาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "Cover Index Lever",
           "standard": "สภาพต้องสมบูรณ์ไม่คดงอสามารถกั้นกระป๋องเรียกฝาได้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "Rim Gear Feed Disc",
           "standard": "หน้าจานต้องเรียบไม่บิดงอ ฟันฟืองต้องสมบูรณ์",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "Auxiliary Feed Ring Gear 64T",
           "standard": "หน้าจานเฟืองต้องเรียบ ระยะให้ตัวของร่องฟันไม่มากเกินไป",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Screw Feed",
           "standard": "จังหวะต้องสัมพันธ์กับ Feed Disc Arm กระป๋องผ่านสะดวก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "Cover Separator Roll",
           "standard": "จังหวะต้องสัมพันธ์กับ RDE 14/15 และ Feed Disc Arm",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "Cover Carier RDE 14/15",
           "standard": "ช่องพ่น Steam ต้องไม่อุดตัน และพาฝาและกระป๋องได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฝา/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -1170,35 +1276,40 @@
           "description": "Knockout Pat (ตัวกดฝา)",
           "standard": "หน้าสัมผัสต้องเรียบไม่มีรอยบุบ ไม่คดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เช็คหัวชีม/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "Support Ring (หน้าจานทองเหลือง)",
           "standard": "หน้าจานทองเหลืองต้องตรงไม่บิดงอเสียรูป",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เช็คหัวชีม/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "Head Chusion Spring (สปริงข้าง)",
           "standard": "สปริงข้างหัว Seam ต้องไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เช็คหัวชีม/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "Seaming Roll Bearing 1st /2nd",
           "standard": "ลูกปืนกรงนกต้องไม่ชำรุด ก้านลูกปืนต้องอยู่ครบ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เช็คหัวชีม/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Seaming Roll 1st / 2nd",
           "standard": "Roll ต้องไม่เป็นสนิม เบอร์ที่ใช้ต้องถูกต้อง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เช็คหัวชีม/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -1258,49 +1369,56 @@
           "description": "Lifter Spring",
           "standard": "สปริงต้องไม่หัก มีการให้ตัว ขึ้น-ลงได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Lifter_Unit/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "Lifter Bearing",
           "standard": "ล่องลิ่มระยะการขยับซ้าย-ขวาต้องไม่มากเกินไป",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Lifter_Unit/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "Lifter Adjusment nut",
           "standard": "รูปรับต้องสามรถปรับความสูง-ต่าได้ ไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Lifter_Unit/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "Lifter Adjusment nut Spring washer",
           "standard": "แหวนล็อคสปริงต้องไม่ชำรุดหัก ปุ่มล๊อคต้องไม่สึก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Lifter_Unit/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Lifter Spring Tension nut",
           "standard": "รูปรับต้องสามารถปรับสปริงได้ ไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Lifter_Unit/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "Lifter Insert",
           "standard": "ต้องไม่บุบ หน้าสัมผัสต้องเรียบ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Lifter_Unit/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "Lifter Plate",
           "standard": "แผ่นเพลทต้องผิวเรียบไม่สึก หรือชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Lifter_Unit/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -1325,49 +1443,56 @@
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์เกียร์ต้องไม่มีน้ามันรั่วซึม ต้องไม่มีเสียงดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานสามกลับ/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน หรือชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานสามกลับ/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เฟือง /โซ่ ขับสายพาน",
           "standard": "ฟันเฟืองต้องไม่ล้มหรือแหลมคม / โซ่ข้อต่อต้องไม่หลวม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานสามกลับ/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "เฟืองชุปเปอร์ลีน /โซ่สายพาน",
           "standard": "เฟืองต้องไม่หักหรือเสียรูป / โซ่สายพานต้องไม่ขาดชำรุด หรือไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานสามกลับ/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "มอเตอร์ปั๊มน้ำ",
           "standard": "มอเตอร์ปั๊มต้องไม่มีเสียงดังผิดปกติ และไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานสามกลับ/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้างทั่วไป",
           "standard": "โครงสร้างของเครื่องงต้องไม่หักชำรุดหรือเป็นสนิม / ท่อไอต้องไม่มีน้ำรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานสามกลับ/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานสามกลับ/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -1399,42 +1524,48 @@
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน หรือชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานชั่ง/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์เกียร์ต้องไม่มีน้ำมันรั่วซึม และไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานชั่ง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายพาน",
           "standard": "สภาพสายพานต้องไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานชั่ง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "น๊อตล๊อค / หัวอัดจารบี",
           "standard": "น๊อตล๊อคต้องมีอยู่ครบทุ่กจุด / หัวอัดจารบีต้องมีครบและไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานชั่ง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้างเครื่อง",
           "standard": "สภาพโครงสร้างต้องไม่ชำรุดหักและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานชั่ง/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานชั่ง/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -1466,56 +1597,64 @@
           "description": "สตาร์ทางเข้า",
           "standard": "จังหวะต้องตรงกับหน้าจาน และไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "เกียร์ทดรอบ",
           "standard": "ต้องไม่มีน้ำมันรั่วชึม ลูกปืนต้องไม่แตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เฟือง / โซ่",
           "standard": "ฟันเฟืองต้องไม่สึกแหลม / โซ่ต้องไม่หย่อน ข้อต่อต้องไม่หลวม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มอเตอร์",
           "standard": "มอเตอร์ต้องไม่มีเสียงดังผิดปกติ ไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลุกปืนต้องไม่หลวมคอน และไม่ชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "สายพานพากระป๋อง",
           "standard": "สานพานต้องไม่ชำรุด แตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โครงสร้างเครื่อง",
           "standard": "สภาพโครงสร้างเครื่องต้องไม่ชำรุดหัก หรือเป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filler/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -1547,56 +1686,64 @@
           "description": "ลูกสูบกระบออกบรรจุ",
           "standard": "สภาพต้องสมบูรณ์ไม่มีรอยฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "วาล์วบรรจุ",
           "standard": "วาล์วต้องไม่รั่ว สามารถเปิด-ปิดได้ปกติดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "กระเก็น Ferrule",
           "standard": "ประเก็นเทปล่อนต้องไม่มีรอยฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "โซลินอยวาล์ว",
           "standard": "กด Test ที่โซลินอยวาล์วต้องทำงานปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "สายพานลำเลียง",
           "standard": "สภาพต้องไม่มีรอยแตกหัก สายพานต้องไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์ต้องไม่มีเสียงดังผิดปกติ และไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โครงสร้าง",
           "standard": "โครงสร้างต้องไม่หักชำรุด และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Filling/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -1628,49 +1775,56 @@
           "description": "มอเตอร์ปรับ Speed",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง สามารถปรับรอบความเร็วได้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุซองแมวเลีย/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ลูกกลิ้งซีลร้อน-เย็น",
           "standard": "ลูกกลิ้งต้องไม่บุบ ชำรุด และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุซองแมวเลีย/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เฟือง / โซ่",
           "standard": "เฟืองต้องไม่แหลมคม / โซ่ ข้อต่อต้องไม่หลวม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุซองแมวเลีย/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน หรือชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุซองแมวเลีย/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "เฟืองชุปเปอร์ลีน",
           "standard": "ฟันเฟืองต้องไม่หักหริอบิ่น",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุซองแมวเลีย/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "Regulator",
           "standard": "ต้องไม่ชำรุดแตก ลมต้องไม่รัว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุซองแมวเลีย/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุซองแมวเลีย/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -1705,49 +1859,56 @@
           "description": "หน้าจอวัดอุณหภูมิ",
           "standard": "หน้าจอต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุแมวเลียTTK/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์",
           "standard": "ต้องไม่มีเสียงดัง ไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุแมวเลียTTK/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "บาร์ชิลร้อน",
           "standard": "ต้องไม่ชำรุดแตก หรือบิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุแมวเลียTTK/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "กระบอกลม",
           "standard": "ต้องทำงานได้ดีไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุแมวเลียTTK/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "วาล์วเติมอาหาร",
           "standard": "วาล์วต้องไม่ชำรุดรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุแมวเลียTTK/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "Regulator",
           "standard": "ต้องไม่ชำรุดแตก ลมต้องไม่รัว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุแมวเลียTTK/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/บรรจุแมวเลียTTK/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -1772,28 +1933,32 @@
           "description": "หน้าจอ",
           "standard": "หน้าจอต้องไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์ซองแมวเลีย/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สปริง",
           "standard": "สปริงต้องมีอยู่ครบและไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์ซองแมวเลีย/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ม้วนหมึก",
           "standard": "ม้วนผ้าหมึกต้องไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์ซองแมวเลีย/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "เซ็นเซอร์จับซอง",
           "standard": "ต้องไม่ชำรุดแตกหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์ซองแมวเลีย/task04.jpeg"
         },
         {
           "task_no": 5,
@@ -1839,35 +2004,40 @@
           "description": "หน้าจอ",
           "standard": "หน้าจอต้องไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์กล่อง/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "หัวยิงหมึก",
           "standard": "หัวยิงหมึกต้องไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์กล่อง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "หมึก",
           "standard": "หมึกต้องไม่หมด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์กล่อง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "หลอดบอกสถานะ",
           "standard": "ต้องไม่ชำรุดแตกหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์กล่อง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "โครงสร้างต้องไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องพิมพ์กล่อง/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -1906,49 +2076,56 @@
           "description": "Form and Seal Top",
           "standard": "บาร์ชิลต้องไม่ชำรุด สามารถชิลได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/TP_R2/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "Form and Seal Bottom",
           "standard": "ต้องไม่ชำรุดเสียหาย Mandrel ต้องไม่มีรอยบุบ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/TP_R2/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "Carton infeed",
           "standard": "ต้องพากล่องได้ดีไม่ชำรุดเสียหาย",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/TP_R2/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "Check jaw Gap",
           "standard": "ระยะต้องพอดีกับกล่องไม่เบียด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/TP_R2/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Frame-Sensor",
           "standard": "เฟรมต้องไม่ชำรุดบิดงอ Sensor ต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/TP_R2/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "Package Handling",
           "standard": "ตัว carrier ต้องไม่ชำรุด Support bar ต้องไม่บิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/TP_R2/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "Bottom Flap Sealing",
           "standard": "Sealing plate ต้องไม่บุบชำรุด cylingder ลมไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/TP_R2/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -1974,42 +2151,48 @@
           "description": "มอเตอร์",
           "standard": "ต้องไม่มีเสียงดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มลมสกรู_Air_Compressure/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "กรองอากาศ/กรองน้ำมัน",
           "standard": "ต้องไม่ชำรุดขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มลมสกรู_Air_Compressure/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "กรองดักน้ำ",
           "standard": "ไม่ชำรุดลมไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มลมสกรู_Air_Compressure/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ระดับน้ำมัน",
           "standard": "น้ำมันต้องไม่แห้งและเป็นน้ำมันเกรดอาหาร",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มลมสกรู_Air_Compressure/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "จอควมคุม",
           "standard": "จอไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มลมสกรู_Air_Compressure/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ปั๊มลมสกรู_Air_Compressure/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -2124,42 +2307,48 @@
           "description": "มอเตอร์ปั๊ม",
           "standard": "ต้องไม่มีกลิ่นเหม็นไหม้ไม่เสียงดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ปั๊มน้ำCooling/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "เกจวัดแรงดันน้า",
           "standard": "ต้องไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ปั๊มน้ำCooling/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "วาล์วน้ำ",
           "standard": "วาล์วน้ำต้องเปิด-ปิดได้ไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ปั๊มน้ำCooling/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "สแตนเนอร์",
           "standard": "ต้องถอดล้างทำความสะอาด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ปั๊มน้ำCooling/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "เทอร์มินอลและขั้วสายไฟ",
           "standard": "ต้องไม่ชำรุด/ขั้วไฟต้องแน่น",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ปั๊มน้ำCooling/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ปั๊มน้ำCooling/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -2192,42 +2381,48 @@
           "description": "มอเตอร์",
           "standard": "ต้องไม่เสียงดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/COOLING_WATER/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ใบพัดและน๊อต",
           "standard": "ใบพัดไม่ชำรุดหัก/น๊อตยึดต้องอยู่ครบ",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/COOLING_WATER/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "แผงรังผึ้ง",
           "standard": "ต้องไม่ชำรุดขาดน้าไหลผ่านได้ดี",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/COOLING_WATER/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ท่อเดนน้ำ",
           "standard": "ต้องไม่ชำรุดน้ำไม่รั่วชึม",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/COOLING_WATER/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "ไม่ชำรุดแตกหัก น้ำไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/COOLING_WATER/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/COOLING_WATER/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -2264,42 +2459,48 @@
           "description": "ถังพักน้ำ",
           "standard": "ต้องไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ถังพักน้ำ/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ระบบท่อส่งน้ำ",
           "standard": "ท่อส่งน้ำต้องไม่แตกไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ถังพักน้ำ/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "วาล์ว",
           "standard": "วาล์วน้ำต้องไม่รั่วไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ถังพักน้ำ/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ท่อเติมน้ำเข้า",
           "standard": "ท่อเติมน้ำเข้าต้องไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ถังพักน้ำ/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "มอเตอร์ปั๊ม",
           "standard": "ไม่เสียงดังผิดปกติน้ำไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ถังพักน้ำ/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ถังพักน้ำ/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -2332,49 +2533,56 @@
           "description": "เทอร์โมมิเตอร์",
           "standard": "ต้องไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/Chiller/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "น้ำมันคอมแอร์",
           "standard": "ต้องไม่แห้งและมีเพียงพอ",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/Chiller/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เพรสเซอร์เกรส",
           "standard": "หน้าปัดต้องไม่แตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/Chiller/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มอเตอร์",
           "standard": "ต้องไม่มีเสียงดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/Chiller/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/Chiller/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ท่อน้ำยา",
           "standard": "ท่อน้ำยาต้องไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/Chiller/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/Chiller/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -2399,21 +2607,24 @@
           "description": "รางน้ำฝน",
           "standard": "ต้องไม่รั่ว ไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ท่อระบายน้ำและรางน้ำฝน/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ท่อระบายน้ำฝน",
           "standard": "ท่อระบายน้ำต้องไม่อุดตันระบายน้ำได้ดี",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ท่อระบายน้ำและรางน้ำฝน/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ท่อน้ำฝน",
           "standard": "ท่อน้ำฝนต้องไม่ชำรุดแตกและไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/ท่อระบายน้ำและรางน้ำฝน/task03.jpeg"
         },
         {
           "task_no": 4,
@@ -2466,49 +2677,56 @@
           "description": "ไส้กรองเมมเบรน",
           "standard": "ถอดล้างไส้กรองและตรวจเช็คสภาพไส้กรอง",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ระบบน้ำ_RO1/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ไส้กรองใยสังเคราะห์",
           "standard": "ฉีดล้างทำความสะอาดด้วยน้ำสะอาดพร้อมตรวจเช็ค",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ระบบน้ำ_RO1/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "แอนทราไซค์ (50ลิตร)",
           "standard": "ล้างย้อนกลับเป็นเวลาอย่างน้อย 5-10 นาที หรือตามความเหมาะสม",
           "method": "ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ระบบน้ำ_RO1/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "แมงกานีส (50ลิตร)",
           "standard": "ล้างย้อนกลับเป็นเวลาอย่างน้อย 5-10 นาที หรือตามความเหมาะสม",
           "method": "ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ระบบน้ำ_RO1/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "คาร์บอน (100 ลิตร)",
           "standard": "ล้างย้อนกลับเป็นเวลาอย่างน้อย 5-10 นาที หรือตามความเหมาะสม",
           "method": "ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ระบบน้ำ_RO1/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "เรซิ่น (100 ลิตร)",
           "standard": "ล้างย้อนกลับเป็นเวลาอย่างน้อย 5-10 นาที หรือตามความเหมาะสม",
           "method": "ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ระบบน้ำ_RO1/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ระบบน้ำ_RO1/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -2533,35 +2751,40 @@
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/อาคาร/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "บานประตู",
           "standard": "ไม่ชำรุดเปิด-ปิดได้ปกติ",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/อาคาร/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "หลังคาและผนังเมททอลชีท",
           "standard": "หลังคาต้องไม่รั่วผนังต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/อาคาร/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ผนังปูน",
           "standard": "ผนังปูนต้องไม่แตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/อาคาร/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "บันได",
           "standard": "ต้องไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/อาคาร/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -2605,49 +2828,56 @@
           "description": "สวิตย์ควบคุม",
           "standard": "ต้องไม่ชำรุด เปิด-ปิดได้ปกติ",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/เครื่องปรับอากาศ/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "โครงสร้าง",
           "standard": "ต้องอยู่ในสภาพปกติไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/เครื่องปรับอากาศ/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ท่อแอร์",
           "standard": "ท่อต้องไม่รั่วไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/เครื่องปรับอากาศ/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "แผงรังผึ้ง",
           "standard": "ต้องสะอาดไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/เครื่องปรับอากาศ/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ฝาปิด",
           "standard": "ต้องไม่ชำรุดแตก",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/เครื่องปรับอากาศ/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ฟิลเตอร์กรอง",
           "standard": "ต้องไม่มีฝุ่นเกาะหนาแน่น",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/เครื่องปรับอากาศ/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Monthly"
+          "frequency": "Monthly",
+          "image_url": "img/checklist/เครื่องปรับอากาศ/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -2682,42 +2912,48 @@
           "description": "มอเตอร์แอร์",
           "standard": "มอเตอร์ต้องไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/คอยเย็นแอร์/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ฟิลเตอร์กรอง",
           "standard": "ต้องอยู่ในสภาพปกติไม่ชำรุด ไม่อุดตัน/ทำความสะอาด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/คอยเย็นแอร์/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "แผงควบคุม",
           "standard": "แผงต้องไม่มีรอยไหม้ ต้องสภาพสมบูณร์",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/คอยเย็นแอร์/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ฟิวส์",
           "standard": "สภาพต้องไม่ชำรุด ไม่ขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/คอยเย็นแอร์/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ท่อเดนน้ำ",
           "standard": "ท่อเดนน้ำต้องไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/คอยเย็นแอร์/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "อุปกรณ์ในตู้ต้องอยู่ในสภาพเรียบร้อย",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/คอยเย็นแอร์/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -2743,35 +2979,40 @@
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมแป้ง/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์",
           "standard": "ต้องไม่เสียงดังผิดปกติไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมแป้ง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน ไม่ชชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมแป้ง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มูเล่ย์และสายพาน",
           "standard": "มูเล่ย์และสายพาน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมแป้ง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "เพลาและชิลยาง",
           "standard": "ชิลยางและเพลา",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมแป้ง/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -2812,35 +3053,40 @@
           "description": "โครงสร้าง",
           "standard": "โครงสร้างต้องไม่ชำรุดไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดผสมแป้ง/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "แขวนนวดแป้ง",
           "standard": "ต้องไม่ชำรุดปิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดผสมแป้ง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เฟืองและโซ่",
           "standard": "ฟันเฟืองต้องไม่แหลมคม/โซ่ไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดผสมแป้ง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มูเล่ย์และสายพาน",
           "standard": "มูเล่ย์ไม่ชำรุดแตก/สายพานไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดผสมแป้ง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "มอเตอร์ขับ",
           "standard": "ต้องไม่มีกลิ่นเหม็นไหม้เสียงไม่ดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดผสมแป้ง/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -2880,49 +3126,56 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดส่วนผสม/task01.png"
         },
         {
           "task_no": 2,
           "description": "สายพาน",
           "standard": "ไม่หย่อนหรือขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดส่วนผสม/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "มูเล่ย์",
           "standard": "ไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดส่วนผสม/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนหรือแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดส่วนผสม/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ใบกวน",
           "standard": "ไม่หักหรืองอผิดรูป",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดส่วนผสม/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ไม่บุบหรือชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดส่วนผสม/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องนวดส่วนผสม/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -2955,42 +3208,48 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตรวจจับโลหะแบบสายพาน/task01.png"
         },
         {
           "task_no": 2,
           "description": "มูเล่ย์และสายพาน",
           "standard": "มูเล่ย์ต้องไม่แตกชำรุด  สายพานขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตรวจจับโลหะแบบสายพาน/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนและไม่แตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตรวจจับโลหะแบบสายพาน/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ปุ่ม Emergency",
           "standard": "ปุ่มต้องไม่ชำรุด สามารถกดปิดได้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตรวจจับโลหะแบบสายพาน/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "สายพาน",
           "standard": "สายพานไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตรวจจับโลหะแบบสายพาน/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "หลอดไฟแสดงสถานะ",
           "standard": "หลอดไฟต้องไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตรวจจับโลหะแบบสายพาน/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -3022,56 +3281,64 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task01.png"
         },
         {
           "task_no": 2,
           "description": "มูเล่ย์",
           "standard": "ไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายพาน",
           "standard": "ไม่หย่อนหรือขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "วาล์วไอและวาล์วน้ำ",
           "standard": "เปิด-ปิดได้ ไม่มีการรั่วหรือสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "สกรูอัดงาน",
           "standard": "ไม่มีสนิมและไม่มีรอยบิ่น",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "แบบอัด",
           "standard": "ต้องไม่บุบหรือเป็นรอยจนเสียรูปทรง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โครงสร้าง",
           "standard": "ไม่บุบหรือเกิดสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Extruder/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -3103,42 +3370,48 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีกลิ่นไหม้และไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานตัดสแน็ค/task01.png"
         },
         {
           "task_no": 2,
           "description": "สายพานขับมอเตอร์",
           "standard": "ต้องไม่ชำรุดหรือฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานตัดสแน็ค/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "มูเล่ย์",
           "standard": "ล่องมูเล่ห์ต้องไม่แตกหรือสึกหรอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานตัดสแน็ค/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนหรือแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานตัดสแน็ค/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "พัดลม",
           "standard": "ใบต้องไม่แตกหรือชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานตัดสแน็ค/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "สายพานลำเลียงสแน็ค",
           "standard": "ไม่ชำรุดหรือฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานตัดสแน็ค/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -3170,56 +3443,64 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายพาน / มูเล่ย์",
           "standard": "สายพานต้องไม่ชำรุดขาด /มูเล่ย์",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่ชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "เฟือง",
           "standard": "ต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โซลินอยด์วาล์ว",
           "standard": "ต้องทำงานได้ปกติไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "กระบอกลม",
           "standard": "ลมต้องไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ใบมีด",
           "standard": "ใบมีดต้องไม่แตก ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตัดสแน็ค/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -3245,35 +3526,40 @@
           "description": "แผงควบคุม",
           "standard": "ต้องไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบลมร้อน/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ประเก็นฝาตู้",
           "standard": "ไม่ชำรุดฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบลมร้อน/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ชั้นวาง",
           "standard": "ต้องไม่ชำรุดหักไม่บิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบลมร้อน/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "บานประตู",
           "standard": "บานประตูต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบลมร้อน/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบลมร้อน/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -3312,63 +3598,72 @@
           "description": "ประเก็นหน้าตู้",
           "standard": "ไม่ฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task01.png"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "วาล์วเปิด-ปิดสตีม",
           "standard": "วาล์วและท่อต้องไม่มีน้ำรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "เพรสเชอร์เกจ",
           "standard": "เข็มตรงและหน้าปัดต้องไม่แตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนหรือแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "กระบอกลม",
           "standard": "ต้องทำงานได้ปกติ ลมต้องไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โซลินอยด์วาล์ว",
           "standard": "ตรวจเช็คว่าทำงานได้ปกติไหม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "มู่เลย์และสายพาน",
           "standard": "มู่เลย์ต้องไม่แตกชำรุด  สานพานไม่ขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task08.jpeg"
         },
         {
           "task_no": 9,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้อบสแน็ค/task09.jpeg"
         },
         {
           "task_no": 10,
@@ -3399,35 +3694,40 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องซีลถุง/task01.png"
         },
         {
           "task_no": 2,
           "description": "เฟือง",
           "standard": "ไม่แตกหักหรือชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องซีลถุง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายพานซีลร้อน",
           "standard": "ไม่หย่อนหรือชำรุดฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องซีลถุง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "สายพานซีลเย็น",
           "standard": "ไม่หย่อนหรือชำรุดฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องซีลถุง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "สายพานลำเลียงซอง",
           "standard": "ไม่หย่อนหรือชำรุดฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องซีลถุง/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -3466,42 +3766,48 @@
           "description": "ฝาปิด",
           "standard": "ไม่มีรอยบุบหรือยุบ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งไก่/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ประเก็น",
           "standard": "ไม่มีรอยฉีกขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งไก่/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เกจวัดแรงดัน",
           "standard": "ไม่มีสนิมหรือเข็มชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งไก่/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "เซฟตี้วาล์ว",
           "standard": "ต้องใช้งานได้ปกติดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งไก่/task04.png"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "ไม่มีรอยบุบหรือรอยรั่วตามรอยต่อของตะเข็บ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งไก่/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/ตู้นึ่งไก่/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -3533,56 +3839,64 @@
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์ต้องไม่เสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่แตก ชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายพานกดซอง",
           "standard": "สายพานต้องไม่ขาด ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "โซ่สายพานพาซอง",
           "standard": "ต้องไม่ชำรุดขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โซ่ -เฟืองขับ",
           "standard": "โซ่ต้องไม่ขาดชำรุด-เฟืองต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "กล่องควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่าซองPOUCH/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -3614,63 +3928,72 @@
           "description": "หัวฉีดสเปรย์",
           "standard": "อยู่ครบทุกหัวและไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task01.png"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์ปั้ม",
           "standard": "ไม่มีเสียงดังและไม่มีน้ำรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "โซ่พากระป๋อง",
           "standard": "ข้อต่อไม่แตกชำรุด และไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task03.png"
         },
         {
           "task_no": 4,
           "description": "เฟืองและโซ่",
           "standard": "ข้อต่อไม่แตกชำรุด และไม่หย่อน ข้อต่อโซ่ต้องไม่หลวมและไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ท่อ Steamและวาล์ว",
           "standard": "ท่อไม่รั่วและวาล์วใช้งานได้ปกติปิดได้สนิท",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนและไม่แตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "มอเตอร์ขับ",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุดและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task08.jpeg"
         },
         {
           "task_no": 9,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องล้างกระป๋อง/task09.jpeg"
         },
         {
           "task_no": 10,
@@ -3695,7 +4018,8 @@
           "description": "รูปล่อยน้ำ / รู STEAM",
           "standard": "จะต้องไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกระป๋อง/task01.jpeg"
         },
         {
           "task_no": 2,
@@ -3709,42 +4033,48 @@
           "description": "โซ่และลูกปืน",
           "standard": "โซ่ ข้อต่อต้องไม่หลวมลูกปืนต้องไม่หลวมหรือแตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกระป๋อง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ประเก็นหน้าหม้อ",
           "standard": "ต้องไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกระป๋อง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "เซฟตี้วาล์ว",
           "standard": "ต้องไม่หักชำรุด สามรถใช้งานได้ปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกระป๋อง/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "วาล์ว",
           "standard": "ไม่รั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกระป๋อง/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "มอเตอร์เกียร์ขับโซ่",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง เกียร์ไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกระป๋อง/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกระป๋อง/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -3776,56 +4106,64 @@
           "description": "หัวฉีดเสปรย์",
           "standard": "ต้องมีอยู่ครบและไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ประเก็นหน้าหม้อ",
           "standard": "ต้องไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เซฟตี้วาล์ว",
           "standard": "ต้องไม่หักชำรุด สามรถใช้งานได้ปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "วาล์ว",
           "standard": "ไม่รั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task04.png"
         },
         {
           "task_no": 5,
           "description": "มอเตอร์ปั๊ม",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "มอเตอร์เกียร์ขับโซ่",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง เกียร์ไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ระบบท่อ",
           "standard": "ไม่มีน้ำรั่วซึม ไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อเพ๊าท์/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -3857,56 +4195,64 @@
           "description": "หัวฉีดเสปรย์",
           "standard": "ต้องมีอยู่ครบและไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ประเก็นหน้าหม้อ",
           "standard": "ต้องไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เซฟตี้วาล์ว",
           "standard": "ต้องไม่หักชำรุด สามรถใช้งานได้ปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "วาล์ว",
           "standard": "ไม่รั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task04.png"
         },
         {
           "task_no": 5,
           "description": "มอเตอร์ปั๊ม",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "มอเตอร์เกียร์ขับโซ่",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง เกียร์ไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ระบบท่อ",
           "standard": "ไม่มีน้ำรั่วซึม ไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/หม้อฆ่าเชื้อกล่อง/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -3938,56 +4284,64 @@
           "description": "มอเตอร์ปั๊ม",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง ปั๊มไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "กระบอกไฮโดรลิค",
           "standard": "ไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายไฮโดรลิค",
           "standard": "ไม่แตก ไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task03.png"
         },
         {
           "task_no": 4,
           "description": "ระดับน้ำมัน",
           "standard": "ต้องมีน้ำมันเพียงพอ ระดับไม่ต่ำกว่าขีดแดง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "พัดลม",
           "standard": "ใบไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โลว์ลูกกลิ้ง",
           "standard": "ลูกปืนไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุดและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเอียงตะกร้า/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -4019,56 +4373,64 @@
           "description": "มอเตอร์เกียร์",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task01.png"
         },
         {
           "task_no": 2,
           "description": "เฟืองและโซ่",
           "standard": "ฟันเฟืองไม่แหลมคม โซ่ข้อต่อไม่หลวม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนหรือแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "พัดลม",
           "standard": "ใบพัดต้องไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "สายพานกลม",
           "standard": "ไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "มอเตอร์ Blower",
           "standard": "สามารถเป่าลมได้ ท่อลมไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุดและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องเป่ากระป๋องแห้ง/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -4100,42 +4462,48 @@
           "description": "Nozzles หัวเป่าลม",
           "standard": "ต้องไม่ชำรุดหรืออุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HS_R2/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "Flexble Ducting",
           "standard": "สายต้องไม่แตก ลมไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HS_R2/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "Airknives",
           "standard": "ปากเป่าลมต้องไม่ชำรุด ลมออกได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HS_R2/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "motor",
           "standard": "ต้องไม่เสียงดัง ไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HS_R2/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Filter ตัวกรอง",
           "standard": "ตัวกรองต้องไม่อุดตัน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HS_R2/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HS_R2/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -4176,28 +4544,32 @@
           "description": "หลอดแสดงสถานะ",
           "standard": "ไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องยิงโค้ด/task01.png"
         },
         {
           "task_no": 2,
           "description": "หัวยิงหมึก",
           "standard": "ไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องยิงโค้ด/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "หัวเซ็นเซอร์",
           "standard": "ไม่ชำรุด สามารถตรวจจับวัตถุได้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องยิงโค้ด/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "โครงสร้าง",
           "standard": "สภาพต้องไม่ชำรุด จอไม่แตก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องยิงโค้ด/task04.jpeg"
         },
         {
           "task_no": 5,
@@ -4243,56 +4615,64 @@
           "description": "สายพานกาวเย็น",
           "standard": "สภาพไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายพานพากระป๋อง",
           "standard": "ไม่แตกชำรุด ไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "มอเตอร์ปั๊ม",
           "standard": "ไม่มีเสียงดัง ปั๊มต้องไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "น้ำมันไฮโดรลิค",
           "standard": "ต้องมีน้ำมันเพียงพอ ระดับไม่ต่ำกว่าขีดแดง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอน ไม่แตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "เฟืองและโซ่",
           "standard": "ฟันเฟืองต้องไม่แหลมคม โซ่ข้อต่อต้องไม่หลวม ไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "มอเตอร์ขับ",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปิดฉลาก/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -4324,35 +4704,40 @@
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนหรือแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/สายพานรับซองเพ้าช์/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายพาน",
           "standard": "ไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/สายพานรับซองเพ้าช์/task02.png"
         },
         {
           "task_no": 3,
           "description": "มอเตอร์เกียร์",
           "standard": "ไม่มีเสียงดังและไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/สายพานรับซองเพ้าช์/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุดและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/สายพานรับซองเพ้าช์/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่องรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/สายพานรับซองเพ้าช์/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -4392,63 +4777,72 @@
           "description": "มอเตอร์ปั๊มไฮโดรลิค",
           "standard": "มอเตอร์ต้องไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายไฮโดรลิค",
           "standard": "สายไฮโดรลิคต้องไม่มีรอยแตกน้ามันต้องไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "กระบอกไฮดรอลิค",
           "standard": "สภาพต้องไม่มีน้ามันรั่วซึม สามรถยกขึ้น-ลงได้ปกติดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มูเล่ย์ / สายพาน",
           "standard": "มูเล่ย์ต้องไม่ชำรุดหรือแตก / สายพานต้องต้องไม่ขาดและหย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "หน้าจานหมุนรับกระป๋อง",
           "standard": "หน้าจานหมุนต้องตรงไม่บิดเบี้ยว หรือชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "เกียร์ทดรอบจานหมุน",
           "standard": "สภาพเกียร์ทดรอบต้องไม่มีน้ามันรั่วซึม และไม่มีเสียงดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "น้ำมัน",
           "standard": "น้ำมันต้องมีเพียงพอ ระดับน้ำมันต้องไม่ต่ากว่าขีดแดง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "มอเตอร์ขับสายพานจานหมุน",
           "standard": "มอเตอร์ขับต้องไม่มีกลิ่นเหม็นไหม้ และไม่มีเสียงดังผิดปกติ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task08.jpeg"
         },
         {
           "task_no": 9,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/จานหมุน/task09.jpeg"
         },
         {
           "task_no": 10,
@@ -4481,42 +4875,48 @@
           "description": "Platform",
           "standard": "Plat form ต้องไม่ชำรุด บิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HSS_R2/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "Control Panel",
           "standard": "ปุ่มเปิด-ปิดต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HSS_R2/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "Lift Station",
           "standard": "X-Life ต้องยกขึ้นลงได้ปกติดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HSS_R2/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "Electrical Cabinet",
           "standard": "ตู้ควบคุมไฟฟ้าต้องไม่ชำรุด ป้องกันฝุ่น กันน้ำได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HSS_R2/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Mid conveyor",
           "standard": "สายพานพากล่องต้องไม่ชำรุดขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HSS_R2/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "Sensor port",
           "standard": "เซ็นเซอร์ต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HSS_R2/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -4537,7 +4937,8 @@
           "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
           "standard": null,
           "method": "ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/HSS_R2/task08.jpeg"
         }
       ]
     },
@@ -4558,42 +4959,48 @@
           "description": "มอเตอร์",
           "standard": "มอเตอร์ต้องไม่มีเสียงดัง และไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/Hi-Mixer/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ใบกวน",
           "standard": "น๊อตล๊อคใบกวนต้องอยู่ครบและล๊อคแน่น ใบต้องไม่บิดงอ",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/Hi-Mixer/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน และไม่ชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/Hi-Mixer/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มูเล่ย์ / สายพาน",
           "standard": "มูเล่ย์ต้องไม่ชำรุดแตก / สายพานต้องไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/Hi-Mixer/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "สภาพต้องไม่ชำรุดหัก และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/Hi-Mixer/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/Hi-Mixer/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -4626,42 +5033,48 @@
           "description": "วาล์วและท่อ",
           "standard": "จะต้องไม่ชำรุดและรั่ว",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/HIMIXER3/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "หน้าปั๊ม",
           "standard": "ต้องไม่ชำรุดและไม่รั่ว",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/HIMIXER3/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "มอเตอร์ลม",
           "standard": "ลมต้องไม่รั่วมอเตอร์ต้องหมุนใช้งานได้ดี",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/HIMIXER3/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "มอเตอร์",
           "standard": "ต้องไม่ชำรุดและไม่รั่ว",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/HIMIXER3/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "ไม่ชำรุดหักไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/HIMIXER3/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": null
+          "frequency": null,
+          "image_url": "img/checklist/HIMIXER3/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -4693,35 +5106,40 @@
           "description": "ทุ่นและใบมีด",
           "standard": "ทุ่นต้องไม่เสียศูนย์ ใบมีดต้องไม่หักหรือบิดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตีเนื้อปลา/task01.png"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์",
           "standard": "ไม่มีกลิ่นไหม้ และไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตีเนื้อปลา/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน และแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตีเนื้อปลา/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "โครงสร้าง",
           "standard": "ไม่หักและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตีเนื้อปลา/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องตีเนื้อปลา/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -4762,49 +5180,56 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีกลิ่นเหม็นไหม้และไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด/task01.png"
         },
         {
           "task_no": 2,
           "description": "มูเล่ย์และสายพาน",
           "standard": "มูเล่ย์ต้องไม่แตกชำรุด                                  สายพานไม่ขาดหรือหย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เฟืองและโซ่",
           "standard": "ฟันเฟืองต้องไม่แหลม  โซ่ไม่หย่อนและข้อต่อต้องไม่หลวม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "สกรู",
           "standard": "สภาพต้องไม่เสียศูนย์ ไม่ชำรุด ฉีก และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "แผงรังผึ้ง",
           "standard": "หน้าจานเรียบ ไม่คดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุด และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -4829,49 +5254,56 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีกลิ่นเหม็นไหม้และไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด_3/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มูเล่ย์",
           "standard": "มูเล่ย์ต้องไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด_3/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "สายพาน",
           "standard": "สายพานต้องไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด_3/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "กระบอกลม",
           "standard": "กระบอกลมต้องไม่มีลมรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด_3/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ใบมีด",
           "standard": "ใบมีดต้องไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด_3/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ต้องไม่หลวมคอน ไม่แตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด_3/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "โครงสร้าง",
           "standard": "ต้องไม่ชำรุดหัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องบด_3/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -4896,42 +5328,48 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีกลิ่นเหม็นไหม้และไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องสับผสม/task01.png"
         },
         {
           "task_no": 2,
           "description": "มูเล่ย์และสายพาน",
           "standard": "มูเล่ย์ต้องไม่แตกชำรุด                            สายพานไม่ขาดหรือหย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องสับผสม/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เกียร์ทด",
           "standard": "ไม่มีน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องสับผสม/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนและแตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องสับผสม/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ใบมีด",
           "standard": "ไม่บิ่นหรือชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องสับผสม/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องสับผสม/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -4963,35 +5401,40 @@
           "description": "มอเตอร์",
           "standard": "ไม่มีกลิ่นเหม็นไหม้และไม่มีเสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องกวนร้อน/task01.png"
         },
         {
           "task_no": 2,
           "description": "ใบพัด",
           "standard": "สภาพต้องไม่เสียศูนย์ ไม่คด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องกวนร้อน/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "หลอดวัดน้ำ",
           "standard": "ไม่มีรอยแตกและน้ำต้องไม่รั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องกวนร้อน/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "โครงสร้าง",
           "standard": "ไม่หักชำรุดและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องกวนร้อน/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องกวนร้อน/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -5030,42 +5473,48 @@
           "description": "มอเตอร์ขับใบพัด",
           "standard": "มอเตอร์ขับใบพัดต้องไม่เสียงดัง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมโฮโม/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์ลอก",
           "standard": "มอเตอร์ลอกต้องไม่เสียงดังไม่ม่กลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมโฮโม/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ใบพัด",
           "standard": "ใบพัดต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมโฮโม/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "สายสลิง",
           "standard": "สายสลิงต้องไม่ขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมโฮโม/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "โครงสร้างต้องไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมโฮโม/task05.png"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องปั่นผสมโฮโม/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -5090,42 +5539,48 @@
           "description": "ใบกวน",
           "standard": "สภาพใบกวนต้องไม่หักชำรุดหัก และต้องไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon_Mixer/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน และชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon_Mixer/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์ตอ้งไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้ เกียร์ต้องไม่มีน้ำมันรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon_Mixer/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "เฟือง / โซ่",
           "standard": "ฟันเฟืองต้องไม่แหลมคม / โซ่ข้อต่อต้องไม่หลวมและต้องไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon_Mixer/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "สภาพต้องไม่ชำรุดหัก และต้องไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon_Mixer/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon_Mixer/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -5158,21 +5613,24 @@
           "description": "ใบกวน",
           "standard": "สภาพใบกวนต้องไม่หักชำรุดหัก และต้องไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon3/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ลูกปืนต้องไม่หลวมคอน และชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon3/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์ตอ้งไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้ เกียร์ต้องไม่มีน้ำมันรั่ว",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon3/task03.jpeg"
         },
         {
           "task_no": 4,
@@ -5193,14 +5651,16 @@
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon3/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "เปลี่ยนถ่ายน้ำมันเกียร์ทุ่ก 6 เดือน",
           "standard": "เปลี่ยนน้ำมันเกียร์วันที่:",
           "method": "ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/Ribbon3/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -5225,49 +5685,56 @@
           "description": "มอเตอร์เกียร์",
           "standard": "เกียร์ต้องไม่มีน้ำมันรั่ว มอเตอร์ต้องไม่มีเสียงดัง ไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องจ่ายกระป๋องเปล่า/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์ขับจานหมุน",
           "standard": "ต้องไม่มีเสียงดังและไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องจ่ายกระป๋องเปล่า/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ต้องไม่หลวมคอน และไม่ชำรุดแตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องจ่ายกระป๋องเปล่า/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "เฟือง / โซ่",
           "standard": "ฟันเฟืองต้องไม่แหลมคม / โซ่ ข้อต่อต้องไม่หลวมและไม่หย่อน",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องจ่ายกระป๋องเปล่า/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "หน้าจานปล่อยกระป๋อง",
           "standard": "หน้าจานต้องไม่บิดงอ น๊อตยึดต้องอยู่ครบ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องจ่ายกระป๋องเปล่า/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "โครงสร้างต้องไม่ชำรุดหัก และไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องจ่ายกระป๋องเปล่า/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/เครื่องจ่ายกระป๋องเปล่า/task07.jpeg"
         },
         {
           "task_no": 8,
@@ -5299,56 +5766,64 @@
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ไม่หลวมคอนหรือแตกชำรุด",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task01.png"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์ขับสายพาน",
           "standard": "ไม่มีเสียงดังและไม่มีกลิ่นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เฟืองและโซ่",
           "standard": "ฟันเฟืองไม่แหลมคม โซ่ข้อต่อต้องไม่หลวม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task03.png"
         },
         {
           "task_no": 4,
           "description": "มอเตอร์เป่าลม/ฟิวเตอร์",
           "standard": "ไม่มีเสียงดัง ใบพัดตัวเป่าไม่หักชำรุด/ทำความสะอาดฟิวเตอร์กรองลม",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "สายพาน",
           "standard": "ไม่ขาดชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "โครงสร้าง",
           "standard": "สภาพไม่หักชำรุดและไม่เป็นสนิม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task06.jpeg"
         },
         {
           "task_no": 7,
           "description": "วัดความเร็วลมโบว์โว่",
           "standard": "ความเร็วลมต้องไม่ต่ำกว่า 18 M/S (เมตร/วินาที)",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task07.jpeg"
         },
         {
           "task_no": 8,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานพากระป๋องเปล่า/task08.jpeg"
         },
         {
           "task_no": 9,
@@ -5377,35 +5852,40 @@
           "description": "พัดลมระบายความร้อน",
           "standard": "ต้องอยู่ในสภาพดี100%",
           "method": "เช็ค",
-          "frequency": "Quarterly"
+          "frequency": "Quarterly",
+          "image_url": "img/checklist/คอมพิวเตอร์/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ฝุ่นผง",
           "standard": "ฝุ่นผงไม่ให้มีในระบบแผงวงจรต่างๆ",
           "method": "เช็ค",
-          "frequency": "Quarterly"
+          "frequency": "Quarterly",
+          "image_url": "img/checklist/คอมพิวเตอร์/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เครื่องจ่ายไฟสำรอง",
           "standard": "ต้องไม่ชำรุดสามารถสำรองไฟได้ดี",
           "method": "เช็ค",
-          "frequency": "Quarterly"
+          "frequency": "Quarterly",
+          "image_url": "img/checklist/คอมพิวเตอร์/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "หน้าจอMonitor",
           "standard": "หน้าจอต้องไม่แตกชำรุด ภาพไม่สั่นไหว",
           "method": "เช็ค",
-          "frequency": "Quarterly"
+          "frequency": "Quarterly",
+          "image_url": "img/checklist/คอมพิวเตอร์/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "Hard Disk",
           "standard": "ต้องไม่ชำรุดเสียหาย ต้องตั้งห่างจากผนัง 3 นิ้วเป็นอย่างน้อย",
           "method": "เช็ค",
-          "frequency": "Quarterly"
+          "frequency": "Quarterly",
+          "image_url": "img/checklist/คอมพิวเตอร์/task05.jpeg"
         },
         {
           "task_no": 6,
@@ -5437,42 +5917,48 @@
           "description": "ระบบเบรค",
           "standard": "ต้องสามารถควบคุมการหยุดได้ปกติดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟ/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ล้อรถ",
           "standard": "ล้อรถต้องไม่ชำรุดสามารถวิ่งได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟ/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "งาตักของ",
           "standard": "งาตักต้องไม่ชำรุดคดงอ",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟ/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ไฟส่องสว่าง",
           "standard": "หลอดไฟต้องสามารถส่องสว่างได้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟ/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ไฮดรอลิค",
           "standard": "ระบบไฮดรอลิคต้องสามารถยกขึ้นลงได้",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟ/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "แบตเตอร์รี่",
           "standard": "น้ำกลั่นต้องไม่แห้ง",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟ/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -5505,42 +5991,48 @@
           "description": "ระบบเบรค",
           "standard": "สภาพต้องไม่ชำรุด เบรคได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟน้ำมัน/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "ใส้กรอง",
           "standard": "ใส้กรองต้องไม่อุดตัด / เป่าฝุน",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟน้ำมัน/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "แบตเตอร์รี่",
           "standard": "ต้องไม่ชำรุดหรือน้ำกลั่นรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟน้ำมัน/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ล้อรถ",
           "standard": "สายพานต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟน้ำมัน/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โซ่/งายกของ",
           "standard": "โซ่ต้องไม่ชำรุดขาด /งาต้องไม่หัก",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟน้ำมัน/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "น้ำมันเครื่อง",
           "standard": "น้ำมันเครื่องต้องไม่แห้งและต้องใส",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/รถโฟคลิฟน้ำมัน/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -5572,42 +6064,48 @@
           "description": "X-LIFT",
           "standard": "สภาพต้องไม่ชำรุดสามรถยกขึ้น-ลงได้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_ติดฉลาก/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "มอเตอร์ปั๊ม",
           "standard": "ต้องไม่มีเสียงดังผิดปกติไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_ติดฉลาก/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "ชุดปั๊มไฮดรอลิค",
           "standard": "ต้องไม่ชำรุดหรือน้ำมันรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_ติดฉลาก/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "สายพาน",
           "standard": "สายพานต้องไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_ติดฉลาก/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "ต้องไม่แตกโยกหลวมคอน",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_ติดฉลาก/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_ติดฉลาก/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -5639,42 +6137,48 @@
           "description": "มอเตอร์",
           "standard": "มอเตอร์ต้องไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_pack_กระป๋อง/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "เซ็นเซอร์",
           "standard": "ต้องสามารถจับได้ดี",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_pack_กระป๋อง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "กระบอกลม",
           "standard": "ต้องไม่ชำรุดหรือรั่วซึม",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_pack_กระป๋อง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ลูกปืน/อัดจาระบี",
           "standard": "สายพานต้องไม่ชำรุด แตก",
           "method": "เช็ค/ทำ",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_pack_กระป๋อง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "สายพานลำเลียง",
           "standard": "ต้องไม่ชำรุดขาด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_pack_กระป๋อง/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพาน_pack_กระป๋อง/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -5699,42 +6203,48 @@
           "description": "มอเตอร์เกียร์",
           "standard": "มอเตอร์ต้องไม่เสียงดังไม่มีกลิ่นเหม็นไหม้",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานลำเลียงกล่อง/task01.jpeg"
         },
         {
           "task_no": 2,
           "description": "สายพาน",
           "standard": "สายพานต้องไม่แตกชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานลำเลียงกล่อง/task02.jpeg"
         },
         {
           "task_no": 3,
           "description": "เซ้นเซอร์",
           "standard": "ต้องไม่ชำรุดเสียหาย",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานลำเลียงกล่อง/task03.jpeg"
         },
         {
           "task_no": 4,
           "description": "ไกค์ประคอง",
           "standard": "ต้องไม่เป็นสนิม ไม่ชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานลำเลียงกล่อง/task04.jpeg"
         },
         {
           "task_no": 5,
           "description": "โครงสร้าง",
           "standard": "โครงสร้างต้องไม่หักชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานลำเลียงกล่อง/task05.jpeg"
         },
         {
           "task_no": 6,
           "description": "ตู้ควบคุมระบบไฟฟ้า",
           "standard": "ไม่มีสิ่งผิดปกติด้านในตู้ อุปกรณ์อยู่ในสภาพเรียบร้อย ไม่มีร่อยรอยสายไฟชำรุด",
           "method": "เช็ค",
-          "frequency": "Weekly"
+          "frequency": "Weekly",
+          "image_url": "img/checklist/สายพานลำเลียงกล่อง/task06.jpeg"
         },
         {
           "task_no": 7,
@@ -6210,5 +6720,7 @@
     "W02IT05": [
       "คอมพิวเตอร์"
     ]
-  }
+  },
+  "logo_url": "img/bluefalo-r1.png",
+  "source_doc_code": "F-SP-ENG02-01 Rev.01"
 }

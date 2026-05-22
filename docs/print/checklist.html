@@ -4,16 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PM Checklist</title>
-<link rel="icon" type="image/png" href="../assets/Bluefalo.png">
+<link rel="icon" type="image/png" href="../img/bluefalo-r1.png">
 <style>
 * { box-sizing: border-box; }
 html, body {
-    margin: 0;
-    background: #E2E8F0;
+    margin: 0; background: #E2E8F0;
     font-family: 'Sarabun','Prompt','Tahoma','Arial',sans-serif;
     color: #0F172A;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
 .toolbar {
     position: sticky; top: 0; z-index: 100;
@@ -33,19 +31,18 @@ html, body {
 .btn-back:hover { background: #334155; }
 
 .page {
-    background: #FFFFFF; max-width: 1180px;
+    background: #FFFFFF; max-width: 1280px;
     margin: 20px auto; padding: 28px 36px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    min-height: calc(297mm - 40px);
 }
 
 .form-header {
-    display: grid; grid-template-columns: 90px 1fr 240px;
+    display: grid; grid-template-columns: 100px 1fr 240px;
     gap: 16px; align-items: center;
     border-bottom: 3px solid #1F4E79;
     padding-bottom: 14px; margin-bottom: 18px;
 }
-.form-header .logo { width: 86px; height: auto; }
+.form-header .logo { width: 96px; height: auto; }
 .form-header .title-block { text-align: center; }
 .form-header .title-block h1 {
     font-family: 'Prompt','Sarabun',sans-serif;
@@ -89,9 +86,6 @@ html, body {
     font-family: 'Consolas','Menlo',monospace;
     font-weight: 700; color: #1F4E79;
 }
-.asset-info-row .value.empty {
-    border-bottom: 1px solid #94A3B8; background: #FFFFFF; color: #94A3B8;
-}
 
 .scope-band {
     background: #FFF7ED; border: 1px solid #FED7AA;
@@ -109,23 +103,29 @@ html, body {
     padding: 8px 5px; font-weight: 700;
     border: 1px solid #1F4E79; text-align: center; font-size: 10.5px;
 }
-.task-table thead th.col-desc, .task-table thead th.col-std {
-    text-align: left; padding-left: 10px;
-}
+.task-table thead th.col-desc, .task-table thead th.col-std { text-align: left; padding-left: 10px; }
 .task-table thead .grp-freq { background: #305496; border-bottom: 1px solid #1F4E79; }
 
 .task-table tbody td {
-    border: 1px solid #94A3B8; padding: 5px 5px; vertical-align: top;
+    border: 1px solid #94A3B8; padding: 4px 5px; vertical-align: middle;
 }
 .task-table tbody td.col-num    { text-align: center; width: 26px; font-weight: 700; background: #F8FAFC; }
-.task-table tbody td.col-desc   { width: 18%; }
-.task-table tbody td.col-std    { width: 22%; font-size: 10px; color: #334155; background: #F8FAFC; }
+.task-table tbody td.col-img    { text-align: center; width: 72px; background: #FFFFFF; padding: 4px; }
+.task-table tbody td.col-img img {
+    max-width: 64px; max-height: 64px; display: block; margin: 0 auto;
+    border: 1px solid #E2E8F0; border-radius: 2px;
+}
+.task-table tbody td.col-img.empty {
+    color: #94A3B8; font-style: italic; font-size: 10px;
+}
+.task-table tbody td.col-desc   { width: 16%; vertical-align: top; }
+.task-table tbody td.col-std    { width: 18%; font-size: 10px; color: #334155; background: #F8FAFC; vertical-align: top; }
 .task-table tbody td.col-week   { text-align: center; width: 26px; }
 .task-table tbody td.col-freq   { text-align: center; width: 36px; font-weight: 700; color: #1F4E79; font-size: 13px; }
 .task-table tbody td.col-method { text-align: center; width: 50px; font-size: 10px; }
 .task-table tbody td.col-result { width: 50px; background: #FFFBEB; }
-.task-table tbody td.col-find   { width: 14%; background: #FFFBEB; }
-.task-table tbody td.col-act    { width: 14%; background: #FFFBEB; }
+.task-table tbody td.col-find   { width: 12%; background: #FFFBEB; }
+.task-table tbody td.col-act    { width: 12%; background: #FFFBEB; }
 .task-table tbody tr:nth-child(even) td.col-desc,
 .task-table tbody tr:nth-child(even) td.col-std,
 .task-table tbody tr:nth-child(even) td.col-method,
@@ -156,18 +156,16 @@ html, body {
     text-align: right; border-top: 1px dashed #CBD5E1; padding-top: 6px;
 }
 
-.error {
-    padding: 60px 40px; text-align: center;
-    color: #DC2626; font-size: 16px;
-}
+.error { padding: 60px 40px; text-align: center; color: #DC2626; font-size: 16px; }
 
 @media print {
     body { background: #FFFFFF; }
     .toolbar { display: none !important; }
-    .page { box-shadow: none; margin: 0; padding: 8mm 10mm; max-width: none; min-height: 0; }
+    .page { box-shadow: none; margin: 0; padding: 6mm 8mm; max-width: none; min-height: 0; }
     .task-table tbody tr { page-break-inside: avoid; }
     .sig-block { page-break-inside: avoid; }
-    @page { size: A4 landscape; margin: 8mm; }
+    .task-table tbody td.col-img img { max-width: 56px; max-height: 56px; }
+    @page { size: A4 landscape; margin: 6mm; }
 }
 </style>
 </head>
@@ -207,9 +205,11 @@ html, body {
         return best;
     }
 
-    function render(asset, checklist, allSheetsForAsset, docCode) {
+    function render(asset, checklist, allSheetsForAsset, docCode, logoUrl) {
         var root = document.getElementById('root');
         var today = new Date().toLocaleDateString('en-GB');
+        // Resolve paths: docs root is one above the print/ folder
+        function relUp(p) { return '../' + p.replace(/^\.?\/?/, ''); }
 
         document.getElementById('toolbar-title').textContent =
             'PM Checklist — ' + asset.asset_id + ' — ' + (asset.name || '');
@@ -218,9 +218,8 @@ html, body {
         var html = '';
         html += '<div class="page">';
 
-        // HEADER
         html += '<div class="form-header">';
-        html += '  <img class="logo" src="../assets/Bluefalo.png" alt="Bluefalo Logo">';
+        html += '  <img class="logo" src="' + esc(relUp(logoUrl)) + '" alt="Bluefalo Logo" onerror="this.src=\'../assets/Bluefalo.png\'">';
         html += '  <div class="title-block">';
         html += '    <h1>บริษัท บลูฟาโล่ ฟู้ด โปรดักส์ จำกัด</h1>';
         html += '    <div class="subtitle-th">บันทึก การตรวจเช็คเครื่องจักร อุปกรณ์ — ' + esc(checklist.class_label || '') + '</div>';
@@ -233,7 +232,6 @@ html, body {
         html += '  </div>';
         html += '</div>';
 
-        // ASSET INFO
         html += '<div class="asset-info">';
         html += '  <div class="asset-info-row">';
         html += '    <div class="label">รหัสเครื่องจักร</div>';
@@ -259,18 +257,14 @@ html, body {
         html += '  </div>';
         html += '</div>';
 
-        // SCOPE
         if (allSheetsForAsset && allSheetsForAsset.length > 1) {
-            html += '<div class="scope-band">';
-            html += '<strong>Note:</strong> This asset also has additional checklist sheets: ' + esc(allSheetsForAsset.join(', '));
-            html += '</div>';
+            html += '<div class="scope-band"><strong>Note:</strong> Additional checklists for this asset: ' + esc(allSheetsForAsset.join(', ')) + '</div>';
         }
 
-        // TASK TABLE
         html += '<table class="task-table">';
-        html += '<thead>';
-        html += '  <tr>';
+        html += '<thead><tr>';
         html += '    <th rowspan="2" class="col-num">#</th>';
+        html += '    <th rowspan="2" class="col-img">รูปภาพ Part</th>';
         html += '    <th rowspan="2" class="col-desc">รายการตรวจเช็ค</th>';
         html += '    <th rowspan="2" class="col-std">สถานะปกติ (Acceptance criteria)</th>';
         html += '    <th colspan="5" class="grp-freq">Week (ประจำสัปดาห์)</th>';
@@ -282,22 +276,22 @@ html, body {
         html += '    <th rowspan="2" class="col-result">ผล<br>R/S</th>';
         html += '    <th rowspan="2" class="col-find">สิ่งที่พบ / ผิดปกติ</th>';
         html += '    <th rowspan="2" class="col-act">การดำเนินการ</th>';
-        html += '  </tr>';
-        html += '  <tr>';
+        html += '</tr><tr>';
         for (var i=1;i<=5;i++) html += '    <th class="col-week">' + i + '</th>';
-        html += '  </tr>';
-        html += '</thead><tbody>';
+        html += '</tr></thead><tbody>';
 
         checklist.tasks.forEach(function(t, idx) {
+            var imgHTML = t.image_url
+                ? '<img src="' + esc(relUp(t.image_url)) + '" alt="part">'
+                : '<span class="muted">—</span>';
             html += '<tr>';
             html += '  <td class="col-num">' + (idx+1) + '</td>';
+            html += '  <td class="col-img' + (t.image_url ? '' : ' empty') + '">' + imgHTML + '</td>';
             html += '  <td class="col-desc">' + esc(t.description || '') + '</td>';
             html += '  <td class="col-std">' + esc(t.standard || '') + '</td>';
             for (var w=0; w<5; w++) html += '  <td class="col-week">&nbsp;</td>';
-            html += '  <td class="col-freq">&nbsp;</td>';   // 1M
-            html += '  <td class="col-freq">&nbsp;</td>';   // 3M
-            html += '  <td class="col-freq">&nbsp;</td>';   // 6M
-            html += '  <td class="col-freq">&nbsp;</td>';   // 1Y
+            html += '  <td class="col-freq">&nbsp;</td><td class="col-freq">&nbsp;</td>';
+            html += '  <td class="col-freq">&nbsp;</td><td class="col-freq">&nbsp;</td>';
             html += '  <td class="col-method">' + esc(t.method || '') + '</td>';
             html += '  <td class="col-result">&nbsp;</td>';
             html += '  <td class="col-find">&nbsp;</td>';
@@ -306,12 +300,8 @@ html, body {
         });
         html += '</tbody></table>';
 
-        // LEGEND
-        html += '<div class="legend-band">';
-        html += 'สัญลักษณ์การบันทึก: &nbsp; <strong>R</strong> = ปกติ (Normal) &nbsp; · &nbsp; <strong>S</strong> = ไม่ปกติ (Abnormal)';
-        html += '</div>';
+        html += '<div class="legend-band">สัญลักษณ์การบันทึก: &nbsp; <strong>R</strong> = ปกติ (Normal) &nbsp; · &nbsp; <strong>S</strong> = ไม่ปกติ (Abnormal)</div>';
 
-        // SIGNATURES
         html += '<div class="sig-block">';
         html += '  <div class="sig-cell"><div class="label">ผู้บันทึก (Technician)</div><div class="line"></div><div class="role">Date</div></div>';
         html += '  <div class="sig-cell"><div class="label">ผู้ตรวจสอบ (Supervisor)</div><div class="line"></div><div class="role">Date</div></div>';
@@ -342,7 +332,9 @@ html, body {
         var allSheetsForAsset = (clData.asset_to_sheets || {})[assetId] || [];
         var checklist = pickChecklist(clData.checklists, assetId, clData.asset_to_sheets || {});
         if (!checklist) { showError('No PM checklist registered for asset "' + assetId + '".'); return; }
-        render(asset, checklist, allSheetsForAsset, clData.doc_code || 'F-SP-ENG02-01 Rev.01');
+        var docCode = clData.doc_code || clData.source_doc_code || 'F-SP-ENG02-01 Rev.01';
+        var logoUrl = clData.logo_url || 'img/bluefalo-r1.png';
+        render(asset, checklist, allSheetsForAsset, docCode, logoUrl);
     }).catch(function(err){
         console.error(err);
         showError('Failed to load data: ' + (err.message || err));
