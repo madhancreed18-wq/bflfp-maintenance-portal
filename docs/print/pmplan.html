@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PM Plan — SD-SP-ENG02-02</title>
+<link rel="icon" type="image/png" href="../img/bluefalo-r1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/pm-schedule.css">
+<style>
+  body{margin:0;background:#525659;font-family:'Sarabun',sans-serif;}
+  .pp-bar{position:sticky;top:0;display:flex;gap:10px;align-items:center;
+    background:#1E293B;color:#fff;padding:10px 16px;z-index:10;}
+  .pp-bar button{background:#2563EB;color:#fff;border:0;border-radius:6px;
+    padding:8px 16px;font-size:14px;cursor:pointer;font-family:inherit;}
+  .pp-bar .sp{flex:1}
+  .pp-sheets{padding:18px;display:flex;flex-direction:column;align-items:center;gap:18px;}
+  @media print{ .pp-bar{display:none} body{background:#fff} .pp-sheets{padding:0;gap:0} }
+</style>
+</head>
+<body>
+  <div class="pp-bar">
+    <strong>PM Plan — SD-SP-ENG02-02</strong>
+    <span class="sp"></span>
+    <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+  <div class="pp-sheets" id="sheets"><p style="color:#fff">Loading…</p></div>
+
+  <script src="../assets/data-service.js"></script>
+  <script src="../assets/pmplan-render.js"></script>
+  <script>
+  (function () {
+    function qs(k){ return new URLSearchParams(location.search).get(k); }
+    var group = qs('group') || '__all';
+    var q = (qs('q') || '').toLowerCase().trim();
+    var stage = document.getElementById('sheets');
+    var logoUrl = '../img/bluefalo-r1.png';
+
+    function label(s, byId){
+      var g=(s.assets_covered||[]).map(function(id){return byId[id]?byId[id].class_name:null;}).filter(Boolean)[0];
+      return (s.class_label||s.sheet_name||'').trim()+' '+(s.assets_covered||[]).join(' ')+(g?' '+g:'');
+    }
+    function load(){
+      var D = window.BFLFP && window.BFLFP.data;
+      var pA = (D&&D.assets)?D.assets():fetch('../data/assets.json').then(function(r){return r.json();});
+      var pC = (D&&D.checklists)?D.checklists():fetch('../data/checklists.json').then(function(r){return r.json();});
+      Promise.all([pA,pC]).then(function(res){
+        var byId = BFLFP_PMPlan.indexAssets(res[0].assets||res[0]||[]);
+        var sheets = (res[1].checklists||[]).filter(function(s){return (s.tasks||[]).length;});
+        if(res[1].logo_url) logoUrl = (res[1].logo_url.indexOf('http')===0?'':'../')+res[1].logo_url;
+        var list = (group==='__all') ? sheets : sheets.filter(function(s){return s.sheet_name===group;});
+        if(q) list = list.filter(function(s){return label(s,byId).toLowerCase().indexOf(q)>=0;});
+        if(!list.length){ stage.innerHTML='<p style="color:#fff">No matching machine group.</p>'; return; }
+        stage.innerHTML = list.map(function(s){return BFLFP_PMPlan.buildDoc(s, byId, logoUrl);}).join('');
+        document.title = 'PM Plan — '+(group==='__all'?'All groups':group);
+      }).catch(function(e){ stage.innerHTML='<p style="color:#fff">Failed: '+(e.message||e)+'</p>'; });
+    }
+    load();
+  })();
+  </script>
+</body>
+</html>
