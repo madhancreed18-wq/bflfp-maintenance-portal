@@ -1,3 +1,147 @@
+/* ============================================
+   BFLFP — PM Schedule styles
+   ============================================ */
+.pms-page {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 40px 28px 80px;
+}
+
+.pms-toolbar {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px;
+    padding: 18px 20px; margin-bottom: 14px;
+    display: flex; gap: 18px; align-items: center; flex-wrap: wrap;
+}
+.pms-stats { display: flex; gap: 8px; flex-wrap: wrap; }
+.pms-filters {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; align-items: center;
+}
+
+.pms-legend {
+    background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 6px;
+    padding: 8px 14px; margin-bottom: 14px;
+    font-size: 12px; color: #334155;
+    display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+}
+.pms-legend strong { color: #0F172A; margin-right: 4px; }
+.pms-legend .lg-chip {
+    display: inline-block; width: 22px; padding: 2px 0;
+    text-align: center; color: #000000; font-weight: 700;
+    border-radius: 3px; font-size: 11px; border: 1px solid #000000;
+    margin: 0 2px 0 6px;
+}
+
+/* Frequency colors — same R1 palette as the print checklist */
+.lg-chip.fc-W { background: #F4B084; }
+.lg-chip.fc-M { background: #9DC3E6; }
+.lg-chip.fc-Q { background: #FFD966; }
+.lg-chip.fc-S { background: #A9D08E; }
+.lg-chip.fc-A { background: #B4A7D6; }
+.lg-chip.fc-none { background: #E7E6E6; color: #6B7280; }
+
+.pms-table-wrap {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px;
+    overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.pms-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.pms-table thead th {
+    background: #F8FAFC; color: #475569; text-align: center;
+    padding: 10px 6px; font-weight: 700; border-bottom: 2px solid #E2E8F0;
+    text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em;
+    position: sticky; top: 0; z-index: 1;
+}
+.pms-table thead th.col-id, .pms-table thead th.col-name, .pms-table thead th.col-class { text-align: left; padding-left: 12px; }
+
+.pms-table tbody td {
+    padding: 8px 6px; border-bottom: 1px solid #F1F5F9; vertical-align: middle;
+    text-align: center;
+}
+.pms-table tbody td.col-id { padding-left: 12px; text-align: left; }
+.pms-table tbody td.col-name { padding-left: 12px; text-align: left; font-weight: 500; max-width: 280px; }
+.pms-table tbody td.col-class { padding-left: 12px; text-align: left; color: #64748B; font-size: 11px; max-width: 180px; }
+.pms-table tbody td.col-freq { text-align: center; }
+.pms-table tbody td.col-act { text-align: center; }
+
+.pms-table .col-id code {
+    background: #1E293B; color: #FFFFFF; padding: 3px 8px; border-radius: 4px;
+    font-family: 'Consolas','Menlo',monospace; font-size: 11px; font-weight: 600;
+}
+
+.pms-table tbody tr:hover { background: #FFF7ED; }
+.pms-table tbody tr.row-scrapped td { opacity: 0.55; text-decoration: line-through; }
+
+/* Month cells */
+.pms-table tbody td.col-m {
+    width: 38px; min-width: 32px;
+    font-weight: 700; color: #000000;
+    border: 1px solid #E2E8F0;
+}
+.pms-table tbody td.col-m.due { color: #000000; }
+.pms-table tbody td.col-m.due.fc-W { background: #F4B084; }
+.pms-table tbody td.col-m.due.fc-M { background: #9DC3E6; }
+.pms-table tbody td.col-m.due.fc-Q { background: #FFD966; }
+.pms-table tbody td.col-m.due.fc-S { background: #A9D08E; }
+.pms-table tbody td.col-m.due.fc-A { background: #B4A7D6; }
+.pms-table tbody td.col-m.due.fc-none { background: #E7E6E6; }
+
+.row-toggle {
+    color: #0F172A; text-decoration: none; cursor: pointer;
+    border-bottom: 1px dotted #94A3B8;
+}
+.row-toggle:hover { color: #F97316; border-bottom-color: #F97316; }
+
+.btn-checklist {
+    display: inline-block; padding: 4px 10px; background: #F97316; color: #FFFFFF;
+    text-decoration: none; border-radius: 6px; font-size: 11px; font-weight: 600;
+}
+.btn-checklist:hover { background: #EA580C; }
+
+/* Detail panel */
+.detail-row td { padding: 0 !important; background: #FAFAFA !important; }
+.detail-panel {
+    padding: 18px 24px; background: #FAFAFA;
+    border-left: 4px solid #F97316;
+    border-bottom: 1px solid #E2E8F0;
+}
+.detail-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 24px;
+    margin-bottom: 14px;
+}
+.detail-grid > div { display: flex; flex-direction: column; gap: 2px; }
+.detail-grid > div.d-wide { grid-column: span 3; }
+.detail-grid .d-lbl {
+    font-size: 11px; font-weight: 700; color: #475569;
+    text-transform: uppercase; letter-spacing: 0.04em;
+}
+.detail-grid .d-val { font-size: 13px; color: #0F172A; }
+.detail-grid .d-val code {
+    background: #1E293B; color: #FFFFFF; padding: 2px 6px; border-radius: 3px;
+    font-family: 'Consolas','Menlo',monospace; font-size: 12px;
+}
+.detail-actions {
+    display: flex; gap: 10px; padding-top: 12px; border-top: 1px solid #E2E8F0;
+}
+.btn-detail {
+    padding: 8px 16px; background: #F97316; color: #FFFFFF;
+    border: none; border-radius: 8px; font-weight: 600; font-size: 13px;
+    text-decoration: none;
+}
+.btn-detail:hover { background: #EA580C; }
+.btn-detail-2 {
+    padding: 8px 16px; background: #FFFFFF; color: #475569;
+    border: 1px solid #CBD5E1; border-radius: 8px; font-weight: 600; font-size: 13px;
+    text-decoration: none;
+}
+.btn-detail-2:hover { background: #F8FAFC; }
+
+.loading-row, .empty-row {
+    text-align: center; color: #94A3B8; padding: 40px !important; font-style: italic;
+}
+.pms-footer-note {
+    margin-top: 14px; color: #64748B; font-size: 12px; text-align: right;
+}
+
+/* ===== PM Checklist (SD-SP-ENG02-02) plan view ===== */
 /* ============================================================
    BFLFP — PM Schedule / PM Plan (SD-SP-ENG02-02)
    Styles the on-screen page AND the print/pmplan.html document.
@@ -82,3 +226,11 @@
 .pp-table colgroup .cg-task   { width: 44%; }   /* checklist column — widest */
 .pp-table colgroup .cg-fq     { width: 4%; }    /* each tick column — narrow */
 .pp-table colgroup .cg-method { width: 8%; }
+
+/* ---- PM Schedule tabs ---- */
+.pms-tabs { display:flex; gap:6px; border-bottom:2px solid var(--border,#E2E8F0); margin:0 0 16px; }
+.pms-tab { background:transparent; border:0; border-bottom:3px solid transparent; padding:10px 18px;
+  font-size:15px; font-weight:600; cursor:pointer; color:var(--text-muted,#64748B); font-family:inherit; }
+.pms-tab span { display:block; font-size:11px; font-weight:400; opacity:.75; }
+.pms-tab.is-active { color:var(--brand,#2563EB); border-bottom-color:var(--brand,#2563EB); }
+.pms-tabpanel[hidden] { display:none; }

@@ -43,13 +43,37 @@ window.BFLFP_PMPlan = (function () {
         return sheet.class_label || sheet.sheet_name || '';
     }
 
+    // Resolve the machine roster for a sheet:
+    //   assets_covered (AssetSheetMap)  UNION  any asset sharing the group's class.
+    // This makes newly-added assets appear automatically once their Class matches.
+    function roster(sheet, assetsById) {
+        var ids = (sheet.assets_covered || []).slice();
+        var cls = '';
+        for (var i = 0; i < ids.length; i++) {
+            var a0 = assetsById[ids[i]];
+            if (a0 && a0.class_name) { cls = a0.class_name; break; }
+        }
+        if (!cls) cls = (sheet.class_label || '').trim();
+        if (cls) {
+            Object.keys(assetsById).forEach(function (id) {
+                var a = assetsById[id];
+                if (a && a.class_name === cls && ids.indexOf(id) < 0) ids.push(id);
+            });
+        }
+        // de-dupe, drop scrapped, sort by asset id, map to {code,name}
+        var seen = {};
+        return ids.filter(function (id) {
+                if (seen[id]) return false; seen[id] = 1;
+                var a = assetsById[id];
+                return !a || a.status !== 'Scrapped';
+            })
+            .sort(function (x, y) { return String(x).localeCompare(String(y)); })
+            .map(function (id) { var a = assetsById[id] || {}; return { code: id, name: a.name || '' }; });
+    }
+
     // Build ONE PM Plan document (one machine group / checklist sheet).
     function buildDoc(sheet, assetsById, logoUrl) {
-        var cov = sheet.assets_covered || [];
-        var machines = cov.map(function (id) {
-            var a = assetsById[id] || {};
-            return { code: id, name: a.name || '' };
-        });
+        var machines = roster(sheet, assetsById);
         var tasks = sheet.tasks || [];
         var n = Math.max(machines.length, tasks.length);
 
