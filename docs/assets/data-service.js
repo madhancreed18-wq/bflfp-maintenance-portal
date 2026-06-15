@@ -51,6 +51,13 @@ BFLFP.data = (function () {
 
     function timestamp() { return new Date().toISOString().slice(0, 19) + 'Z'; }
 
+    // Normalize a key for matching across sources: trim + Unicode NFC so a SharePoint
+    // sheet name (possibly NFD) matches the checklists.json sheet name (NFC).
+    function nkey(s) {
+        s = (s == null ? '' : String(s)).trim();
+        return s.normalize ? s.normalize('NFC') : s;
+    }
+
     function logSource(key, source) {
         console.log('%c[BFLFP.data] ' + key + ' loaded from ' + source,
             'color:' + (source === 'flow' ? '#16A34A' : '#F97316'));
@@ -192,7 +199,7 @@ BFLFP.data = (function () {
                 if (assetToSheets[aid].indexOf(sn) < 0) assetToSheets[aid].push(sn);
             });
 
-            return {
+            var result = {
                 version: raw.version || 3,
                 source: raw.source || 'SharePoint',
                 doc_code: raw.doc_code || 'F-SP-ENG02-01 Rev.01',
@@ -203,6 +210,30 @@ BFLFP.data = (function () {
                 checklists: sheets,
                 asset_to_sheets: assetToSheets
             };
+
+            // SharePoint ChecklistTasks has no image column, so flow-loaded tasks arrive
+            // without image_url and every reference photo renders blank. Merge the static
+            // photo paths (bundled in checklists.json) by (sheet_name, task_no).
+            // Returns a Promise — get()'s .then chains on it transparently.
+            return checklistImageIndex().then(function (imgIdx) {
+                result.checklists.forEach(function (s) {
+                    var sn = nkey(s.sheet_name);
+                    (s.tasks || []).forEach(function (t) {
+                        var hit = imgIdx[sn + '||' + t.task_no];
+                        if (hit) {
+                            // Prefer the PUBLIC repo image. The flow may supply a
+                            // SharePoint image URL that requires a Microsoft login and
+                            // breaks in incognito / on other devices; the repo file works
+                            // for everyone.
+                            t.image_url = hit;
+                        } else if (t.image_url &&
+                                   /sharepoint\.com|\/_layouts\/|login\.microsoft|powerplatform/i.test(t.image_url)) {
+                            t.image_url = '';   // unservable without login -> render as "—"
+                        }
+                    });
+                });
+                return result;
+            });
         }
         return raw;
     }
@@ -238,6 +269,25 @@ BFLFP.data = (function () {
             if (!r.ok) throw new Error('Local ' + path + ' HTTP ' + r.status);
             return r.json();
         });
+    }
+
+    // Lazy, cached map of static checklist reference photos: "sheet_name||task_no" ->
+    // image_url. Loaded once from the bundled checklists.json so flow-loaded checklists
+    // (whose SharePoint source has no image column) can still show task photos.
+    var _imgIndexPromise = null;
+    function checklistImageIndex() {
+        if (_imgIndexPromise) return _imgIndexPromise;
+        _imgIndexPromise = fetchLocal(FALLBACK.checklists).then(function (raw) {
+            var idx = {};
+            ((raw && raw.checklists) || []).forEach(function (s) {
+                var sn = nkey(s.sheet_name);
+                (s.tasks || []).forEach(function (t) {
+                    if (t && t.image_url) idx[sn + '||' + t.task_no] = t.image_url;
+                });
+            });
+            return idx;
+        }).catch(function () { return {}; });
+        return _imgIndexPromise;
     }
 
     function get(key) {
