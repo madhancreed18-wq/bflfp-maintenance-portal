@@ -73,3 +73,12 @@
     .pm-plan-doc:last-child { page-break-after: auto; }
     @page { size: A4 landscape; margin: 10mm; }
 }
+
+/* authoritative column widths (work despite the colspan frequency header) */
+.pp-table { } 
+.pp-table colgroup .cg-no     { width: 4%; }
+.pp-table colgroup .cg-code   { width: 9%; }
+.pp-table colgroup .cg-name   { width: 15%; }
+.pp-table colgroup .cg-task   { width: 44%; }   /* checklist column — widest */
+.pp-table colgroup .cg-fq     { width: 4%; }    /* each tick column — narrow */
+.pp-table colgroup .cg-method { width: 8%; }

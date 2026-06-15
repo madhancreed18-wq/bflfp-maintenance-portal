@@ -89,6 +89,11 @@ window.BFLFP_PMPlan = (function () {
           '</table>' +
 
           '<table class="pp-table">' +
+            '<colgroup>' +
+              '<col class="cg-no"><col class="cg-code"><col class="cg-name"><col class="cg-task">' +
+              '<col class="cg-fq"><col class="cg-fq"><col class="cg-fq"><col class="cg-fq"><col class="cg-fq">' +
+              '<col class="cg-method">' +
+            '</colgroup>' +
             '<thead>' +
               '<tr>' +
                 '<th class="pp-no" rowspan="2">ลำดับ</th>' +
