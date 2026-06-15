@@ -55,8 +55,8 @@
 .pp-table .pp-no     { width: 38px;  text-align: center; }
 .pp-table .pp-code   { width: 92px;  text-align: center; }
 .pp-table .pp-name   { width: 170px; }
-.pp-table .pp-task   { text-align: left; }
-.pp-table .pp-fq     { width: 50px;  text-align: center; }
+.pp-table .pp-task   { width: auto; min-width: 300px; text-align: left; }
+.pp-table .pp-fq     { width: 30px;  text-align: center; }
 .pp-table .pp-method { width: 78px;  text-align: center; }
 .pp-table tbody .pp-fq { color: #000; font-weight: 700; font-size: 14px; }
 
