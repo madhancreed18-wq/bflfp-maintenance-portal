@@ -42,15 +42,19 @@ window.BFLFP_Resolver = (function() {
 
     function load(dataDir) {
         dataDir = dataDir || './data';
-        return Promise.all([
-            fetch(dataDir + '/assets.json').then(function(r){ return r.json(); }),
-            fetch(dataDir + '/asset_aliases.json').then(function(r){
-                if (!r.ok) {  // file optional — gracefully degrade
-                    return { aliases: {}, ignore_patterns: [], ignore_exact: [] };
-                }
+        // Prefer shared data service (SharePoint flow) when available; fall back to local JSON.
+        var assetsPromise = (window.BFLFP && BFLFP.data && BFLFP.data.assets)
+            ? BFLFP.data.assets()
+            : fetch(dataDir + '/assets.json').then(function(r){ return r.json(); });
+        var aliasesPromise = (window.BFLFP && BFLFP.data && BFLFP.data.aliases)
+            ? BFLFP.data.aliases().catch(function(){
+                return { aliases: {}, ignore_patterns: [], ignore_exact: [] };
+              })
+            : fetch(dataDir + '/asset_aliases.json').then(function(r){
+                if (!r.ok) return { aliases: {}, ignore_patterns: [], ignore_exact: [] };
                 return r.json();
-            })
-        ]).then(function(both){
+              });
+        return Promise.all([assetsPromise, aliasesPromise]).then(function(both){
             var assetsData = both[0];
             var aliasData  = both[1];
             assetsByCode = {};
@@ -130,15 +134,39 @@ window.BFLFP_Resolver = (function() {
         return { status: 'other', asset_id: null, canonical_name: null, raw: raw };
     }
 
-    // Editing API — adds an alias in-memory; user must download to persist
-    function addAlias(rawValue, assetId) {
+    // Editing API — adds an alias in-memory; if SharePoint flow is configured,
+    // also POSTs the new alias so other browsers see it immediately.
+    // Returns a Promise resolving to { ok, persistedToCloud:bool } when called
+    // with a third argument true; returns boolean (synchronous) otherwise for
+    // backward compatibility with existing callers.
+    function addAlias(rawValue, assetId, returnPromise) {
         var k = _norm(rawValue);
-        if (!k) return false;
+        if (!k) return returnPromise ? Promise.resolve({ ok: false, reason: 'empty' }) : false;
         var code = String(assetId).toUpperCase();
-        if (!assetsByCode[code]) return false;
+        if (!assetsByCode[code]) return returnPromise ? Promise.resolve({ ok: false, reason: 'unknown asset' }) : false;
         sessionAliases[k] = code;
         dirty = true;
-        return true;
+
+        // Try cloud persistence
+        if (window.BFLFP && BFLFP.data && BFLFP.data.upsertAlias) {
+            var p = BFLFP.data.upsertAlias({ alias: k, asset_id: code })
+                .then(function(resp){
+                    // Promote session alias to "persisted" map and clear dirty flag for this entry
+                    aliases[k] = code;
+                    delete sessionAliases[k];
+                    dirty = Object.keys(sessionAliases).length > 0 ||
+                            Object.keys(sessionIgnoreExact).length > 0;
+                    return { ok: true, persistedToCloud: true, action: resp && resp.action };
+                })
+                .catch(function(err){
+                    console.warn('[Resolver] upsertAlias flow failed, kept session-only:', err);
+                    return { ok: true, persistedToCloud: false, reason: err.message || String(err) };
+                });
+            return returnPromise ? p : true;
+        }
+
+        // No flow configured — return legacy behaviour
+        return returnPromise ? Promise.resolve({ ok: true, persistedToCloud: false }) : true;
     }
     function removeAlias(rawValue) {
         var k = _norm(rawValue);
@@ -147,12 +175,31 @@ window.BFLFP_Resolver = (function() {
         dirty = true;
         return true;
     }
-    function addIgnoreExact(rawValue) {
+    function addIgnoreExact(rawValue, returnPromise) {
         var k = _norm(rawValue);
-        if (!k) return false;
+        if (!k) return returnPromise ? Promise.resolve({ ok: false, reason: 'empty' }) : false;
         sessionIgnoreExact[k] = true;
         dirty = true;
-        return true;
+
+        // Cloud-persist if upsertAlias flow is configured.
+        // We pass asset_id as empty and is_ignored=true.
+        if (window.BFLFP && BFLFP.data && BFLFP.data.upsertAlias) {
+            var p = BFLFP.data.upsertAlias({ alias: k, asset_id: '', is_ignored: true })
+                .then(function(resp){
+                    ignoreExact[k] = true;
+                    delete sessionIgnoreExact[k];
+                    dirty = Object.keys(sessionAliases).length > 0 ||
+                            Object.keys(sessionIgnoreExact).length > 0;
+                    return { ok: true, persistedToCloud: true, action: resp && resp.action };
+                })
+                .catch(function(err){
+                    console.warn('[Resolver] upsertAlias (ignore) flow failed, kept session-only:', err);
+                    return { ok: true, persistedToCloud: false, reason: err.message || String(err) };
+                });
+            return returnPromise ? p : true;
+        }
+
+        return returnPromise ? Promise.resolve({ ok: true, persistedToCloud: false }) : true;
     }
     function isDirty() { return dirty; }
     function getAllAssets() { return allAssets.slice(); }

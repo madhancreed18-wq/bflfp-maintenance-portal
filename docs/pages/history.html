@@ -1,0 +1,74 @@
+<!-- Machine History — F-SP-ENG02-02 Rev.02 -->
+<section class="rep-page" id="hist-page">
+
+    <header class="rep-page-header">
+        <div class="rep-page-header-icon"><i class="ti ti-book"></i></div>
+        <div class="rep-page-header-text">
+            <h1>Machine History <em>ประวัติการซ่อมบำรุงเครื่อง</em></h1>
+            <p>Lifetime maintenance record for a single asset. Mirrors form F-SP-ENG02-02.</p>
+        </div>
+        <span class="rep-form-code-chip">F-SP-ENG02-02 Rev.02</span>
+    </header>
+
+    <div class="rep-controls">
+        <div class="rep-control" style="min-width: 280px; flex: 1;">
+            <label class="rep-control-label" for="hist-asset">Asset</label>
+            <select id="hist-asset">
+                <option value="">Pick an asset…</option>
+            </select>
+        </div>
+        <div class="rep-control">
+            <label class="rep-control-label" for="hist-from">From</label>
+            <input type="date" id="hist-from">
+        </div>
+        <div class="rep-control">
+            <label class="rep-control-label" for="hist-to">To</label>
+            <input type="date" id="hist-to">
+        </div>
+        <div class="rep-control">
+            <label class="rep-control-label" for="hist-jobtype">Job Type</label>
+            <select id="hist-jobtype">
+                <option value="">All types</option>
+                <option value="Preventive">Preventive only</option>
+                <option value="Corrective">Corrective only</option>
+                <option value="Repair">Repair only</option>
+                <option value="Breakdown">Breakdown only</option>
+            </select>
+        </div>
+        <div class="rep-actions">
+            <button class="rep-btn rep-btn-primary" id="hist-generate"><i class="ti ti-refresh"></i> Generate</button>
+            <button class="rep-btn rep-btn-secondary" id="hist-print"><i class="ti ti-printer"></i> Print</button>
+        </div>
+    </div>
+
+    <div class="rep-help">
+        <i class="ti ti-info-circle"></i>
+        <span>Shows every maintenance event ever recorded for the selected asset, in date order. No date filter = lifetime view.</span>
+    </div>
+
+    <div class="rep-stats">
+        <div class="rep-stat stat-blue">
+            <div class="rep-stat-label">Total events</div>
+            <div class="rep-stat-value" id="hist-stat-total">—</div>
+        </div>
+        <div class="rep-stat stat-green">
+            <div class="rep-stat-label">Preventive</div>
+            <div class="rep-stat-value" id="hist-stat-pm">—</div>
+        </div>
+        <div class="rep-stat stat-amber">
+            <div class="rep-stat-label">Corrective</div>
+            <div class="rep-stat-value" id="hist-stat-corr">—</div>
+        </div>
+        <div class="rep-stat stat-red">
+            <div class="rep-stat-label">Breakdowns</div>
+            <div class="rep-stat-value" id="hist-stat-bd">—</div>
+        </div>
+    </div>
+
+    <div id="hist-report-container">
+        <div class="rep-loading">
+            <p>Pick an asset and click Generate.</p>
+        </div>
+    </div>
+
+</section>

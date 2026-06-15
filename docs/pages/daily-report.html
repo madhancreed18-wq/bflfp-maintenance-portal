@@ -1,0 +1,75 @@
+<!-- Daily Maintenance Report — F-SP-ENG02-06 Rev.01
+     Viewer for Python-generated MaintenanceReport_DD-MM-YYYY.xlsx / .pdf
+     in the parent Report/YYYY/MM/DD/ folder. -->
+<section class="rep-page" id="dr-page">
+
+    <header class="rep-page-header">
+        <div class="rep-page-header-icon"><i class="ti ti-calendar-stats"></i></div>
+        <div class="rep-page-header-text">
+            <h1>Daily Maintenance Report <em>รายงานการซ่อมบำรุงประจำวัน</em></h1>
+            <p>Shows the report your Python script generates each day from Power Apps data. Pick a date and view, download, or print.</p>
+        </div>
+        <span class="rep-form-code-chip">F-SP-ENG02-06 Rev.01</span>
+    </header>
+
+    <div class="rep-controls">
+        <div class="rep-control">
+            <label class="rep-control-label" for="dr-date">Date</label>
+            <input type="date" id="dr-date">
+        </div>
+        <div class="rep-actions">
+            <button class="rep-btn rep-btn-secondary" id="dr-prev" title="Previous day"><i class="ti ti-chevron-left"></i></button>
+            <button class="rep-btn rep-btn-secondary" id="dr-next" title="Next day"><i class="ti ti-chevron-right"></i></button>
+            <button class="rep-btn rep-btn-primary" id="dr-open"><i class="ti ti-refresh"></i> Open</button>
+        </div>
+    </div>
+
+    <!-- Print a date range (merged into one PDF) -->
+    <div class="rep-controls" id="dr-range-controls" style="margin-top: 10px;">
+        <div class="rep-control">
+            <label class="rep-control-label" for="dr-from">From</label>
+            <input type="date" id="dr-from">
+        </div>
+        <div class="rep-control">
+            <label class="rep-control-label" for="dr-to">To</label>
+            <input type="date" id="dr-to">
+        </div>
+        <div class="rep-actions">
+            <button class="rep-btn rep-btn-primary" id="dr-print-range"><i class="ti ti-printer"></i> Print range</button>
+            <a class="rep-btn rep-btn-secondary" id="dr-download-range" download="DailyReports_merged.pdf" style="display:none"><i class="ti ti-download"></i> Download merged PDF</a>
+        </div>
+    </div>
+
+    <div class="rep-help" id="dr-help">
+        <i class="ti ti-info-circle"></i>
+        <span>Reports are pulled from <code>Report/YYYY/MM/DD/MaintenanceReport_DD-MM-YYYY.pdf</code> — the same files your Python script writes from Power Apps. If a date has no report, the file simply doesn't exist yet.</span>
+    </div>
+
+    <div id="dr-status-bar"></div>
+
+    <!-- Action toolbar (download / open in new tab) -->
+    <div class="dr-toolbar" id="dr-toolbar" hidden>
+        <div class="dr-toolbar-info" id="dr-toolbar-info"></div>
+        <div class="dr-toolbar-actions">
+            <a class="rep-btn rep-btn-secondary" id="dr-open-xlsx" target="_blank" rel="noopener"><i class="ti ti-file-spreadsheet"></i> Open XLSX</a>
+            <a class="rep-btn rep-btn-secondary" id="dr-open-pdf" target="_blank" rel="noopener"><i class="ti ti-file-text"></i> Open PDF</a>
+            <a class="rep-btn rep-btn-secondary" id="dr-download" download><i class="ti ti-download"></i> Download PDF</a>
+            <button class="rep-btn rep-btn-primary" id="dr-print"><i class="ti ti-printer"></i> Print</button>
+        </div>
+    </div>
+
+    <!-- PDF viewer (iframe) -->
+    <div class="dr-viewer-wrap" id="dr-viewer-wrap" hidden>
+        <iframe id="dr-pdf-frame" class="dr-pdf-frame" title="Daily Maintenance Report PDF"></iframe>
+    </div>
+
+    <!-- Photo gallery -->
+    <section class="dr-gallery-section" id="dr-gallery-section" hidden>
+        <header class="hp-section-header" style="margin-top: 20px;">
+            <h2><i class="ti ti-photo"></i> Photos archived this day</h2>
+            <p>Before/after images captured by technicians in Power Apps</p>
+        </header>
+        <div class="dr-gallery" id="dr-gallery"></div>
+    </section>
+
+</section>

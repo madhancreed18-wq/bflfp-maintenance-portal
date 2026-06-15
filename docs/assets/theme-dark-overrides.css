@@ -1,0 +1,275 @@
+/* ============================================
+   BFLFP — DARK MODE OVERRIDES
+   Loaded LAST so it wins specificity over hardcoded page CSS.
+   Fixes contrast issues for the 11 page CSS files that hardcoded
+   light-mode colors (white backgrounds, dark text).
+   ============================================ */
+
+[data-theme="dark"] {
+
+    /* ===========================================
+       PAGE WRAPPERS — force text to light
+       =========================================== */
+    .home-page,
+    .dashboard-page,
+    .assets-page,
+    .pmr-page,
+    .pm-schedule-page,
+    .pm-completions-page,
+    .maintenance-log-page,
+    .reports-page,
+    .about-page,
+    .checklist-editor,
+    .page-content {
+        color: var(--text-primary);
+    }
+
+    /* ===========================================
+       BACKGROUNDS — white → dark surface
+       =========================================== */
+    /* Common card backgrounds */
+    .home-card,
+    .dashboard-card,
+    .kpi-card,
+    .stat-card,
+    .stat-tile,
+    .info-card,
+    .assets-table-wrap,
+    .ml-table-wrap,
+    .pm-completions-wrap,
+    .pm-schedule-wrap,
+    .pmr-controls,
+    .pmr-help,
+    .reports-card,
+    .corrective-header,
+    .corrective-help,
+    .corrective-embed-wrap,
+    .corrective-loading,
+    .pe-modal-panel,
+    .modal-panel,
+    .filter-bar,
+    .toolbar,
+    .quick-actions,
+    .hero-section,
+    .feature-section,
+    .stats-section {
+        background: var(--bg-surface) !important;
+        border-color: var(--border) !important;
+        color: var(--text-primary);
+    }
+
+    /* Tables — header rows + body */
+    table thead,
+    table thead tr,
+    table thead th,
+    .assets-table thead,
+    .assets-table thead th,
+    .ml-table thead,
+    .ml-table thead th,
+    .pm-table thead,
+    .pm-table thead th {
+        background: var(--bg-surface-2) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border) !important;
+    }
+    table tbody tr,
+    table tbody td,
+    .assets-table tbody tr,
+    .assets-table tbody td,
+    .ml-table tbody tr,
+    .ml-table tbody td {
+        background: var(--bg-surface) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border) !important;
+    }
+    table tbody tr:hover,
+    .assets-table tbody tr:hover,
+    .ml-table tbody tr:hover {
+        background: var(--bg-hover) !important;
+    }
+    /* Striped rows */
+    table tbody tr:nth-child(even) {
+        background: var(--bg-surface-2) !important;
+    }
+
+    /* Form inputs */
+    input[type="text"],
+    input[type="search"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="month"],
+    input[type="password"],
+    select,
+    textarea {
+        background: var(--bg-surface-2) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border-strong) !important;
+    }
+    input::placeholder,
+    textarea::placeholder { color: var(--text-muted) !important; }
+
+    select option {
+        background: var(--bg-surface);
+        color: var(--text-primary);
+    }
+
+    /* ===========================================
+       HARDCODED DARK TEXT COLORS → LIGHT
+       Page CSS often used #0F172A, #1E293B, #334155 etc.
+       Override all of those to the theme text colors.
+       =========================================== */
+
+    /* High-emphasis text (was dark navy / charcoal) */
+    [style*="color: #0F172A"],
+    [style*="color: #1E293B"],
+    [style*="color: #0B1220"],
+    [style*="color: #000"] {
+        color: var(--text-primary) !important;
+    }
+
+    /* Secondary text (was slate-700/600) */
+    [style*="color: #334155"],
+    [style*="color: #475569"],
+    [style*="color: #1F2937"],
+    [style*="color: #374151"] {
+        color: var(--text-secondary) !important;
+    }
+
+    /* Muted text (was slate-500/400) */
+    [style*="color: #64748B"],
+    [style*="color: #6B7280"],
+    [style*="color: #94A3B8"],
+    [style*="color: #9CA3AF"] {
+        color: var(--text-muted) !important;
+    }
+
+    /* ===========================================
+       HEADINGS — bias toward lighter weights in dark mode
+       (Heavy weights look chunky on dark backgrounds)
+       =========================================== */
+    h1, h2, h3, h4, h5, h6,
+    .page-title,
+    .section-title,
+    .kpi-label,
+    .stat-label,
+    .home-section h2,
+    .home-section h3,
+    .dashboard-section h2,
+    .reports-section h2 {
+        color: var(--text-primary) !important;
+        font-weight: 500;                /* down from 600/700 — easier on dark BG */
+    }
+    /* Sub-headings and helper labels */
+    .text-muted,
+    .text-secondary,
+    .subtitle,
+    .description,
+    .helper-text,
+    .footer-text,
+    .page-subtitle,
+    small {
+        color: var(--text-muted) !important;
+    }
+
+    /* ===========================================
+       BUTTONS — make sure buttons stay visible
+       =========================================== */
+    .btn,
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline,
+    button:not([class^="ti"]):not(.sidebar-collapse-btn):not(.theme-toggle):not(.role-switcher-btn):not(.nav-group-header):not(.topbar-action):not(.topbar-menu-btn) {
+        color: var(--text-primary);
+    }
+    .btn-secondary,
+    .btn-outline {
+        background: var(--bg-surface-2);
+        border-color: var(--border-strong);
+    }
+    .btn-secondary:hover,
+    .btn-outline:hover {
+        background: var(--bg-hover);
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+
+    /* ===========================================
+       LINKS
+       =========================================== */
+    a:not(.nav-item):not(.role-menu-item) {
+        color: var(--accent);
+    }
+    a:not(.nav-item):not(.role-menu-item):hover {
+        color: var(--accent-hover);
+    }
+
+    /* ===========================================
+       BORDERS — soft dark border instead of light gray
+       =========================================== */
+    [style*="border: 1px solid #E2E8F0"],
+    [style*="border: 1px solid #CBD5E1"],
+    [style*="border: 1px solid #F1F5F9"],
+    [style*="border-color: #E2E8F0"] {
+        border-color: var(--border) !important;
+    }
+
+    /* Dividers / hr */
+    hr {
+        border-color: var(--border);
+        background: var(--border);
+    }
+
+    /* ===========================================
+       BADGES / PILLS — keep contrast
+       =========================================== */
+    .badge,
+    .pill,
+    .tag,
+    .chip,
+    .stat-pill,
+    .status-pill {
+        background: var(--bg-surface-2);
+        color: var(--text-primary);
+        border-color: var(--border-strong);
+    }
+
+    /* ===========================================
+       MODAL OVERLAYS — darker tint in dark mode
+       =========================================== */
+    .modal-overlay,
+    .pmr-sign-modal-overlay,
+    .pe-modal-overlay {
+        background: rgba(0, 0, 0, 0.75) !important;
+    }
+
+    /* ===========================================
+       CHARTS — light grid lines, light axis text
+       (Charts via Chart.js — text is rendered as canvas,
+        but if any svg/html charts exist they get this treatment)
+       =========================================== */
+    .chart-grid line,
+    .chart-axis line {
+        stroke: var(--border);
+    }
+    .chart-axis text,
+    .chart-label {
+        fill: var(--text-muted);
+    }
+
+    /* ===========================================
+       PRINT-SPECIFIC STAYS LIGHT
+       The PM Report A4 printout should always be white-on-black,
+       not affected by app dark mode (you print on paper, after all).
+       =========================================== */
+    @media print {
+        .pmr-doc,
+        .pmr-doc *,
+        .pmr-task-table,
+        .pmr-task-table * {
+            background: #FFFFFF !important;
+            color: #000000 !important;
+            border-color: #000000 !important;
+        }
+    }
+}

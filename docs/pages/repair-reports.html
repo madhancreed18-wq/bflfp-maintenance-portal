@@ -1,0 +1,43 @@
+<!-- Repair Request Form — F-SP-ENG02-03 Rev.01 -->
+<section class="rep-page" id="rr-page">
+
+    <header class="rep-page-header">
+        <div class="rep-page-header-icon"><i class="ti ti-bandage"></i></div>
+        <div class="rep-page-header-text">
+            <h1>Repair Request Form <em>ใบแจ้งซ่อม</em></h1>
+            <p>Per-job repair record. Pick a job from the Maintenance Log to view its official form. Mirrors F-SP-ENG02-03.</p>
+        </div>
+        <span class="rep-form-code-chip">F-SP-ENG02-03 Rev.01</span>
+    </header>
+
+    <div class="rep-controls">
+        <div class="rep-control" style="min-width: 240px; flex: 1;">
+            <label class="rep-control-label" for="rr-job">Repair Job</label>
+            <select id="rr-job">
+                <option value="">Pick a corrective/repair job…</option>
+            </select>
+        </div>
+        <div class="rep-control">
+            <label class="rep-control-label" for="rr-asset-filter">Filter by asset</label>
+            <select id="rr-asset-filter">
+                <option value="">All assets</option>
+            </select>
+        </div>
+        <div class="rep-actions">
+            <button class="rep-btn rep-btn-primary" id="rr-generate"><i class="ti ti-refresh"></i> Generate</button>
+            <button class="rep-btn rep-btn-secondary" id="rr-print"><i class="ti ti-printer"></i> Print</button>
+        </div>
+    </div>
+
+    <div class="rep-help">
+        <i class="ti ti-info-circle"></i>
+        <span>Renders the same 3-section form (Request · Repair · Verification) the Power Apps captures, but in printable A4 layout.</span>
+    </div>
+
+    <div id="rr-report-container">
+        <div class="rep-loading">
+            <p>Pick a job and click Generate.</p>
+        </div>
+    </div>
+
+</section>

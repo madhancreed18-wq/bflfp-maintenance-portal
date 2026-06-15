@@ -1,0 +1,37 @@
+<!-- PM Reports — Monthly Consolidated PM Record -->
+<section class="pmr-page">
+
+    <div class="pmr-controls">
+        <div class="pmr-control">
+            <label for="pmr-asset">Asset <span>เครื่องจักร</span></label>
+            <input type="text" id="pmr-asset" list="pmr-asset-list" placeholder="W01AC01 — Air Compressor #1" autocomplete="off">
+            <datalist id="pmr-asset-list"></datalist>
+        </div>
+        <div class="pmr-control">
+            <label for="pmr-year">Year <span>ปี</span></label>
+            <select id="pmr-year"></select>
+        </div>
+        <div class="pmr-control">
+            <label for="pmr-month">Month <span>เดือน</span></label>
+            <select id="pmr-month">
+                <option value="1">January</option><option value="2">February</option>
+                <option value="3">March</option><option value="4">April</option>
+                <option value="5">May</option><option value="6">June</option>
+                <option value="7">July</option><option value="8">August</option>
+                <option value="9">September</option><option value="10">October</option>
+                <option value="11">November</option><option value="12">December</option>
+            </select>
+        </div>
+        <button class="pmr-btn pmr-btn-primary" id="pmr-load">📋 Generate Report</button>
+        <button class="pmr-btn pmr-btn-secondary" id="pmr-print" disabled>🖨️ Print / Save as PDF</button>
+        <span class="pmr-badge" id="pmr-badge" hidden></span>
+    </div>
+
+    <div class="pmr-help" id="pmr-help">
+        <p>👈 Pick an asset and month, then click <strong>Generate Report</strong>. The system pulls all PM submissions from SharePoint and assembles them into a consolidated R1-format document with weekly columns, ready to sign and archive.</p>
+    </div>
+
+    <div class="pmr-report" id="pmr-report" hidden>
+        <!-- Populated by JS -->
+    </div>
+</section>

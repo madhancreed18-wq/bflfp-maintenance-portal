@@ -1,0 +1,64 @@
+<!-- PM Completions admin (browser-local queue + JSON export) -->
+<section class="pmc-page">
+    <header class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">PM Completions <span class="title-th">การบันทึก PM ที่ทำเสร็จ</span></h1>
+            <p class="page-subtitle">All PM checklist submissions saved in this browser. Download as JSON and commit to <code>docs/data/pm_completions.json</code> to publish them to the dashboard.</p>
+        </div>
+    </header>
+
+    <div class="pmc-toolbar">
+        <div class="pmc-stats">
+            <span class="stat-pill"><span class="stat-num" id="pmc-stat-total">—</span><span class="stat-label">In browser</span></span>
+            <span class="stat-pill"><span class="stat-num" id="pmc-stat-pass">—</span><span class="stat-label">Pass</span></span>
+            <span class="stat-pill"><span class="stat-num" id="pmc-stat-fail">—</span><span class="stat-label">Fail / Findings</span></span>
+        </div>
+        <div class="pmc-actions">
+            <input type="file" id="pmc-import" accept=".json" hidden>
+            <button class="btn-secondary" id="btn-import">📥 Import JSON…</button>
+            <button class="btn-download btn-download-active" id="btn-download-all">💾 Download All as JSON</button>
+            <button class="btn-danger" id="btn-clear" disabled>🗑️ Clear Local</button>
+        </div>
+    </div>
+
+    <div class="pmc-help">
+        <strong>How this works:</strong> Each PM submission from the floor is saved in <em>this browser only</em> until you click <kbd>💾 Download All as JSON</kbd>.
+        Replace <code>docs/data/pm_completions.json</code> with the downloaded file, then <code>git commit &amp; push</code>.
+        After deploy, the dashboard sees the completions.
+        <br><strong>Multi-device:</strong> on each tablet, click <kbd>💾 Download</kbd> → upload all collected JSON files via <kbd>📥 Import JSON…</kbd> on a single device → then download the merged file to commit.
+    </div>
+
+    <div class="pmc-table-wrap">
+        <table class="pmc-table" id="pmc-table">
+            <thead>
+                <tr>
+                    <th>Submitted</th>
+                    <th>Asset</th>
+                    <th>PM Date</th>
+                    <th>Technician</th>
+                    <th>Type</th>
+                    <th>Result</th>
+                    <th>Tasks</th>
+                    <th>Notes</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="pmc-tbody">
+                <tr><td colspan="9" class="empty-row">No completions saved in this browser yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="pmc-footer-note" id="pmc-count-note"></p>
+</section>
+
+<!-- Detail modal -->
+<div class="pmc-modal-backdrop" id="pmc-modal" hidden>
+    <div class="pmc-modal-panel">
+        <header class="pmc-modal-header">
+            <h2 id="pmc-modal-title">PM Completion Detail</h2>
+            <button id="pmc-modal-close" class="modal-close">×</button>
+        </header>
+        <div class="pmc-modal-body" id="pmc-modal-body"></div>
+    </div>
+</div>

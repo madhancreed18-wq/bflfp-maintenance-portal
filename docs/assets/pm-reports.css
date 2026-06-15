@@ -1,0 +1,582 @@
+/* ============================================
+   BFLFP — PM Reports page (monthly consolidated)
+   ============================================ */
+
+/* Web fallback for Sarabun (when 'TH Sarabun PSK' isn't installed locally) */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap');
+
+.pmr-page { max-width: 1280px; margin: 0 auto; padding: 40px 28px 80px; }
+
+.pmr-controls {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px;
+    padding: 16px 20px; margin: 16px 0;
+    display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap;
+}
+.pmr-control { display: flex; flex-direction: column; gap: 4px; }
+.pmr-control label {
+    font-size: 11px; font-weight: 700; color: #475569;
+    text-transform: uppercase; letter-spacing: 0.05em;
+}
+.pmr-control label span { color: #94A3B8; font-weight: 400; margin-left: 4px; font-size: 10px; }
+.pmr-control input, .pmr-control select {
+    padding: 8px 12px; border: 1px solid #CBD5E1; border-radius: 6px;
+    font-size: 13px; min-width: 160px; font-family: inherit;
+}
+.pmr-control input:focus, .pmr-control select:focus {
+    outline: 2px solid #F97316; outline-offset: -1px; border-color: #F97316;
+}
+
+.pmr-btn {
+    padding: 10px 18px; border: none; border-radius: 8px;
+    font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit;
+    transition: background 0.15s;
+}
+.pmr-btn-primary { background: #F97316; color: #FFFFFF; }
+.pmr-btn-primary:hover { background: #EA580C; }
+.pmr-btn-secondary { background: #1E293B; color: #FFFFFF; }
+.pmr-btn-secondary:hover { background: #0F172A; }
+.pmr-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.pmr-badge {
+    padding: 8px 14px; border-radius: 999px;
+    font-size: 12px; font-weight: 700;
+}
+.pmr-badge-complete { background: #DCFCE7; color: #166534; }
+.pmr-badge-partial  { background: #FEF3C7; color: #92400E; }
+.pmr-badge-none     { background: #F1F5F9; color: #64748B; }
+
+.pmr-help {
+    background: #FFF7ED; border: 1px solid #FED7AA; border-left: 4px solid #F97316;
+    padding: 16px 20px; border-radius: 8px; margin-bottom: 20px;
+}
+.pmr-help p { margin: 0; color: #9A3412; font-size: 14px; line-height: 1.5; }
+
+/* ============================================
+   The Generated Report Document
+   ============================================ */
+.pmr-doc {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px;
+    padding: 24px 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    color: #0F172A; font-size: 13px;
+    /* TH Sarabun PSK — Thai government standard font (preinstalled on Thai Windows) */
+    font-family: 'TH Sarabun PSK', 'TH Sarabun New', 'Sarabun', 'Prompt', 'Inter', sans-serif;
+}
+/* Force every element inside the doc to inherit the Sarabun font (overrides global Prompt/Inter on headings) */
+.pmr-doc,
+.pmr-doc *,
+.pmr-doc-titles h2,
+.pmr-doc-titles p,
+.pmr-task-table th,
+.pmr-task-table td,
+.pmr-legend,
+.pmr-legend-block,
+.pmr-legend-title,
+.pmr-legend-row,
+.pmr-legend-name,
+.pmr-doc-meta,
+.pmr-meta-label,
+.pmr-meta-label small,
+.pmr-sig-role-en,
+.pmr-sig-role-th,
+.pmr-footer {
+    font-family: 'TH Sarabun PSK', 'TH Sarabun New', 'Sarabun', 'Prompt', 'Inter', sans-serif !important;
+}
+.pmr-doc-header {
+    display: grid; grid-template-columns: 60px 1fr auto; gap: 12px;
+    align-items: flex-start; padding-bottom: 6px; margin-bottom: 6px;
+}
+.pmr-logo { width: 56px; height: auto; }
+.pmr-doc-titles { text-align: center; }
+.pmr-doc-titles h2 { margin: 0 0 2px; font-size: 16px; font-family: 'Prompt','Inter',sans-serif; font-weight: 700; }
+.pmr-doc-titles p  { margin: 0; font-size: 12px; color: #475569; }
+.pmr-doc-meta { text-align: right; font-size: 11px; color: #475569; font-weight: 600; }
+
+/* Asset info strip — single thin line matching the official form */
+.pmr-doc-asset-strip {
+    display: grid; grid-template-columns: 36px 1fr 1.6fr 1fr;
+    border: 1px solid #1E293B; margin-bottom: 8px; font-size: 11px;
+}
+.pmr-doc-asset-strip > div {
+    padding: 4px 8px; border-right: 1px solid #1E293B;
+}
+.pmr-doc-asset-strip > div:last-child { border-right: none; }
+.pmr-strip-pm {
+    background: #F8FAFC; font-weight: 700; text-align: center;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.pmr-task-table { width: 100%; border-collapse: collapse; border: 1px solid #1E293B; }
+.pmr-task-table thead th {
+    background: #F8FAFC; color: #0F172A; padding: 6px 8px;
+    font-size: 11px; font-weight: 700; text-align: center;
+    border: 1px solid #1E293B;
+}
+.pmr-task-table tbody td {
+    padding: 6px 8px; border: 1px solid #1E293B;
+    font-size: 11px; vertical-align: middle;
+}
+.pmr-task-table .col-num   { width: 30px; text-align: center; font-weight: 700; color: #000; }
+/* Per-task frequency colour on the # column (matches BFLFP palette) */
+.pmr-task-table .col-num.fc-W { background: #F4B084; }   /* Weekly — orange */
+.pmr-task-table .col-num.fc-M { background: #FF6B6B; color: #FFFFFF; } /* Monthly — red */
+.pmr-task-table .col-num.fc-Q { background: #95D5B2; }   /* Quarterly — green */
+.pmr-task-table .col-num.fc-S { background: #74B3CE; }   /* Bi-Annual — blue */
+.pmr-task-table .col-num.fc-A { background: #B4A7D6; }   /* Annual — purple */
+.pmr-task-table .col-num.fc-D { background: #FFE066; }   /* Daily — yellow */
+.pmr-task-table .col-num.fc-none { background: #E7E6E6; }
+.pmr-task-table .col-img   {
+    width: 60px;
+    padding: 0 !important;
+    height: 56px;
+    line-height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.pmr-task-table .col-img img {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block;
+    margin: 0;
+}
+.pmr-task-table .col-desc  { width: 22%; }
+.pmr-task-table .col-std   { width: 24%; font-size: 10px; color: #334155; }
+.pmr-task-table .col-weekgroup { background: #F8FAFC; color: #000; text-align: center; }
+.pmr-task-table .col-freqgroup { width: 32px; text-align: center; font-size: 11px; }
+.pmr-task-table thead tr:nth-child(2) .col-week {
+    background: #F8FAFC; color: #000;
+    width: 36px; text-align: center; font-size: 10px;
+}
+.pmr-task-table .col-week-cell { text-align: center; height: 28px; vertical-align: middle; }
+.pmr-task-table .col-method { width: 50px; text-align: center; font-size: 10px; }
+
+.pmr-tick {
+    display: inline-block; width: 18px; height: 18px; line-height: 18px;
+    text-align: center; font-weight: 700; border-radius: 3px;
+}
+.pmr-ok { color: #166534; }
+.pmr-ng { color: #991B1B; }
+.pmr-na { color: #64748B; }
+
+.pmr-week-meta {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 8px; margin: 14px 0; padding: 12px;
+    background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px;
+}
+.pmr-week-info { font-size: 11px; color: #334155; }
+.pmr-week-info-label {
+    font-size: 10px; font-weight: 700; color: #1E293B;
+    text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px;
+}
+.pmr-week-pending { color: #F59E0B; font-weight: 600; }
+.pmr-week-notes { margin-top: 4px; color: #64748B; font-size: 10px; }
+
+.pmr-legend {
+    margin: 14px 0; padding: 8px 12px; background: #F8FAFC;
+    border: 1px solid #E2E8F0; border-radius: 4px; font-size: 11px;
+}
+
+/* Two-column legend footer (matches BFLFP form) */
+.pmr-legend-block {
+    display: grid; grid-template-columns: 1fr 2fr; gap: 12px;
+    margin: 14px 0; border: 1px solid #1E293B;
+}
+.pmr-legend-symbols, .pmr-legend-colors {
+    padding: 8px 12px;
+}
+.pmr-legend-symbols {
+    border-right: 1px solid #1E293B; background: #F8FAFC;
+}
+.pmr-legend-colors { background: #FFFFFF; }
+.pmr-legend-title {
+    font-size: 10px; font-weight: 700; color: #1E293B;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    margin-bottom: 6px; padding-bottom: 4px; border-bottom: 1px solid #CBD5E1;
+}
+.pmr-legend-row {
+    font-size: 11px; color: #334155; margin-bottom: 3px;
+    display: flex; align-items: center; gap: 6px;
+}
+.pmr-legend-color-grid {
+    display: grid; grid-template-columns: auto 1fr auto 1fr auto 1fr;
+    gap: 4px 8px; align-items: center;
+}
+.pmr-legend-chip {
+    display: inline-block; width: 18px; height: 14px;
+    border: 1px solid #1E293B;
+}
+.pmr-legend-name {
+    font-size: 10px; color: #334155;
+}
+/* BFLFP frequency colors (matches the official form) */
+.pmr-legend-chip.cl-W { background: #F4B084; }   /* Weekly — orange */
+.pmr-legend-chip.cl-M { background: #FF6B6B; }   /* Monthly — red */
+.pmr-legend-chip.cl-Q { background: #95D5B2; }   /* Quarterly — green */
+.pmr-legend-chip.cl-S { background: #74B3CE; }   /* Bi-Annual — blue */
+.pmr-legend-chip.cl-A { background: #B4A7D6; }   /* Annual — purple */
+.pmr-legend-chip.cl-D { background: #FFE066; }   /* Daily — yellow */
+
+/* ============================================
+   Inline Date + Signature rows (appended to the main task table)
+   ============================================ */
+.pmr-pending-em { color: #DC2626; font-style: italic; font-size: 10px; }
+
+.pmr-meta-row td {
+    border: 1px solid #1E293B;
+    vertical-align: middle;
+    background: #FFFFFF;
+}
+.pmr-meta-label {
+    background: #F8FAFC !important;
+    padding: 4px 10px !important;
+    text-align: left; font-weight: 700; color: #0F172A;
+    font-size: 10px; line-height: 1.2;
+}
+.pmr-meta-label small { color: #64748B; font-size: 9px; font-weight: 500; }
+
+.pmr-date-row .pmr-date-cell {
+    text-align: center; font-weight: 600; font-size: 11px;
+    background: #FFFEF0 !important;
+}
+
+/* Signature label cell (Technician/Supervisor/Manager) */
+.pmr-sig-label-cell {
+    background: #F8FAFC !important;
+}
+.pmr-sig-role-en {
+    font-size: 10px; font-weight: 700; color: #0F172A;
+    display: flex; align-items: center; gap: 6px;
+}
+.pmr-sig-role-th { font-size: 9px; color: #475569; font-weight: 500; margin-top: 1px; }
+
+/* Tag showing which stage signs this row (e.g. "Fill Mode", "Approval Queue", "SIGN HERE") */
+.pmr-sig-stage-tag {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 600;
+    padding: 1px 5px;
+    border-radius: 999px;
+    background: #E2E8F0;
+    color: #64748B;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.pmr-sig-stage-tag-active {
+    background: #F97316;
+    color: #FFFFFF;
+}
+
+/* The whole Manager row gets a subtle highlight so the user knows where to click */
+.pmr-sig-row-editable .pmr-meta-label,
+.pmr-sig-row-editable .pmr-sig-cell-inline {
+    background: #FFFBEB !important;
+}
+
+/* Read-only thumbnails — Tech/Sup. No hover, no cursor, just display. */
+.pmr-sig-thumb-readonly {
+    cursor: default !important;
+}
+.pmr-sig-thumb-readonly:hover {
+    background: transparent !important;
+}
+.pmr-sig-thumb-pending {
+    /* Pending = not yet signed upstream */
+    color: #94A3B8;
+}
+.pmr-sig-pending-label {
+    font-size: 14px;
+    color: #94A3B8;
+    font-weight: 400;
+}
+
+/* Editable thumbnails — Manager only. Cursor + hover hint stays. */
+.pmr-sig-thumb-editable {
+    cursor: pointer;
+    background: #FFFFFF;
+}
+.pmr-sig-thumb-editable:hover {
+    background: #FEF3C7;
+}
+
+/* Inline signature cell with click-to-sign thumbnail */
+.pmr-sig-cell-inline {
+    padding: 2px !important;
+    text-align: center;
+    vertical-align: middle;
+    height: 52px;
+}
+.pmr-sig-thumb {
+    width: 100%; height: 48px;
+    border: none;
+    border-radius: 0;
+    background: transparent; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s;
+    overflow: hidden;
+    position: relative;
+}
+.pmr-sig-thumb:hover {
+    background: #FFF7ED;
+}
+.pmr-sig-thumb.pmr-sig-thumb-filled {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.pmr-sig-thumb.pmr-sig-thumb-filled:hover {
+    background: #FFF7ED;
+}
+.pmr-sig-placeholder {
+    color: #64748B;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+.pmr-sig-thumb::after {
+    content: '';
+    position: absolute; inset: 0;
+    pointer-events: none;
+}
+.pmr-sig-saved {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 46px;
+    object-fit: contain;
+    background: #FFFFFF;
+}
+
+/* ============================================
+   SIGNATURE MODAL — large drawing area
+   ============================================ */
+.pmr-sign-modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(15, 23, 42, 0.65);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 2000; padding: 20px;
+}
+.pmr-sign-modal-overlay[hidden] { display: none !important; }
+.pmr-sign-modal-panel {
+    background: #FFFFFF; border-radius: 12px;
+    width: 100%; max-width: 680px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    display: flex; flex-direction: column;
+    animation: pmr-sign-rise 0.2s ease-out;
+}
+@keyframes pmr-sign-rise {
+    from { transform: translateY(-12px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+.pmr-sign-modal-header {
+    display: flex; align-items: center;
+    padding: 16px 22px; border-bottom: 1px solid #E2E8F0;
+    background: #F8FAFC; border-radius: 12px 12px 0 0;
+}
+.pmr-sign-modal-header h3 {
+    margin: 0; font-size: 17px; flex: 1;
+    font-family: 'Prompt','Inter',sans-serif; color: #0F172A;
+}
+.pmr-sign-modal-close {
+    background: none; border: none; font-size: 26px;
+    cursor: pointer; color: #64748B; padding: 0;
+    width: 32px; height: 32px; border-radius: 6px;
+}
+.pmr-sign-modal-close:hover { background: #E2E8F0; color: #0F172A; }
+.pmr-sign-modal-body {
+    padding: 20px 22px;
+}
+#pmr-sign-big-canvas {
+    width: 100%; height: 200px;
+    border: 2px dashed #94A3B8; border-radius: 6px;
+    background: #FFFFFF; cursor: crosshair; touch-action: none;
+    display: block;
+}
+.pmr-sign-modal-hint {
+    margin: 8px 0 0; font-size: 12px; color: #64748B; text-align: center;
+}
+.pmr-sign-modal-footer {
+    display: flex; gap: 10px; align-items: center;
+    padding: 14px 22px;
+    border-top: 1px solid #E2E8F0; background: #F8FAFC;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Per-week notes block (below sig table, if any submitted notes) */
+.pmr-notes-block {
+    margin-top: 14px; padding: 10px 14px;
+    background: #FFF7ED; border: 1px solid #FED7AA; border-radius: 4px;
+}
+.pmr-notes-block h4 {
+    margin: 0 0 6px; font-size: 11px; font-weight: 700;
+    color: #9A3412; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.pmr-notes-block ul { margin: 0; padding-left: 20px; font-size: 11px; color: #334155; }
+.pmr-notes-block li { margin-bottom: 3px; }
+
+.pmr-footer {
+    margin-top: 20px; padding-top: 12px; border-top: 1px solid #E2E8F0;
+    text-align: center; font-size: 10px; color: #94A3B8;
+}
+
+/* ============================================
+   PRINT
+   ============================================ */
+@media print {
+    body { background: #FFFFFF; }
+    /* Force browsers to print backgrounds/colors (legends, chips, header bars) */
+    * {
+        -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+    }
+    html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
+    .site-nav, .announcement-banner, .site-footer, .pmr-controls, .pmr-help, .no-print {
+        display: none !important;
+    }
+    .pmr-page { padding: 0; max-width: none; margin: 0; }
+
+    /* === CENTERED MODE: document fits on ONE A4 landscape page with margins around it === */
+    @page { size: A4 landscape; margin: 10mm 12mm; }
+    .pmr-doc {
+        border: none; box-shadow: none; border-radius: 0;
+        /* Padding (not margin) pushes header down without confusing page-break calculations */
+        padding: 12mm 0 0 0;
+        /* Natural size — no stretching to fill page. Centered horizontally only. */
+        width: 100%;
+        max-width: 273mm;           /* A4 landscape (297mm) minus 12mm × 2 page margins */
+        margin: 0 auto;             /* horizontal centering only */
+        display: block;
+        /* Prevent the doc from being split across two pages */
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    /* Belt-and-braces: no orphan/widow page break inside the table either */
+    .pmr-task-table { page-break-inside: avoid; break-inside: avoid; }
+    /* Compact, natural row heights — content no longer needs to fill the page */
+    /* Sarabun renders smaller than Inter at same px, so font sizes are bumped ~+1.5px */
+    .pmr-task-table tbody td {
+        height: auto;
+        padding: 3px 5px !important;
+        font-size: 11px;
+    }
+    .pmr-task-table tbody tr:not(.pmr-meta-row) td {
+        height: 30px;
+    }
+    .pmr-task-table tbody tr.pmr-meta-row td {
+        height: 28px;
+    }
+    /* Image fills the cell edge-to-edge — touches all 4 borders */
+    .pmr-task-table .col-img {
+        padding: 0 !important;
+        height: 30px;
+        line-height: 0;
+        vertical-align: middle;
+        overflow: hidden;
+    }
+    .pmr-task-table .col-img img {
+        max-width: none !important;
+        max-height: none !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-width: 100% !important;
+        min-height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+        display: block;
+        margin: 0;
+    }
+    /* Legend sits naturally below content (no longer pinned to page bottom) */
+    .pmr-bottom-legend {
+        margin-top: 6px;
+    }
+    .pmr-doc-header {
+        padding-bottom: 3px; margin-bottom: 4px;
+        grid-template-columns: 45px 1fr auto;
+        gap: 8px;
+    }
+    .pmr-logo { width: 42px; }
+    .pmr-doc-titles h2 { font-size: 15px; margin-bottom: 1px; font-weight: 700; }
+    .pmr-doc-titles p  { font-size: 12px; }
+    .pmr-doc-meta { font-size: 11px; }
+
+    .pmr-doc-asset-strip { margin-bottom: 4px; font-size: 12px; }
+    .pmr-doc-asset-strip > div { padding: 3px 6px; }
+    .pmr-strip-pm { font-size: 13px; font-weight: 700; }
+
+    .pmr-task-table thead th {
+        padding: 3px 4px;
+        font-size: 11px;
+        font-weight: 700;
+    }
+    .pmr-task-table tbody td {
+        padding: 3px 5px !important;
+        font-size: 11px;
+        line-height: 1.2;
+    }
+    /* (col-img sizing handled above — keep image centered & contained) */
+    .pmr-task-table .col-std { font-size: 10.5px; }
+    .pmr-task-table .col-week-cell { height: 18px; }
+    .pmr-task-table tbody tr { page-break-inside: avoid; }
+    .pmr-tick { width: 14px; height: 14px; line-height: 14px; font-size: 12px; }
+
+    .pmr-legend {
+        margin: 6px 0; padding: 3px 6px; font-size: 11px;
+    }
+    .pmr-legend-block { margin: 6px 0; }
+    .pmr-legend-symbols, .pmr-legend-colors { padding: 4px 8px; }
+    .pmr-legend-title { font-size: 11px; margin-bottom: 3px; padding-bottom: 2px; font-weight: 700; }
+    .pmr-legend-row { font-size: 11px; margin-bottom: 1px; }
+    .pmr-legend-name { font-size: 10px; }
+    .pmr-legend-chip { width: 14px; height: 11px; }
+    .pmr-legend-color-grid { gap: 2px 6px; }
+
+    /* INLINE signature/date rows inside the task table — compact print */
+    .pmr-meta-row { page-break-inside: avoid; }
+    .pmr-meta-label { padding: 3px 6px !important; font-size: 11px; font-weight: 700; }
+    .pmr-meta-label small { font-size: 10px; }
+    .pmr-date-row .pmr-date-cell { font-size: 11px; padding: 3px !important; }
+    .pmr-sig-role-en { font-size: 11px; font-weight: 700; }
+    .pmr-sig-role-th { font-size: 10px; }
+    .pmr-sig-cell-inline {
+        padding: 1px !important; height: 38px;
+    }
+    .pmr-sig-thumb {
+        height: 34px;
+        border: none !important;
+        background: transparent !important;
+    }
+    .pmr-sig-thumb.pmr-sig-thumb-filled {
+        border: none !important;
+    }
+    /* Hide the ✎ pencil in print — empty cells are just empty boxes */
+    .pmr-sig-placeholder,
+    .pmr-sig-thumb .pmr-sig-placeholder { display: none !important; visibility: hidden !important; }
+    .pmr-sig-saved {
+        max-height: 32px;
+    }
+    .pmr-sig-clear { display: none !important; }
+
+    .pmr-notes-block {
+        margin-top: 6px; padding: 4px 8px; font-size: 9px;
+        page-break-inside: avoid;
+    }
+    .pmr-notes-block h4 { font-size: 9px; margin-bottom: 2px; }
+    .pmr-notes-block ul { font-size: 9px; padding-left: 16px; }
+
+    .pmr-footer {
+        margin-top: 6px; padding-top: 4px; font-size: 8px;
+    }
+}
+
+/* ============================================
+   Per-asset shortcut button styling on Assets page
+   ============================================ */
+.btn-action.is-report {
+    background: #0F766E; color: #FFFFFF;
+}
+.btn-action.is-report:hover { background: #115E59; }

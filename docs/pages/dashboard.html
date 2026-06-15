@@ -100,6 +100,74 @@
          ============================================ -->
     <div class="dash-main" id="dash-main" style="display:none;">
 
+        <!-- ============================================
+             PM COMPLIANCE — CURRENT PERIOD (live from PMCompletions)
+             ============================================ -->
+        <section class="dash-card pmlive-card" id="pmlive-section">
+            <div class="dash-card-header pmlive-header">
+                <div>
+                    <h3 class="dash-card-title">
+                        <span class="dot dot-primary"></span>
+                        PM Compliance — Current Period
+                        <span class="dash-th-inline">/ การปฏิบัติตามแผน PM ในช่วงปัจจุบัน</span>
+                    </h3>
+                    <p class="dash-card-sub">Live from technician submissions · Are this period's PMs done?</p>
+                </div>
+                <button class="dash-btn dash-btn-outline" id="pmlive-refresh" title="Refresh live PM data">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                    Refresh
+                </button>
+            </div>
+
+            <!-- 5 frequency tiles -->
+            <div class="pmlive-tiles" id="pmlive-tiles">
+                <div class="pmlive-tile-loading">Loading PM compliance…</div>
+            </div>
+
+            <!-- Pending + Recent tables -->
+            <div class="pmlive-tables">
+                <details class="pmlive-detail" id="pmlive-pending-wrap">
+                    <summary>
+                        <span class="pmlive-summary-dot pmlive-dot-pending"></span>
+                        <span class="pmlive-summary-label">Pending this period</span>
+                        <span class="pmlive-summary-count" id="pmlive-pending-count">—</span>
+                        <span class="pmlive-summary-hint">click to expand</span>
+                    </summary>
+                    <div class="pmlive-table-wrap">
+                        <table class="pmlive-table" id="pmlive-pending-table">
+                            <thead>
+                                <tr>
+                                    <th>Asset ID</th><th>Name</th><th>Class</th>
+                                    <th>Frequency</th><th>Last Done</th><th>Days Since</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <details class="pmlive-detail" id="pmlive-recent-wrap">
+                    <summary>
+                        <span class="pmlive-summary-dot pmlive-dot-done"></span>
+                        <span class="pmlive-summary-label">Recent submissions (last 30 days)</span>
+                        <span class="pmlive-summary-count" id="pmlive-recent-count">—</span>
+                        <span class="pmlive-summary-hint">click to expand</span>
+                    </summary>
+                    <div class="pmlive-table-wrap">
+                        <table class="pmlive-table" id="pmlive-recent-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th><th>Asset ID</th><th>Name</th>
+                                    <th>Technician</th><th>Type</th><th>Result</th><th>Tasks</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </details>
+            </div>
+        </section>
+
         <!-- KPI STRIP -->
         <section class="dash-kpi-strip">
             <div class="kpi-tile kpi-tile-primary">
@@ -420,3 +488,5 @@
 
 <!-- Chart.js via CDN (required for charts) -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<!-- PM Live Compliance — reads from PMCompletions, computes per-period status -->
+<script src="./assets/pm-live-compliance.js?v=1"></script>

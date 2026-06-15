@@ -1,0 +1,62 @@
+<!-- Corrective Maintenance — embedded Power Apps -->
+<section class="corrective-page">
+    <header class="corrective-header">
+        <div class="corrective-header-inner">
+            <div class="corrective-title-block">
+                <h1 class="corrective-title">
+                    Corrective Maintenance
+                    <span class="corrective-title-th">การซ่อมแซมเชิงแก้ไข</span>
+                </h1>
+                <p class="corrective-subtitle">
+                    Powered by the Maintanance BFLFP app (Power Apps). Issue reports, repair logs, and 3-step approvals (Requester → Inspector → Approver).
+                </p>
+            </div>
+            <div class="corrective-actions">
+                <button class="corrective-btn corrective-btn-fullscreen" id="corrective-fullscreen" type="button" title="Hide portal chrome and use the entire window for the app">
+                    ⛶ Fullscreen
+                </button>
+                <a class="corrective-btn corrective-btn-open" id="corrective-open-new"
+                   href="https://apps.powerapps.com/play/e/default-e622a082-d0bb-441e-a364-13f5c6912159/a/c21c9003-291c-4998-b829-f13cb54afa07?tenantId=e622a082-d0bb-441e-a364-13f5c6912159&hint=20b714cd-a2d0-493b-8b66-a3bbd7ab4146&sourcetime=1779876718586"
+                   target="_blank" rel="noopener">
+                    ↗ Open in new window
+                </a>
+                <button class="corrective-btn corrective-btn-reload" id="corrective-reload" type="button">↻ Reload</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- First-load help banner — dismissible -->
+    <div class="corrective-help" id="corrective-help">
+        <span class="corrective-help-icon">ℹ️</span>
+        <div class="corrective-help-text">
+            <strong>First time? You may be asked to sign in to Microsoft.</strong>
+            That's expected — the embedded app uses your BFLFP Microsoft 365 account. Sign in once, then it remembers.
+            If it doesn't load, click "Open in new window" above to use it in its own tab.
+        </div>
+        <button class="corrective-help-close" id="corrective-help-close" aria-label="Dismiss">×</button>
+    </div>
+
+    <!-- Loading skeleton (replaced when iframe is ready) -->
+    <div class="corrective-loading" id="corrective-loading">
+        <div class="corrective-spinner"></div>
+        <p>Loading Corrective Maintenance app…</p>
+    </div>
+
+    <!-- The actual Power Apps embed -->
+    <div class="corrective-embed-wrap">
+        <iframe
+            id="corrective-iframe"
+            class="corrective-iframe"
+            src="https://apps.powerapps.com/play/e/default-e622a082-d0bb-441e-a364-13f5c6912159/a/c21c9003-291c-4998-b829-f13cb54afa07?tenantId=e622a082-d0bb-441e-a364-13f5c6912159&hint=20b714cd-a2d0-493b-8b66-a3bbd7ab4146&sourcetime=1779876718586&source=portal-embed"
+            title="Maintanance BFLFP — Corrective Maintenance"
+            allow="geolocation; microphone; camera; clipboard-read; clipboard-write"
+            referrerpolicy="strict-origin-when-cross-origin"
+            loading="lazy"
+        ></iframe>
+    </div>
+
+    <!-- Floating exit-fullscreen button (only visible while body.corrective-fullscreen is on) -->
+    <button class="corrective-exit-fs" id="corrective-exit-fs" type="button" title="Exit fullscreen (Esc)">
+        ✕ Exit Fullscreen
+    </button>
+</section>

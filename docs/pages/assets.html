@@ -7,11 +7,11 @@
         </div>
     </header>
 
-    <!-- EDIT MODE BANNER (shown only when edit mode is active) -->
-    <div class="edit-mode-banner" id="edit-mode-banner" hidden>
+    <div class="edit-mode-banner" id="edit-mode-banner" hidden data-need="edit_assets">
         <span class="edit-mode-label">🔒 Edit Mode Active</span>
         <span class="edit-mode-sub">Changes are stored in your browser. Use the download button to export updated JSON when done.</span>
         <button class="btn-download" id="btn-download" disabled>💾 Download updated assets.json</button>
+        <button class="btn-download-cl" id="btn-download-cl" disabled>📑 Download updated checklists.json</button>
     </div>
 
     <div class="assets-toolbar">
@@ -49,7 +49,8 @@
                 <option value="Scrapped">Scrapped</option>
             </select>
             <button class="btn-clear" id="f-clear">Clear</button>
-            <button class="btn-add" id="btn-add" hidden>+ Add Asset</button>
+            <button class="btn-print-bulk" id="btn-print-bulk" disabled data-need="bulk_print">📋 Print All Filtered</button>
+            <button class="btn-add" id="btn-add" hidden data-need="add_assets">+ Add Asset</button>
         </div>
     </div>
 
@@ -57,6 +58,7 @@
         <table class="assets-table" id="assets-table">
             <thead>
                 <tr>
+                    <th class="col-check"><input type="checkbox" id="check-all" title="Select all visible" /></th>
                     <th class="col-id">Asset ID</th>
                     <th class="col-name">ชื่อ Asset</th>
                     <th class="col-type">Type</th>
@@ -70,7 +72,7 @@
                 </tr>
             </thead>
             <tbody id="assets-tbody">
-                <tr><td colspan="10" class="loading-row">Loading 152 assets…</td></tr>
+                <tr><td colspan="11" class="loading-row">Loading 152 assets…</td></tr>
             </tbody>
         </table>
     </div>
@@ -78,19 +80,15 @@
     <p class="assets-footer-note" id="assets-count-note"></p>
 </section>
 
-<!-- =========================================================
-     ADD / EDIT ASSET MODAL
-     ========================================================= -->
+<!-- ADD / EDIT ASSET MODAL -->
 <div class="modal-overlay" id="asset-modal" hidden>
     <div class="modal-panel" role="dialog" aria-labelledby="modal-title">
         <header class="modal-header">
             <h2 id="modal-title">Add Asset</h2>
             <button class="modal-close" id="modal-close" aria-label="Close">×</button>
         </header>
-
         <form class="modal-body" id="asset-form" novalidate>
             <input type="hidden" id="f-original-id" value="" />
-
             <fieldset class="form-section">
                 <legend>Identity</legend>
                 <div class="form-grid">
@@ -119,7 +117,6 @@
                     </label>
                 </div>
             </fieldset>
-
             <fieldset class="form-section">
                 <legend>Equipment Details</legend>
                 <div class="form-grid">
@@ -141,7 +138,6 @@
                     </label>
                 </div>
             </fieldset>
-
             <fieldset class="form-section">
                 <legend>Location</legend>
                 <div class="form-grid">
@@ -155,7 +151,6 @@
                     </label>
                 </div>
             </fieldset>
-
             <fieldset class="form-section">
                 <legend>Operational</legend>
                 <div class="form-grid">
@@ -194,9 +189,7 @@
                     </label>
                 </div>
             </fieldset>
-
             <div class="form-error" id="form-error" hidden></div>
-
             <footer class="modal-footer">
                 <button type="button" class="btn-secondary" id="btn-cancel">Cancel</button>
                 <button type="submit" class="btn-primary" id="btn-save">Save Asset</button>

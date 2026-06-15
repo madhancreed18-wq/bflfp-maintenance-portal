@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "generated": "2026-05-23",
+  "count": 1,
+  "completions": [
+    {
+      "asset_id": "W01AC01",
+      "asset_name": "ปั๊มลมสกรู  (Air - Compressure)#1",
+      "asset_class": "AIR COMPRESSOR",
+      "pm_date": "2026-05-23",
+      "technician": "ศิริโชค",
+      "pm_type": "Weekly",
+      "overall_result": "Pass with Findings",
+      "tasks_passed": 3,
+      "tasks_failed": 5,
+      "tasks_na": 0,
+      "tasks": [
+        {
+          "task_no": 1,
+          "description": "มอเตอร์",
+          "result": "R",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        },
+        {
+          "task_no": 2,
+          "description": "กรองอากาศ/กรองน้ำมัน",
+          "result": "R",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        },
+        {
+          "task_no": 3,
+          "description": "กรองดักน้ำ",
+          "result": "R",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        },
+        {
+          "task_no": 4,
+          "description": "ระดับน้ำมัน",
+          "result": "S",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        },
+        {
+          "task_no": 5,
+          "description": "จอควมคุม",
+          "result": "S",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        },
+        {
+          "task_no": 6,
+          "description": "ตู้ควบคุมระบบไฟฟ้า",
+          "result": "S",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        },
+        {
+          "task_no": 7,
+          "description": "เปลี่ยนถ่ายน้ำมันเกรดอาหารทุ่ก 6 เดือน",
+          "result": "S",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        },
+        {
+          "task_no": 8,
+          "description": "การเคลียร์สิ่งแปลกปลอม / ความสะอาดก่อนส่งมอบ",
+          "result": "S",
+          "finding": "",
+          "action": "",
+          "measured": ""
+        }
+      ],
+      "notes": "",
+      "id": "pmc-1779499941397-9arr3j",
+      "submitted_at": "2026-05-23T01:32:21.397Z"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+/* ============================================
+   BFLFP — PM Completions admin styles
+   ============================================ */
+.src-badge {
+    display: inline-block; padding: 2px 6px; margin-left: 6px;
+    font-size: 10px; font-weight: 700; border-radius: 4px;
+    vertical-align: middle; letter-spacing: 0.02em;
+}
+.src-badge.src-cloud { background: #DCFCE7; color: #166534; }
+.src-badge.src-local { background: #FEF3C7; color: #92400E; }
+
+.pmc-page { max-width: 1480px; margin: 0 auto; padding: 40px 28px 80px; }
+.pmc-toolbar {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px;
+    padding: 18px 20px; margin-bottom: 14px;
+    display: flex; gap: 18px; align-items: center; flex-wrap: wrap;
+}
+.pmc-stats { display: flex; gap: 8px; flex-wrap: wrap; }
+.pmc-actions { display: flex; gap: 8px; margin-left: auto; }
+.btn-danger {
+    padding: 8px 14px; background: #FEE2E2; color: #991B1B;
+    border: 1px solid #FCA5A5; border-radius: 8px; font-size: 13px;
+    font-weight: 600; cursor: pointer; font-family: inherit;
+}
+.btn-danger:hover:not(:disabled) { background: #FECACA; }
+.btn-danger:disabled { background: #F5F5F5; color: #94A3B8; border-color: #E2E8F0; cursor: not-allowed; }
+
+.pmc-help {
+    background: #EFF6FF; border: 1px solid #BFDBFE; border-left: 4px solid #2563EB;
+    border-radius: 6px; padding: 12px 16px; margin-bottom: 14px;
+    font-size: 13px; color: #1E3A8A; line-height: 1.6;
+}
+.pmc-help code, .pmc-help kbd {
+    background: #1E3A8A; color: #FFFFFF; padding: 2px 6px; border-radius: 3px;
+    font-family: 'Consolas','Menlo',monospace; font-size: 11px;
+}
+
+.pmc-table-wrap {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px;
+    overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.pmc-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.pmc-table thead th {
+    background: #F8FAFC; color: #475569; text-align: left;
+    padding: 12px; font-weight: 600; border-bottom: 2px solid #E2E8F0;
+    text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em;
+}
+.pmc-table tbody td {
+    padding: 10px 12px; border-bottom: 1px solid #F1F5F9; vertical-align: top;
+}
+.pmc-table tbody tr:hover { background: #FFF7ED; }
+.pmc-table code {
+    background: #1E293B; color: #FFFFFF; padding: 2px 6px; border-radius: 3px;
+    font-family: 'Consolas','Menlo',monospace; font-size: 11px;
+}
+.pmc-table small { color: #64748B; font-size: 11px; }
+
+.res-pill {
+    display: inline-block; padding: 3px 10px; border-radius: 4px;
+    font-size: 11px; font-weight: 700;
+}
+.res-pass { background: #DCFCE7; color: #166534; }
+.res-warn { background: #FEF3C7; color: #92400E; }
+.res-fail { background: #FEE2E2; color: #991B1B; }
+
+.btn-view {
+    padding: 4px 10px; background: #1E40AF; color: #FFFFFF;
+    border: none; border-radius: 4px; font-size: 11px; font-weight: 600;
+    cursor: pointer; font-family: inherit;
+}
+.btn-view:hover { background: #1E3A8A; }
+.btn-del {
+    padding: 4px 8px; background: #FEE2E2; color: #991B1B;
+    border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer;
+    font-family: inherit; font-size: 12px;
+}
+.btn-del:hover { background: #FECACA; }
+
+/* Detail modal */
+.pmc-modal-backdrop {
+    position: fixed; inset: 0; background: rgba(15,23,42,0.55);
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 40px 20px; z-index: 1000; overflow-y: auto;
+}
+.pmc-modal-backdrop[hidden] { display: none !important; }
+.pmc-modal-panel {
+    background: #FFFFFF; border-radius: 10px; max-width: 920px; width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.pmc-modal-header {
+    display: flex; align-items: center; padding: 16px 22px;
+    border-bottom: 1px solid #E2E8F0; background: #F8FAFC;
+    border-radius: 10px 10px 0 0;
+}
+.pmc-modal-header h2 { margin: 0; font-size: 16px; color: #0F172A; flex: 1; }
+.modal-close {
+    background: none; border: none; font-size: 26px; cursor: pointer;
+    color: #64748B; width: 32px; height: 32px; line-height: 1; padding: 0;
+}
+.modal-close:hover { color: #0F172A; }
+.pmc-modal-body { padding: 18px 22px; }
+.pmc-dl { display: grid; grid-template-columns: 160px 1fr; gap: 8px 18px; margin-bottom: 18px; }
+.pmc-dl dt { font-weight: 700; color: #475569; font-size: 12px; text-transform: uppercase; }
+.pmc-dl dd { margin: 0; font-size: 13px; color: #0F172A; }
+
+.pmc-task-table {
+    width: 100%; border-collapse: collapse; font-size: 12px;
+    border: 1px solid #E2E8F0;
+}
+.pmc-task-table th {
+    background: #F8FAFC; padding: 8px; border-bottom: 1px solid #E2E8F0;
+    text-align: left; font-weight: 700;
+}
+.pmc-task-table td { padding: 6px 8px; border-bottom: 1px solid #F1F5F9; }
+
+.empty-row { text-align: center; color: #94A3B8; padding: 40px !important; font-style: italic; }
+.pmc-footer-note { margin-top: 14px; color: #64748B; font-size: 12px; text-align: right; }
+.btn-secondary {
+    padding: 8px 14px; background: #FFFFFF; color: #475569;
+    border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13px;
+    font-weight: 600; cursor: pointer; font-family: inherit;
+}
+.btn-secondary:hover { background: #F8FAFC; }

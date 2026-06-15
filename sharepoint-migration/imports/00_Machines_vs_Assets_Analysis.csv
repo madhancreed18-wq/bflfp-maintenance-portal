@@ -1,0 +1,233 @@
+﻿MachineName,Bucket,MappedTo,SuggestedAction
+W01AC03,matches_id,W01AC03,Add to AssetAliases (canonical ID used as name)
+Ttk 2,matches_name,W01PK18 [fuzzy],Add to AssetAliases
+W01AC02 เครื่องทำลมแห้ง (Air - Compressure)#1,matches_name,W01AC02 [fuzzy],Add to AssetAliases
+W01AC01 ปั๊มลมสกรู  (Air - Compressure)#1,matches_name,W01AC01 [fuzzy],Add to AssetAliases
+W01AC03 ปั๊มลมสกรู  (Air - Compressure)#2,matches_name,W01AC03 [fuzzy],Add to AssetAliases
+W01AC04 เครื่องทำลมแห้ง (Air - Compressure)#2,matches_name,W01AC04 [fuzzy],Add to AssetAliases
+W01AI01 Chiller Wet Food #1,matches_name,W01AI01 [fuzzy],Add to AssetAliases
+W01AI02 Chiller Wet Food #2,matches_name,W01AI02 [fuzzy],Add to AssetAliases
+W02AI03 เครื่องปรับอากาศ ห้องQC,matches_name,W02AI03 [fuzzy],Add to AssetAliases
+W01AI04 เครื่องปรับอากาศ ห้องสแน็ค,matches_name,W01AI04 [fuzzy],Add to AssetAliases
+W01AI05 เครื่องปรับอากาศ ห้องมิกซ์สแน็ค#1,matches_name,W01AI05 [fuzzy],Add to AssetAliases
+W01AI06 เครื่องปรับอากาศ ห้องมิกซ์สแน็ค#2,matches_name,W01AI06 [fuzzy],Add to AssetAliases
+W01AI07 เครื่องปรับอากาศ ห้องประชุม,matches_name,W01AI07 [fuzzy],Add to AssetAliases
+W01AI08  ห้องเย็น#1,matches_name,W01AI08 [fuzzy],Add to AssetAliases
+W01AI09  ห้องเย็น#2,matches_name,W01AI09 [fuzzy],Add to AssetAliases
+W02AI10 คอยเย็นห้อง Filling,matches_name,W02AI10 [fuzzy],Add to AssetAliases
+W02AI11 คอยเย็นห้อง Mixing,matches_name,W02AI11 [fuzzy],Add to AssetAliases
+W02AI12 คอยเย็นห้อง บรรจุภัณฑ์,matches_name,W02AI12 [fuzzy],Add to AssetAliases
+W02AI13 คอยเย็นห้อง ขูดปลา,matches_name,W02AI13 [fuzzy],Add to AssetAliases
+W02AI14 คอยเย็นห้อง เตรียมวัติถุดิบ,matches_name,W02AI14 [fuzzy],Add to AssetAliases
+W02AI15 คอยเย็นห้อง ตัดสแน็ค,matches_name,W02AI15 [fuzzy],Add to AssetAliases
+W02AI16 คอยเย็นห้อง บริหาร1,matches_name,W02AI16 [fuzzy],Add to AssetAliases
+W02AI17 คอยเย็นห้อง บริหาร2,matches_name,W02AI17 [fuzzy],Add to AssetAliases
+W02AI18 คอยเย็นห้อง ประชุม,matches_name,W02AI18 [fuzzy],Add to AssetAliases
+W02AI19 คอยเย็นห้อง ออฟฟิต,matches_name,W02AI19 [fuzzy],Add to AssetAliases
+W02AI20 คอยเย็นห้อง รับแขก,matches_name,W02AI20 [fuzzy],Add to AssetAliases
+W02AI21 เครื่องปรับอากาศ ห้องรับแขก,matches_name,W02AI21 [fuzzy],Add to AssetAliases
+W01BC01 สายพานผ่าท้องปลา (Butohering Converyer),matches_name,W01BC01 [fuzzy],Add to AssetAliases
+W01BC02 สายพานขูดปลา (Cleering Conveyer),matches_name,W01BC02 [fuzzy],Add to AssetAliases
+W01BC03 สายพานชั่งน้ำหนักเนื้อปลา (Weighting Conveyer),matches_name,W01BC03 [fuzzy],Add to AssetAliases
+W01BC04 รางเติมน้ำ3กลับ (Filling Conveyer),matches_name,W01BC04 [fuzzy],Add to AssetAliases
+W01BC05 สายพานรับซอง (Pouch Conveyer),matches_name,W01BC05 [fuzzy],Add to AssetAliases
+W01BC06 สายพานพากระป๋องเปล่า,matches_name,W01BC06 [fuzzy],Add to AssetAliases
+W01BC07 สายพานตัดสแน็ค,matches_name,W01BC07 [fuzzy],Add to AssetAliases
+W01BC09 สายพานลำเลียงกล่อง,matches_name,W01BC09 [fuzzy],Add to AssetAliases
+W01CL01 รางสเปร์คูลลิ่งปลา (Side Spray Cooling),matches_name,W01CL01 [fuzzy],Add to AssetAliases
+W01CW01  Cooling Water #1,matches_name,W01CW01 [fuzzy],Add to AssetAliases
+W01CW02  Cooling Water #2,matches_name,W01CW02 [fuzzy],Add to AssetAliases
+W01DP01 ถังเทปลา (Damper),matches_name,W01DP01 [fuzzy],Add to AssetAliases
+W01DI01 เครื่องบด#1 (Grinder),matches_name,W01DI01 [fuzzy],Add to AssetAliases
+W01DI02 เครื่องบด#2 (Grinder),matches_name,W01DI02 [fuzzy],Add to AssetAliases
+W01DI03 เครื่องบด#3 (Grinder),matches_name,W01DI03 [fuzzy],Add to AssetAliases
+W01DI04 เครื่องบด#4 (Grinder),matches_name,W01DI04 [fuzzy],Add to AssetAliases
+W01DS01 เครื่องจ่ายกระป๋องเปล่า (Emtry Can),matches_name,W01DS01 [fuzzy],Add to AssetAliases
+W01DR01 เครื่องเป่ากระป๋องแห้ง (Can Drying),matches_name,W01DR01 [fuzzy],Add to AssetAliases
+W01DR02 ตู้อบสแน็ค (Dryer Snack),matches_name,W01DR02 [fuzzy],Add to AssetAliases
+W01DR03 ตู้อบลมร้อน#1,matches_name,W01DR03 [fuzzy],Add to AssetAliases
+W01DR04 ตู้อบลมร้อน#2,matches_name,W01DR04 [fuzzy],Add to AssetAliases
+W01DR05 เครื่องเป่าซอง POUCH,matches_name,W01DR05 [fuzzy],Add to AssetAliases
+W01DR06 HS R2 DRYER ( เครื่องเป่ากล่อง),matches_name,W01DR06 [fuzzy],Add to AssetAliases
+W01IJ01 เครื่องยิงโค๊ตฮิตาชิ#1,matches_name,W01IJ01 [fuzzy],Add to AssetAliases
+W01IJ02 เครื่องยิงโค๊ตฮิตาชิ#2,matches_name,W01IJ03 [fuzzy],Add to AssetAliases
+W01IJ03 เครื่องยิงโค๊ตฮิตาชิ#3,matches_name,W01IJ03 [fuzzy],Add to AssetAliases
+W01IJ04 เครื่องพิมพ์ซองแมวเลีย,matches_name,W01IJ04 [fuzzy],Add to AssetAliases
+W01IJ05 เครื่องพิมพ์กล่อง,matches_name,W01IJ05 [fuzzy],Add to AssetAliases
+W01MN01 เครื่องตรวจจับโลหะแบบท่อ#1,matches_name,W01MN01 [fuzzy],Add to AssetAliases
+W01MN02 เครื่องตรวจจับโลหะแบบท่อ#2,matches_name,W01MN02 [fuzzy],Add to AssetAliases
+W01MN03 เครื่งตรวจจับโลหะแบบสายพาน#1,matches_name,W01MN03 [fuzzy],Add to AssetAliases
+W01MN04 เครื่งตรวจจับโลหะแบบสายพาน#2,matches_name,W01MN04 [fuzzy],Add to AssetAliases
+W01MS01 เครื่องนวดส่วนผสม (Kitchen Ald)#1,matches_name,W01MS01 [fuzzy],Add to AssetAliases
+W01MS02 เครื่องนวดส่วนผสม (Kitchen Ald)#2,matches_name,W01MS02 [fuzzy],Add to AssetAliases
+W01MS03 เครื่องนวดผสมแป้ง#1,matches_name,W01MS03 [fuzzy],Add to AssetAliases
+W01MS04 เครื่องนวดผสมแป้ง#2,matches_name,W01MS05 [fuzzy],Add to AssetAliases
+W01MS05 เครื่องนวดผสมแป้ง#3,matches_name,W01MS05 [fuzzy],Add to AssetAliases
+W01MI01 เครื่องตีเนื้อปลา (Flake Machine)#1,matches_name,W01MI01 [fuzzy],Add to AssetAliases
+W01MI10 เครื่องตีเนื้อปลา (Flake Machine)#2,matches_name,W01MI10 [fuzzy],Add to AssetAliases
+W01MI02 เครื่องสับผสม (Mixer Chapper),matches_name,W01MI02 [fuzzy],Add to AssetAliases
+W01MI03 เครื่องปั่น (Hi-Mixer) #1,matches_name,W01MI03 [fuzzy],Add to AssetAliases
+W01MI04 เครื่องปั่น (Hi-Mixer) #2,matches_name,W01MI13 [fuzzy],Add to AssetAliases
+W01MI05 เครื่องปั่น (Hi-Mixer) #3,matches_name,W01MI13 [fuzzy],Add to AssetAliases
+W01MI11 เครื่องปั่น (Hi-Mixer) #4,matches_name,W01MI13 [fuzzy],Add to AssetAliases
+W01MI12 เครื่องปั่น (Hi-Mixer) #5,matches_name,W01MI13 [fuzzy],Add to AssetAliases
+W01MI13 เครื่องปั่น (Hi-Mixer) #6,matches_name,W01MI13 [fuzzy],Add to AssetAliases
+W01MI06 ถังผสมแบบใบเกลียวสกรู (Ribbon Mixer) #1,matches_name,W01MI06 [fuzzy],Add to AssetAliases
+W01MI07 ถังผสมแบบใบเกลียวสกรู (Ribbon Mixer) #2,matches_name,W01MI14 [fuzzy],Add to AssetAliases
+W01MI10 ถังผสมแบบใบเกลียวสกรู (Ribbon Mixer) #3,matches_name,W01MI14 [fuzzy],Add to AssetAliases
+W01PK01 เครื่องFilling บรรจุของเหลว,matches_name,W01PK01 [fuzzy],Add to AssetAliases
+W01PK02 เครื่องFiller บรรจุปลาลงกระป๋อง,matches_name,W01PK02 [fuzzy],Add to AssetAliases
+W01PK04 เครื่องจานหมุน (X-Lift Can)#2,matches_name,W01PK04 [fuzzy],Add to AssetAliases
+W01PK09 เครื่องปิดฝา lifter,matches_name,W01PK09 [fuzzy],Add to AssetAliases
+W01PK14 เครื่องSealถุง (Band Sealer)#2,matches_name,W01PK26 [fuzzy],Add to AssetAliases
+W01PK15 เครื่องSealถุง (Band Sealer)#3,matches_name,W01PK26 [fuzzy],Add to AssetAliases
+W01PK16 เครื่องSealถุง (Band Sealer)#4,matches_name,W01PK26 [fuzzy],Add to AssetAliases
+W01PK12 เครื่องชั่งปลามัลติเฮด,matches_name,W01PK12 [fuzzy],Add to AssetAliases
+W01PK13 เครื่องชั่งเช็คเวท,matches_name,W01PK13 [fuzzy],Add to AssetAliases
+W01PK21 HSS R2 LOAOING,matches_name,W01PK21 [fuzzy],Add to AssetAliases
+W01PK22 HSS R2 UN LOAOING,matches_name,W01PK22 [fuzzy],Add to AssetAliases
+W01PK23 บรรจุซองแมวเลีย TONY #2,matches_name,W01PK23 [fuzzy],Add to AssetAliases
+W01PK24 เครื่องSealถุง (Band Sealer)#5,matches_name,W01PK26 [fuzzy],Add to AssetAliases
+W01PK25 เครื่องSealถุง (Band Sealer)#6,matches_name,W01PK26 [fuzzy],Add to AssetAliases
+W01PK26 เครื่องSealถุง (Band Sealer)#7,matches_name,W01PK26 [fuzzy],Add to AssetAliases
+W01RO04 ระบบน้ำRO Wet Food,matches_name,W01RO04 [fuzzy],Add to AssetAliases
+W01ST01 ตู้นึ่งปลา (Tuna Pre-Cooked),matches_name,W01ST01 [fuzzy],Add to AssetAliases
+W01ST03 เครื่องนึ่งแรงดันไอน้ำ (Retort Water Spray),matches_name,W01ST03 [fuzzy],Add to AssetAliases
+W01ST04 ตู้นึ่งเนื้อไก่ (Chicken Pre-Cooked),matches_name,W01ST04 [fuzzy],Add to AssetAliases
+W01ST05 เครื่อง Retort  Water Spray ฆ่าเชื้อกล่อง,matches_name,W01ST05 [fuzzy],Add to AssetAliases
+W01SR01 เครื่องกวนร้อน (Hi-Temp Stirrer),matches_name,W01SR01 [fuzzy],Add to AssetAliases
+W01SC01 อาคาร Wet Food,matches_name,W01SC01 [fuzzy],Add to AssetAliases
+W01SS01 ท่อระบายน้ำและรางน้ำฝน,matches_name,W01SS01 [fuzzy],Add to AssetAliases
+W01TT01 เครื่องเอียงตระกร้าเทน้ำ (Basket Tilter),matches_name,W01TT01 [fuzzy],Add to AssetAliases
+W01WT02 ถังพักน้ำ#2,matches_name,W01WT02 [fuzzy],Add to AssetAliases
+W01WT05 ถังพักน้ำซอฟ#2,matches_name,W01WT02 [fuzzy],Add to AssetAliases
+W01WT06 ถังพักน้ำRO,matches_name,W01WT02 [fuzzy],Add to AssetAliases
+W01WS01 เครื่องล้างกระป๋อง (Can Washer),matches_name,W01WS01 [fuzzy],Add to AssetAliases
+W01FP01 ปั๊มวัติถุดิบ FEED PUMP#1,matches_name,W01FP01 [fuzzy],Add to AssetAliases
+W01FP02 ปั๊มวัติถุดิบ FEED PUMP#2,matches_name,W01FP04 [fuzzy],Add to AssetAliases
+W01FP03 ปั๊มวัติถุดิบ FEED PUMP#3,matches_name,W01FP04 [fuzzy],Add to AssetAliases
+W01FP04 ปั๊มวัติถุดิบ FEED PUMP#4,matches_name,W01FP04 [fuzzy],Add to AssetAliases
+W01WP01 ปั๊มน้ำ Cooling #1,matches_name,W01WP01 [fuzzy],Add to AssetAliases
+W01WP02 ปั๊มน้ำ Cooling #2,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01WP03 ปั๊มน้ำ Cooling #3,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01WP04 ปั๊มน้ำ Cooling #4,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01WP05 ปั๊มน้ำ Cooling #5,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01WP06 ปั๊มน้ำ Cooling #6,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01WP07 ปั๊มน้ำ Cooling #7,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01WP08 ปั๊มน้ำ Cooling #8,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01WP09 ปั๊มน้ำ Cooling #9,matches_name,W01WP09 [fuzzy],Add to AssetAliases
+W01CT02 เครื่องตัดปลา#2,matches_name,W01CT06 [fuzzy],Add to AssetAliases
+W01CT03 เครื่องตัดปลา#3,matches_name,W01CT06 [fuzzy],Add to AssetAliases
+W01CT04 เครื่องตัดปลา#4,matches_name,W01CT06 [fuzzy],Add to AssetAliases
+W01CT05 เครื่องตัดปลา#5,matches_name,W01CT06 [fuzzy],Add to AssetAliases
+W01CT06 เครื่องตัดปลา#6,matches_name,W01CT06 [fuzzy],Add to AssetAliases
+W01CT07 เครื่องตัดสแน็ค,matches_name,W01CT07 [fuzzy],Add to AssetAliases
+W01CT08 เครื่องตัดปลาซาดีน,matches_name,W01CT06 [fuzzy],Add to AssetAliases
+W01CA01 รถโฟคลิฟไฟฟ้า # 1,matches_name,W01CA01 [fuzzy],Add to AssetAliases
+W01CA02 รถโฟคลิฟไฟฟ้า # 2,matches_name,W01CA02 [fuzzy],Add to AssetAliases
+W01CA03 รถโฟคลิฟน้ำมัน,matches_name,W01CA03 [fuzzy],Add to AssetAliases
+W02IT01 คอมพิวเตอร์ #01,matches_name,W02IT01 [fuzzy],Add to AssetAliases
+W02IT02 คอมพิวเตอร์ #02,matches_name,W02IT05 [fuzzy],Add to AssetAliases
+W02IT03 คอมพิวเตอร์ #03,matches_name,W02IT05 [fuzzy],Add to AssetAliases
+W02IT04 คอมพิวเตอร์ #04,matches_name,W02IT05 [fuzzy],Add to AssetAliases
+อ้างล้างมือห้องเย็น,matches_name,W01AI09 [fuzzy],Add to AssetAliases
+ribbon mixer,matches_name,W01MI06 [fuzzy],Add to AssetAliases
+Duplex,matches_alias,W01PK06,Already in alias map
+Can filling,matches_alias,W01PK08,Already in alias map
+Tony,matches_alias,W01PK19,Already in alias map
+Ttk 1,matches_alias,W01PK17,Already in alias map
+Retrort 2,matches_alias,W01ST02,Already in alias map
+Tetra pak,matches_alias,W01PK20,Already in alias map
+Seamer,matches_alias,W01PK08,Already in alias map
+W01BC08 สายพานติดฉลาก,matches_alias,W01BC08,Already in alias map
+W01BC10 สายพาน PACK กระป๋อง,matches_alias,W01BC10,Already in alias map
+W01EX01 เครื่องขึ้นรูปสแน็ค (Extruder),matches_alias,W01EX01,Already in alias map
+W01LB01 เครื่องปิดฉลากกระป๋อง (Can Labelling),matches_alias,W01LB01,Already in alias map
+W01MI08 เครื่องปั่นผสมแป้ง#1,matches_alias,W01MI08,Already in alias map
+W01PK03 เครื่องจานหมุน (X-Lift Can)#1,matches_alias,W01PK03,Already in alias map
+W01PK05 เครื่องบรรจุซองเพ้าช์ TYJ,matches_alias,W01PK05,Already in alias map
+W01PK06 เครื่องบรรจุซองเพ้าช์ Dupex,matches_alias,W01PK06,Already in alias map
+W01PK07 เครื่องบรรจุซองแมวเลีย (Treats Cat Filler),matches_alias,W01PK07,Already in alias map
+W01PK08 เครื่องปิดฝากระป๋อง (Can Seaming),matches_alias,W01PK08,Already in alias map
+W01PK10 เครื่องปิดฝา หัวSeam,matches_alias,W01PK10,Already in alias map
+W01PK11 เครื่องSealถุง (Band Sealer)#1,matches_alias,W01PK11,Already in alias map
+W01PK17 บรรจุซองแมวเลีย TTK #1,matches_alias,W01PK17,Already in alias map
+W01PK18 บรรจุซองแมวเลีย TTK #2,matches_alias,W01PK18,Already in alias map
+W01PK19 บรรจุซองแมวเลีย TONY #1,matches_alias,W01PK19,Already in alias map
+W01PK20 เครื่อง Seal กล่อง TP R2,matches_alias,W01PK20,Already in alias map
+W01ST02 เครื่อง Retort Steam หม้อฆ่าเชื้อกระป๋อง,matches_alias,W01ST02,Already in alias map
+W01WT01 ถังพักน้ำ#1,matches_alias,W01WT01,Already in alias map
+W01WT03 ถังพักน้ำล้างพื้น,matches_alias,W01WT03,Already in alias map
+W01WT04 ถังพักน้ำซอฟ#1,matches_alias,W01WT04,Already in alias map
+W01CT01 เครื่องตัดปลา#1,matches_alias,W01CT01,Already in alias map
+กระบอก fill อาหารเครื่อง Duplex เสีย,matches_alias,W01PK06,Already in alias map
+ปั้มดูดอาหาร Tetrapak,matches_alias,W01PK20,Already in alias map
+Toyo,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+Other (Type new),unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+Retrort 1,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+tony2,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+Hi-mixer 150 kg,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องน้ำออฟฟิตชั้น1,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+หลอดไฟห้องขยะบริเวณหน้าห้องตะกร้า,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องพีมิกซ์,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องบรรจุกระป๋อง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องบดใหญ่,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+รถเข็นใส่งาน,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องเตรียมวัตถุดิบ,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องฉีดน้ำแรงดันสูง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+มุ่งมั่น,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องบรรจุ Snack,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+สายยางอ่างล้างมือห้องมิกซ์2,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+คลังสินค้า,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+Hi-mixer 30 kg,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+สายพานเครื่องเป่ากระป๋อง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+HI MIXER 300KG,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องบดเล็ก,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่อง Pre flake,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+Metal detector,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องผสม,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องสับผสม 150 kg.,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องแอนติรูม,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ออฟฟิศคลัง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องสับผสม 300 kg,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+คลังวัตถุดิบ,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องทำน้ำแข็ง2,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องแพ็คกระป๋อง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องน้ำออฟฟิตชั้น1(ชาย),unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+สายพานลำเลียงกระป๋อง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องปั้มลม,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+บ้านขยะ,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ประตูม้วน,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องทำน้ำแข็ง1,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องเก็บขยะ,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ปั้มน้ำ CW ขึ้นแท่ง#2,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ประตูม้วน อินคูเบต,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+หลังคาโรงงานBFLFP,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ปั้มน้ำ SW#1,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+สายพานส่งกระป๋อง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องอินคูลเบส,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ปั้มระฉีดน้ำหม้อRetrot,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เช็คการทำงานเครื่องติดสลาก,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ซ่อมล้อรถเข็นตะกร้าห้อง Incubate,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+"เช็คอัดจารบีเครื่องจักรในไลท์ผลิต,ห้องRETROT,ห้องIncubate",unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ปั้มน้ำเพื่อต่อเพิ่มเข้าระบบฉีดเข้าหม้อRETROT,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ปั้มน้ำชุดเครื่องผลิตน้ำswเครื่องเล็ก,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เตรียมรางกกระป๋องและเครื่องซิมเมอร์เพื่อเตรียมผลิตอาหารกระป๋องขนาค 80g.,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เตรียมรางกกระป๋องและเครื่องซิมเมอร์เพื่อเตรียมผลิตอาหารกระป๋องขนาด 80g.,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+แก้ไขงานใบแจ้งซ่อมรถเข็นกรงและถาดห้องอินคูเบท,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ซ่อมลื้อแก้ไขเครื่องซิมเมอร์,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+อ่างล้างมือพร้อมเดินท่อน้ำเข้าจุดใหม่,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+"เครื่องเป่าลม,ที่กดสบู่ล้างมือและติดตั้ง power plug เพิ่มจุดอ่างล้างมือใหม่ห้อง mixer 1",unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ท่อลมเพิ่มเพื่อเตรียมใช้งานกับเครื่อง Hi Mixer 300,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ตู้เย็น Topping,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+บ่อดักไขมัน,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ห้องสแน็ต,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องติดฉลาก,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ประตูเชื่อมโรงงาน,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ช๊อปวิศวกรรม,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+เครื่องขนมปัง,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+รถเข็นดูดอาหาร,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+รถเข็นใส่อาหาร,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ตาข่ายกันนกรอบอาคารผลิต,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+ท่อสตีมแทปข้างเทาเวอร์c,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."
+รถโฟร์ลลิฟ,unmapped,,"Decide: is this a NEW asset, a typo, or a duplicate? Map it or ignore it."

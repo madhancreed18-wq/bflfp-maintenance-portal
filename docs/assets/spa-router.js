@@ -16,7 +16,15 @@
         'home':            { fragment: 'pages/home.html',            script: 'assets/home.js',            title: 'Home' },
         'dashboard':       { fragment: 'pages/dashboard.html',       script: 'assets/dashboard.js',       title: 'Dashboard' },
         'assets':          { fragment: 'pages/assets.html',          script: 'assets/assets.js',          title: 'Assets' },
+        'pm-schedule':     { fragment: 'pages/pm-schedule.html',     script: 'assets/pm-schedule.js',     title: 'PM Schedule' },
         'maintenance-log': { fragment: 'pages/maintenance-log.html', script: 'assets/maintenance-log.js', title: 'Maintenance Log' },
+        'corrective':      { fragment: 'pages/corrective.html',      script: 'assets/corrective.js',      title: 'Corrective Maintenance' },
+        'pm-completions':  { fragment: 'pages/pm-completions.html',  script: 'assets/pm-completions.js',  title: 'PM Completions' },
+        'pm-reports':      { fragment: 'pages/pm-reports.html',      script: 'assets/pm-reports.js',      title: 'PM Reports' },
+        'repair-reports':  { fragment: 'pages/repair-reports.html',  script: 'assets/repair-reports.js',  title: 'Repair Form (F-SP-ENG02-03)' },
+        'history':         { fragment: 'pages/history.html',         script: 'assets/history.js',         title: 'Machine History (F-SP-ENG02-02)' },
+        'tools-used':      { fragment: 'pages/tools-used.html',      script: 'assets/tools-used.js',      title: 'Tool Authorization (F-SP-ENG02-04)' },
+        'daily-report':    { fragment: 'pages/daily-report.html',    script: 'assets/daily-report.js',    title: 'Daily Report (F-SP-ENG02-06)' },
         'reports':         { fragment: 'pages/reports.html',         script: 'assets/reports.js',         title: 'Reports' },
         'about':           { fragment: 'pages/about.html',           script: 'assets/about.js',           title: 'About' }
     };
@@ -31,6 +39,9 @@
     // --------------------------------------------
     function currentRoute() {
         var h = (location.hash || '').replace(/^#\/?/, '').toLowerCase();
+        // Strip query string ?key=value from the route key
+        var qIdx = h.indexOf('?');
+        if (qIdx >= 0) h = h.substring(0, qIdx);
         if (!h || !ROUTES[h]) return DEFAULT_ROUTE;
         return h;
     }

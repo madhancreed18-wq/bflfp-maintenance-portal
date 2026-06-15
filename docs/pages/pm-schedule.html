@@ -1,0 +1,98 @@
+<!-- PM Schedule — year matrix view -->
+<section class="pms-page">
+    <header class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">PM Schedule <span class="title-th">แผน PM ประจำปี</span></h1>
+            <p class="page-subtitle">Year matrix — 152 assets × 12 months. Each cell shows when PM is due, colored by frequency. Click an asset name to see details; use the Print button to generate the checklist.</p>
+        </div>
+    </header>
+
+    <div class="pms-toolbar">
+        <div class="pms-stats" id="pms-stats">
+            <span class="stat-pill"><span class="stat-num" id="pms-stat-total">—</span><span class="stat-label">Assets</span></span>
+            <span class="stat-pill"><span class="stat-num" id="pms-stat-w">—</span><span class="stat-label">Weekly</span></span>
+            <span class="stat-pill"><span class="stat-num" id="pms-stat-m">—</span><span class="stat-label">Monthly</span></span>
+            <span class="stat-pill"><span class="stat-num" id="pms-stat-q">—</span><span class="stat-label">Quarterly</span></span>
+            <span class="stat-pill"><span class="stat-num" id="pms-stat-s">—</span><span class="stat-label">Bi-Annual</span></span>
+            <span class="stat-pill"><span class="stat-num" id="pms-stat-a">—</span><span class="stat-label">Annual</span></span>
+        </div>
+
+        <div class="pms-filters">
+            <input type="search" id="pms-search" placeholder="Search by code, name, class…" class="filter-input" />
+            <select id="pms-type" class="filter-select">
+                <option value="">All Types</option>
+                <option value="Machine">Machine</option>
+                <option value="Utilities">Utilities</option>
+                <option value="IT">IT</option>
+            </select>
+            <select id="pms-class" class="filter-select">
+                <option value="">All Classes</option>
+            </select>
+            <select id="pms-freq" class="filter-select">
+                <option value="">All PM Frequencies</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Bi-Annual">Bi-Annual</option>
+                <option value="Annual">Annual</option>
+            </select>
+            <select id="pms-month" class="filter-select">
+                <option value="">All Months</option>
+                <option value="1">ม.ค. (Jan)</option>
+                <option value="2">ก.พ. (Feb)</option>
+                <option value="3">มี.ค. (Mar)</option>
+                <option value="4">เม.ย. (Apr)</option>
+                <option value="5">พ.ค. (May)</option>
+                <option value="6">มิ.ย. (Jun)</option>
+                <option value="7">ก.ค. (Jul)</option>
+                <option value="8">ส.ค. (Aug)</option>
+                <option value="9">ก.ย. (Sep)</option>
+                <option value="10">ต.ค. (Oct)</option>
+                <option value="11">พ.ย. (Nov)</option>
+                <option value="12">ธ.ค. (Dec)</option>
+            </select>
+            <button class="btn-clear" id="pms-clear">Clear</button>
+            <button class="btn-print-bulk" id="pms-print-bulk" disabled>📋 Print Filtered</button>
+        </div>
+    </div>
+
+    <div class="pms-legend">
+        <strong>ความถี่ (Frequency):</strong>
+        <span class="lg-chip fc-W">W</span> ประจำสัปดาห์
+        <span class="lg-chip fc-M">M</span> ประจำ 1 เดือน
+        <span class="lg-chip fc-Q">Q</span> ประจำ 3 เดือน
+        <span class="lg-chip fc-S">S</span> ประจำ 6 เดือน
+        <span class="lg-chip fc-A">A</span> ประจำปี
+    </div>
+
+    <div class="pms-table-wrap">
+        <table class="pms-table" id="pms-table">
+            <thead>
+                <tr>
+                    <th class="col-id">Asset ID</th>
+                    <th class="col-name">ชื่อ Asset</th>
+                    <th class="col-class">Class</th>
+                    <th class="col-freq">Freq</th>
+                    <th class="col-m">ม.ค.</th>
+                    <th class="col-m">ก.พ.</th>
+                    <th class="col-m">มี.ค.</th>
+                    <th class="col-m">เม.ย.</th>
+                    <th class="col-m">พ.ค.</th>
+                    <th class="col-m">มิ.ย.</th>
+                    <th class="col-m">ก.ค.</th>
+                    <th class="col-m">ส.ค.</th>
+                    <th class="col-m">ก.ย.</th>
+                    <th class="col-m">ต.ค.</th>
+                    <th class="col-m">พ.ย.</th>
+                    <th class="col-m">ธ.ค.</th>
+                    <th class="col-act">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="pms-tbody">
+                <tr><td colspan="17" class="loading-row">Loading PM schedule…</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="pms-footer-note" id="pms-count-note"></p>
+</section>
