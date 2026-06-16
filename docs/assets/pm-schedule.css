@@ -196,12 +196,12 @@
     background: #fff; color: #000; font-weight: 700;
     text-align: center; font-size: 12px;
 }
-.pp-table .pp-no     { width: 38px;  text-align: center; }
-.pp-table .pp-code   { width: 92px;  text-align: center; }
-.pp-table .pp-name   { width: 170px; }
-.pp-table .pp-task   { width: auto; min-width: 300px; text-align: left; }
-.pp-table .pp-fq     { width: 30px;  text-align: center; }
-.pp-table .pp-method { width: 78px;  text-align: center; }
+.pp-table .pp-no     { text-align: center; }
+.pp-table .pp-code   { text-align: center; }
+
+.pp-table .pp-task   { text-align: left; }
+.pp-table .pp-fq     { text-align: center; }
+.pp-table .pp-method { text-align: center; }
 .pp-table tbody .pp-fq { color: #000; font-weight: 700; font-size: 14px; }
 
 /* signature footer */
@@ -219,7 +219,6 @@
 }
 
 /* authoritative column widths (work despite the colspan frequency header) */
-.pp-table { } 
 .pp-table colgroup .cg-no     { width: 4%; }
 .pp-table colgroup .cg-code   { width: 9%; }
 .pp-table colgroup .cg-name   { width: 15%; }
@@ -234,3 +233,43 @@
 .pms-tab span { display:block; font-size:11px; font-weight:400; opacity:.75; }
 .pms-tab.is-active { color:var(--brand,#2563EB); border-bottom-color:var(--brand,#2563EB); }
 .pms-tabpanel[hidden] { display:none; }
+
+
+/* ============================================================
+   MOBILE-FRIENDLY (phones / narrow screens)
+   ============================================================ */
+@media (max-width: 820px) {
+    /* stack the toolbar controls full-width */
+    .pms-controls { flex-direction: column; align-items: stretch; gap: 8px; }
+    .pms-group-select, .pms-controls .filter-input { min-width: 0; width: 100%; }
+    .pms-controls .btn-print-bulk { width: 100%; }
+    .pms-tabs { overflow-x: auto; }
+    .pms-tab { padding: 9px 12px; font-size: 14px; white-space: nowrap; }
+
+    /* the PM Plan document: fit the phone, let the wide table scroll sideways */
+    .pms-stage { gap: 14px; }
+    .pm-plan-doc {
+        padding: 12px 12px 16px;
+        font-size: 11px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .pp-head td { padding: 3px 5px; }
+    .pp-head-mid { font-size: 12px; }
+    .pp-head-right { width: auto; font-size: 10px; white-space: normal; }
+    .pp-logo { max-width: 64px; max-height: 44px; }
+    /* keep columns legible; table scrolls within the doc instead of squashing */
+    .pp-table { min-width: 660px; }
+    .pp-table th, .pp-table td { padding: 3px 4px; }
+    .pp-sign td { font-size: 11px; }
+}
+
+/* very small phones */
+@media (max-width: 420px) {
+    .pm-plan-doc { font-size: 10.5px; }
+    .pp-table { min-width: 600px; }
+    .page-title { font-size: 18px; }
+}
+
+/* the wide table scrolls sideways on touch without a visible scrollbar jump */
+.pm-plan-doc { scrollbar-width: thin; }
